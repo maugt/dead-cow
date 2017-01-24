@@ -9,7 +9,7 @@ render() {
 	return (
 		<nav>
 			<div className="container">
-			<h1><a href="/">The Dead Cow</a></h1>
+			<h1><a href="/">The Dead Cow <span>at The Tannery</span></a></h1>
 			<ul>
 				{/* <li><a href="/specials">Daily Specials</a></li> */}
 				{/* <li><a href="/menu">Menu</a></li> */}
