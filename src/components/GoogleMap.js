@@ -1,7 +1,7 @@
 import React, {
 	Component
 } from 'react'
-import {Gmaps, Marker, InfoWindow, Circle} from 'react-gmaps';
+import {Gmaps, Marker} from 'react-gmaps';
 
 
 const coords = {
@@ -85,6 +85,7 @@ export default class GoogleMap extends Component{
 
   render() {
     return (
+			<div className="map">
       <Gmaps
 				scrollwheel={false}
         width={'100%'}
@@ -101,10 +102,11 @@ export default class GoogleMap extends Component{
           lng={coords.lng}
           draggable={false}
           onDragEnd={this.onDragEnd}
-					icon="/assets/icon-small.png"
+					icon="/assets/icon-dark-small.png"
 				/>
 
       </Gmaps>
+			</div>
     );
   }
 

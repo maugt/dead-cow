@@ -10,7 +10,7 @@ import MenuFavorites from './components/MenuFavorites'
 class App extends Component {
 	render() {
 		return (
-			<div className="wrapper">
+			<div>
 			<Nav/>
 			<Cover/>
 			<Map/>

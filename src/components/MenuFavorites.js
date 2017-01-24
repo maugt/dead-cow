@@ -8,7 +8,7 @@ export default class MenuFavorites extends Component {
 render() {
 
 	return (
-		<div id='menuFavorites'>
+		<div className='menuFavorites'>
 			<h2>Menu Favorites</h2>
 			<MenuItem/>
 
