@@ -86,11 +86,12 @@ nav{
 	font-size: 15px;
 	height: 11vh;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	flex-direction: row;
+	align-items: center;
 
 	.container{
 		position: relative;
+		display: flex;
 		justify-content: space-between;
 		align-items: baseline;
 	}
@@ -105,6 +106,8 @@ nav{
 		text-transform:uppercase;;
 		letter-spacing: 1px;
 		margin-left: 5px;
+		position:relative;
+		top: 0px;
 	}
 
 	li{
