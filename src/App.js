@@ -11,7 +11,12 @@ class App extends Component {
 	render() {
 		return (
 			<div>
-			<Nav/>
+			<div className="small">
+				<Nav/>
+			</div>
+			<div className="mobile">
+				<Nav/>
+			</div>
 			<Cover/>
 			<Map/>
 			<MenuFavorites/>
