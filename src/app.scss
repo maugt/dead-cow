@@ -51,11 +51,25 @@ body {
 		display: inline;
 		margin-left: 20px;
 
+
+	}
+
+	.links{
+		display: flex;
+		align-items: baseline;
+		flex-direction: row;
+	}
+
+	.social{
+		margin-left: 10px;
+		a{
+		margin: 0 4px;
 		img {
 			height: 15px;
 			width: 15px;
 			// box-shadow: 0 0 5px #eeeeee;
 		}
+	}
 	}
 }
 
@@ -115,7 +129,7 @@ body {
 	.slogan {
 		text-align: start;
 		margin-right: 50px;
-		margin-top: 100px;
+		margin-top: 50px;
 		font-weight: normal;
 		letter-spacing: 1px;
 		font-size: 35px;
@@ -176,7 +190,7 @@ body {
 
 		.container {
 			align-items: center;
-			justify-content: space-around;
+			justify-content: space-between;;
 			padding: 0;
 		}
 
@@ -192,16 +206,24 @@ body {
 			margin-top: 50px;
 		}
 
-		#slogan {
-			font-size: 20px;
+		.slogan {
+			font-size: 30px;
 			margin-top: 50px;
 			margin-right: 0;
 			text-align: center;
 		}
 	}
+
+	.nav{
+		h1{
+			span{
+				display: none;
+			}
+		}
+	}
 }
 // mobile
-@media (max-width: 675px) {
+@media (max-width: 680px) {
 	.small {
 		display: none;
 	}
@@ -219,11 +241,12 @@ body {
 
 		.container {
 			height: 100vh;
-			justify-content: space-around;
+			justify-content: space-between;
 		}
 
 		.toggleSwitch {
 			font-size: 35px;
+			margin-top: 25px;
 		}
 
 		.front-matter {
@@ -232,7 +255,14 @@ body {
 			justify-content: flex-start;
 		}
 
+		.slogan{
+			text-align: center;
+			font-size: 30px;
+			margin-right: 0;
+		}
+
 		h3 {
+			text-align: center;
 			font-size: 30px;
 		}
 
@@ -255,9 +285,8 @@ body {
 	}
 
 	.nav {
-		// @extend .collapsed;
-		padding: 0;
-		height: 300px;
+		padding:  0px;
+		height: 150px;
 		transition: height 0.25s;
 		overflow: hidden;
 		width: 100%;
@@ -266,34 +295,51 @@ body {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			height: auto;
+		}
+
+		.links{
+			flex-direction: column;
+			align-items: center;
 		}
 
 		h1 {
-			margin-top: 30px;
-			margin-bottom: 10px;
-
+			margin-top: 0;
+			margin-bottom: 5px;
 			span {
 				display: none;
 			}
 		}
 
 		ul {
+			padding: 0;
+			margin-top: 0px;
 			display: flex;
 			flex-direction: column;
-			padding: 0;
-			margin-top: 0;
-			margin-bottom: 15px;
+			align-items: center;
+
 
 			li {
-				margin: 10px 0;
+				font-size: 20px;
+				margin-left: 0;
+				margin-bottom: 10px;
 
-				img {
-					height: 25px;
-					width: 25px;
-				}
 			}
 		}
+
+		.social{
+			margin: 0;
+			a{
+				margin: 0 7px;
+
+				img {
+					height: 20px;
+					width: 20px;
+				}
+			}
+
+		}
+
+
 	}
 
 	.nav.collapsed {
