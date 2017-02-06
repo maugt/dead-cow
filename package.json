@@ -14,8 +14,8 @@
     "react-google-maps": "^6.0.1"
   },
   "scripts": {
-    "start": "react-scripts-with-sass start",
-    "build": "react-scripts-with-sass build",
+    "start": "react-scripts-with-sass start --history-api-fallback",
+    "build": "react-scripts-with-sass build --history-api-fallback",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }

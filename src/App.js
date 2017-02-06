@@ -3,7 +3,7 @@ import React, {
 } from 'react';
 import './app.css';
 import Nav from './components/Nav'
-import Cover from './components/Cover'
+import OpeningSoon from './components/OpeningSoon'
 import Map from './components/GoogleMap'
 import MenuFavorites from './components/MenuFavorites'
 
@@ -12,10 +12,11 @@ class App extends Component {
 		return (
 			<div>
 			<Nav/>
-			<Cover/>
+			{this.props.children}
+			{/* <OpeningSoon/>
 			<Map/>
 			<MenuFavorites/>
-			<img src="" alt="" className="breakup"/>
+			<img src="" alt="" className="breakup"/> */}
 			</div>
 		);
 	}
