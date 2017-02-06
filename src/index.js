@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Route, IndexRoute, IndexRedirect, Router, browserHistory} from 'react-router'
-import App from './app';
+import App from './App';
 import OpeningSoon from './components/OpeningSoon'
 import './index.css';
 

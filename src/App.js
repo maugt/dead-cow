@@ -1,7 +1,7 @@
 import React, {
 	Component
 } from 'react';
-import './app.css';
+import './App.css';
 import Nav from './components/Nav'
 import OpeningSoon from './components/OpeningSoon'
 import Map from './components/GoogleMap'
