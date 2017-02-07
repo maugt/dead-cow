@@ -4,6 +4,7 @@ import {Route, IndexRoute, IndexRedirect, Router, browserHistory} from 'react-ro
 import App from './App';
 import OpeningSoon from './pages/OpeningSoon'
 import Home from './pages/Home'
+import FullMenu from './pages/FullMenu'
 import './index.css';
 
 ReactDOM.render(
@@ -13,6 +14,10 @@ ReactDOM.render(
 		<Route component={Home}>
 			<IndexRoute/>
 			<Route path='/opening-soon' component={OpeningSoon}/>
+		</Route>
+
+		<Route path="/menu" component={FullMenu}>
+
 		</Route>
 		</Route>
 	</Router>
