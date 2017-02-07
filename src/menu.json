@@ -1,64 +1,65 @@
 {
-	"sections": {
-		"breakfast": {
-			"title": "Breakfast"
-		},
-		"lunch": {
-			"title": "Lunch",
-			"sub": {
-				"sandwiches": {
-					"title": "Sandwiches, Available Grab & Go, or made to order"
-				},
-				"salad": {
-					"title": "Salads, made with fresh seasonal vegetables"
-				}
-			}
-		},
-		"beverages": {
-			"title": "Beverages",
-			"coffee": {
-				"title": "Coffee"
-			},
-			"smoothies": {
+	"sections": [{
+		"slug": "breakfast",
+		"title": "Breakfast"
+	}, {
+		"slug": "lunch",
+		"title": "Lunch",
+		"sub": [{
+			"slug": "sandwiches",
+			"title": "Sandwiches, Available Grab & Go, or made to order"
+		}, {
+			"slug": "salad",
+			"title": "Salads, made with fresh seasonal vegetables"
+		}]
+	}, {
+		"slug": "beverages",
+		"title": "Beverages",
+		"sub": [
+			{
+			"slug": "coffee",
+			"title": "Coffee"
+			}, {
+				"slug": "smoothies",
 				"title": "Smoothies"
-			},
-			"fridge": {
+			}, {
+				"slug": "fridge",
 				"title": "Milk / Juice / Soda"
 			}
-		},
-		"snacks": {
-			"title": "Bar Snacks & Appetizers"
-		},
-		"dinner": {
-			"title": "Dinner",
-			"sub": {
-				"plates": {
-					"title": "Plates & Platters, served individually or family-style; your choice of two sides"
-				},
-				"sides": {
-					"title": "Sides, served individually or family-style"
-				}
-			}
+		]
+	}, {
+		"slug": "snacks",
+		"title": "Bar Snacks & Appetizers"
+	}, {
+		"slug": "dinner",
+		"title": "Dinner",
+		"sub": [{
+			"slug": "plates",
+			"title": "Plates & Platters, served individually or family-style; your choice of two sides"
+		}, {
+			"slug": "sides",
+			"title": "Sides, served individually or family-style"
+		}]
 
-		},
-		"bar": {
-			"title": "Cocktails, Beer, and Wine",
-			"sub": {
-				"cocktails": null,
-				"wine-beer": null
-			}
-		},
-		"dessert": {
-			"title": "Dessert"
-		}
-	},
+	}, {
+		"slug": "bar",
+		"title": "Cocktails, Beer, and Wine",
+		"sub": [{
+			"slug": "cocktails"
+		}, {
+			"slug": "wine-beer"
+		}]
+	}, {
+		"slug": "dessert",
+		"title": "Dessert"
+	}],
 	"items": [{
 			"title": "Breakfast Burrito or Panini",
 			"description": "Enjoy your eggs with choice of cheese,  meat, and sauces grilled in a tortilla wrap or bread",
 			"price": [6],
 			"addons": null,
 			"category": "breakfast",
-			"sub-category": null
+			"subCategory": null
 		}, {
 			"title": "Hot Cereal or (Cold) Yogurt",
 			"description": "Daily hot cereal or yogurt",
@@ -68,7 +69,7 @@
 				"price": [2]
 			}],
 			"category": "breakfast",
-			"sub-category": null
+			"subCategory": null
 		}, {
 			"title": "Fritatta",
 			"description": "Fresh seasonal vegetables baked with eggs in individual servings",
@@ -78,7 +79,7 @@
 				"price": [1]
 			}],
 			"category": "breakfast",
-			"sub-category": null
+			"subCategory": null
 		}, {
 			"title": "Pastries",
 			"description": "Daily selection of fresh breads, bagels and pastries baked in house or delivered fresh from one of our local vendors",
@@ -88,7 +89,7 @@
 				"price": [1]
 			}],
 			"category": "breakfast",
-			"sub-category": null
+			"subCategory": null
 		}, {
 			"title": "Soup",
 			"description": "Rotating soup selection",
@@ -101,105 +102,105 @@
 				"price": [8]
 			}],
 			"category": "lunch",
-			"sub-category": null
+			"subCategory": null
 		}, {
 			"title": "Red",
 			"description": "Rotating sandwich featuring meats such as beef, ham, pastrami or sausages",
 			"price": [9],
 			"addons": null,
 			"category": "lunch",
-			"sub-category": "sandwiches"
+			"subCategory": "sandwiches"
 		}, {
 			"title": "White",
 			"description": "Rotating sandwich featuring meats such as poultry or pork",
 			"price": [8],
 			"addons": null,
 			"category": "lunch",
-			"sub-category": "sandwiches"
+			"subCategory": "sandwiches"
 		}, {
 			"title": "Blue",
 			"description": "Rotating seafood (finfish or shellfish) sandwich",
 			"price": [9],
 			"addons": null,
 			"category": "lunch",
-			"sub-category": "sandwiches"
+			"subCategory": "sandwiches"
 		}, {
 			"title": "Green",
 			"description": "Rotating vegetarian sandwich",
 			"price": [7],
 			"addons": null,
 			"category": "lunch",
-			"sub-category": "sandwiches"
+			"subCategory": "sandwiches"
 		}, {
 			"title": "Leafy",
 			"description": "Rotating leafy green salad, with your choice of vinaigrette or creamy dressing",
 			"price": [7],
 			"addons": null,
 			"category": "lunch",
-			"sub-category": "salad"
+			"subCategory": "salad"
 		}, {
 			"title": "Pasta",
 			"description": "Rotating pasta salad special, lightly dressed",
 			"price": [7],
 			"addons": null,
 			"category": "lunch",
-			"sub-category": "salad"
+			"subCategory": "salad"
 		}, {
 			"title": "Grain",
 			"description": "Rotating chef's salad with rice/barley/quinoa base",
 			"price": [7],
 			"addons": null,
 			"category": "lunch",
-			"sub-category": "salad"
+			"subCategory": "salad"
 		}, {
 			"title": "Pulse",
 			"description": "Rotating salad of beans/lentils/peas with vegetables and a light dressing",
 			"price": [7],
 			"addons": null,
 			"category": "lunch",
-			"sub-category": "salad"
+			"subCategory": "salad"
 		}, {
 			"title": "Espresso",
 			"description": "straight shot",
 			"price": [2],
 			"addons": null,
 			"category": "beverages",
-			"sub-category": "coffee"
+			"subCategory": "coffee"
 		}, {
 			"title": "Americano",
 			"description": "drinp strength espresso in 8oz or 12oz cup",
 			"price": [2, 4],
 			"addons": null,
 			"category": "beverages",
-			"sub-category": "coffee"
+			"subCategory": "coffee"
 		}, {
 			"title": "Café Latte",
 			"description": "espresso, steamed milk",
 			"price": [2.75],
 			"addons": null,
 			"category": "beverages",
-			"sub-category": "coffee"
+			"subCategory": "coffee"
 		}, {
 			"title": "Cappuccino",
 			"description": "espresso, foam",
 			"price": [2.75],
 			"addons": null,
 			"category": "beverages",
-			"sub-category": "coffee"
+			"subCategory": "coffee"
 		}, {
 			"title": "Latte Macchiato",
 			"description": "espresso, steamed milk",
 			"price": [2.75],
 			"addons": null,
 			"category": "beverages",
-			"sub-category": "coffee"
+			"subCategory": "coffee"
 		}, {
 			"title": "Café Mocha",
 			"description": "espresso, creamy chocolate, steamed milk, foam",
 			"price": [3],
 			"addons": null,
 			"category": "beverages",
-			"sub-category": "coffee"
+			"subCategory": "coffee"
 		}, {
 			"title": "Blend your own selections",
 			"description": "Veggies, Fruits: first 2 free - Juices, Milks: first 1 free",
@@ -209,7 +210,7 @@
 				"price": [1]
 			}],
 			"category": "beverages",
-			"sub-category": "smoothies"
+			"subCategory": "smoothies"
 		}, {
 			"title": "Whole Milk, Fresh Squeezed OJ, Apple Juice, Coke/Diet Coke/7UP/Italian Soda",
 			"description": null,
@@ -219,119 +220,119 @@
 				"price": [0.5]
 			}],
 			"category": "beverages",
-			"sub-category": "coffee"
+			"subCategory": "coffee"
 		}, {
 			"title": "Roasted Nutes",
 			"description": "Savory or sweet, house roasted",
 			"price": [3],
 			"addons": null,
 			"category": "snacks",
-			"sub-category": null
+			"subCategory": null
 		}, {
 			"title": "Dips & Chips",
 			"description": "Weekly selection of house-made chips and dips",
 			"price": [4],
 			"addons": null,
 			"category": "snacks",
-			"sub-category": null
+			"subCategory": null
 		}, {
 			"title": "Mezze",
 			"description": "Choice of meat, cheese, marinated olives, house-made pickles and roasted vegetables, large or small platter",
 			"price": [4, 7],
 			"addons": null,
 			"category": "snacks",
-			"sub-category": null
+			"subCategory": null
 		}, {
 			"title": "Red",
 			"description": "Rotating red meat (beef/lamb/venison/wild boar) selection, grilled, roasted, or braised",
 			"price": [14],
 			"addons": null,
 			"category": "dinner",
-			"sub-category": "plates"
+			"subCategory": "plates"
 		}, {
 			"title": "White",
 			"description": "Rotating poultry or pork selection, grilled, roasted, or braised",
 			"price": [12],
 			"addons": null,
 			"category": "dinner",
-			"sub-category": "plates"
+			"subCategory": "plates"
 		}, {
 			"title": "Blue",
 			"description": "Rotating seafood (finfish/shellfish) selection, grilled, roasted, or braised",
 			"price": [14],
 			"addons": null,
 			"category": "dinner",
-			"sub-category": "plates"
+			"subCategory": "plates"
 		}, {
 			"title": "Green",
 			"description": "Rotating seasonal vegetables selection, grilled, roasted, or braised",
 			"price": [12],
 			"addons": null,
 			"category": "dinner",
-			"sub-category": "plates"
+			"subCategory": "plates"
 		}, {
 			"title": "Dead Cow",
 			"description": "Vodka, local ginger beer, lime juice",
 			"price": [8],
 			"addons": null,
 			"category": "bar",
-			"sub-category": "cocktails"
+			"subCategory": "cocktails"
 		}, {
 			"title": "Cowsmopolitan",
 			"description": "Vodka, triple sec, lime juice and cranberry juice",
 			"price": [8],
 			"addons": null,
 			"category": "bar",
-			"sub-category": "cocktails"
+			"subCategory": "cocktails"
 		}, {
 			"title": "Moojito",
 			"description": "Rum, mint, lime juice, sugar and soda",
 			"price": [8],
 			"addons": null,
 			"category": "bar",
-			"sub-category": "cocktails"
+			"subCategory": "cocktails"
 		}, {
 			"title": "Moocowrita",
 			"description": "Tequila, triple sec, and lime juice",
 			"price": [8],
 			"addons": null,
 			"category": "bar",
-			"sub-category": "cocktails"
+			"subCategory": "cocktails"
 		}, {
 			"title": "Californication",
 			"description": "Rum, vodka, tequila and gin finished with triple sec, lemon juice and orange juice",
 			"price": [12],
 			"addons": null,
 			"category": "bar",
-			"sub-category": "cocktails"
+			"subCategory": "cocktails"
 		}, {
 			"title": "Wine",
 			"description": "Red and white selections, local favorites or premium",
 			"price": [7, 9],
 			"addons": null,
 			"category": "bar",
-			"sub-category": "wine - beer"
+			"subCategory": "wine - beer"
 		}, {
 			"title": "Beer",
 			"description": "bottled and draft, local favorites or premium",
 			"price": [6, 8],
 			"addons": null,
 			"category": "bar",
-			"sub-category": "wine - beer"
+			"subCategory": "wine - beer"
 		}, {
 			"title": "House-Made Daily Specials",
 			"description": "House-made selections of sweet delights",
 			"price": ["AQ"],
 			"addons": null,
 			"category": "dessert",
-			"sub-category": null
+			"subCategory": null
 		}, {
 			"title": "Cheese Plate",
 			"description": "Served with biscuits and fruit compote",
 			"price": [8],
 			"addons": null,
 			"category": "dessert",
-			"sub-category": null
+			"subCategory": null
 		}
 
 	],
