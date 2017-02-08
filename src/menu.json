@@ -1,58 +1,64 @@
 {
-	"sections": [{
+	"sections": [
+		{
 		"slug": "breakfast",
 		"title": "Breakfast"
-	}, {
-		"slug": "lunch",
-		"title": "Lunch",
-		"sub": [{
-			"slug": "sandwiches",
-			"title": "Sandwiches, Available Grab & Go, or made to order"
 		}, {
-			"slug": "salad",
-			"title": "Salads, made with fresh seasonal vegetables"
-		}]
-	}, {
+		"slug": "lunch",
+		"title": "Lunch"
+		}, {
 		"slug": "beverages",
-		"title": "Beverages",
-		"sub": [
-			{
-			"slug": "coffee",
-			"title": "Coffee"
-			}, {
-				"slug": "smoothies",
-				"title": "Smoothies"
-			}, {
-				"slug": "fridge",
-				"title": "Milk / Juice / Soda"
-			}
-		]
+		"title": "Beverages"
 	}, {
 		"slug": "snacks",
 		"title": "Bar Snacks & Appetizers"
 	}, {
 		"slug": "dinner",
-		"title": "Dinner",
-		"sub": [{
-			"slug": "plates",
-			"title": "Plates & Platters, served individually or family-style; your choice of two sides"
-		}, {
-			"slug": "sides",
-			"title": "Sides, served individually or family-style"
-		}]
-
+		"title": "Dinner"
 	}, {
 		"slug": "bar",
-		"title": "Cocktails, Beer, and Wine",
-		"sub": [{
-			"slug": "cocktails"
-		}, {
-			"slug": "wine-beer"
-		}]
+		"title": "Cocktails, Beer, and Wine"
 	}, {
 		"slug": "dessert",
 		"title": "Dessert"
 	}],
+	"subSections":[
+		{
+			"slug": "sandwiches",
+			"title": "Sandwiches, Available Grab & Go, or made to order",
+			"childOf": "lunch"
+		},{
+			"slug": "salad",
+			"title": "Salads, made with fresh seasonal vegetables",
+			"childOf": "lunch"
+		},{
+			"slug": "coffee",
+			"title": "Coffee",
+			"childOf": "beverages"
+		}, {
+			"slug": "smoothies",
+			"title": "Smoothies",
+			"childOf": "beverages"
+		}, {
+			"slug": "fridge",
+			"title": "Milk / Juice / Soda",
+			"childOf": "beverages"
+		},{
+			"slug": "plates",
+			"title": "Plates & Platters, served individually or family-style; your choice of two sides",
+			"childOf": "dinner"
+		}, {
+			"slug": "sides",
+			"title": "Sides, served individually or family-style",
+			"childOf": "dinner"
+		}, {
+			"slug": "cocktails",
+			"childOf": "bar"
+		}, {
+			"slug": "wine-beer",
+			"childOf": "bar"
+		}
+	],
 	"items": [{
 			"title": "Breakfast Burrito or Panini",
 			"description": "Enjoy your eggs with choice of cheese,  meat, and sauces grilled in a tortilla wrap or bread",
