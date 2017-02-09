@@ -4,18 +4,14 @@ import React, {
 import firebase from 'firebase'
 import * as Actions from '../actions/Actions'
 import VarStore from '../stores/VarStore'
+import MobileToggleSwitch from '../components/MobileToggleSwitch'
 import UUID from 'uuid'
 import data from '../menu.json'
+import C from '../constants/FirebaseConfig.json'
 
-const config = {
-	apiKey: "AIzaSyB3SNrTzMXAJb6zWhjwD4TDSnITCStq3KU",
-	authDomain: "the-dead-cow.firebaseapp.com",
-	databaseURL: "https://the-dead-cow.firebaseio.com",
-	storageBucket: "the-dead-cow.appspot.com",
-	messagingSenderId: "270874696443"
-}
+console.log(C)
 
-firebase.initializeApp(config)
+firebase.initializeApp(C)
 
 export default class FullMenu extends Component {
 
@@ -132,10 +128,50 @@ getStyles(){
 	}
 }
 
+renderMenuItemPrices(item){
+	let prices = []
+	for(let i of item.price){
+		prices.push(
+			<p key={UUID.v4()}>{i}</p>
+		)
+	}
+	return prices
+}
+
+renderMenuItemAddOns(item){
+	let addOns = []
+	if(item.addons){
+		for(let i of item.addons){
+			addOns.push(
+				<div key={UUID.v4()} className="menu-item-add-on">
+					<p className="menu-item-add-on-title">{i.title}</p>
+					<p className="menu-item-add-on-price">{i.price}</p>
+				</div>
+
+			)
+		}
+		return (
+			<div className="menu-item-add-ons">
+				{addOns}
+			</div>
+		)
+	}
+}
+
+
 renderMenuItem(item){
+
 	return(
 		<div key={UUID.v4()} className="menu-item">
-			<h4>{item.title}</h4>
+			<div className="menu-item-banner">
+				<h4 className="menu-item-title">{item.title}</h4>
+				<div className="fill"></div>
+				<div className="menu-item-price">
+					{this.renderMenuItemPrices(item)}
+				</div>
+			</div>
+			<p className="menu-item-desc">{item.description}</p>
+				{this.renderMenuItemAddOns(item)}
 		</div>
 	)
 }
@@ -168,8 +204,14 @@ renderMenuSubSections(section){
 			if(sub.childOf.indexOf(section)>-1){
 				subSec.push(
 					<div key={UUID.v4()} className="menu-subsection">
-						<h3>{sub.title}</h3>
-						{this.renderMenuItems(sub.slug, true)}
+						<div className="container menu-subsection-banner">
+
+							<h3 className="menu-subsection-title">{sub.title}</h3>
+						</div>
+						<div className="container">
+
+							{this.renderMenuItems(sub.slug, true)}
+						</div>
 					</div>
 				)
 			}
@@ -185,8 +227,12 @@ renderMenu(){
 		data.sections.map(section => {
 			sec.push(
 				<div key={UUID.v4()} className="menu-section">
-					<h2>{section.title}</h2>
-					{this.renderMenuItems(section.slug, false)}
+					<div className="container">
+						<h2 className="menu-section-title">{section.title}</h2>
+					</div>
+					<div className="container">
+						{this.renderMenuItems(section.slug, false)}
+					</div>
 					{this.renderMenuSubSections(section.slug)}
 				</div>
 			)
@@ -198,13 +244,23 @@ renderMenu(){
 
 render() {
 	return (
-		<div className="full-menu">
-			<div className="wrapper">
-				<div className="container">
-					{this.renderMenu()}
+		<div className="menu">
+			<div className="background-image">
+				<div className="wrapper">
+					<div className="container">
+						<MobileToggleSwitch/>
+						<div className="page-front-matter">
+							<h1>Menu</h1>
+							<p>Our menu selections vary daily, so come in to see what today's specials are</p>
+						</div>
+					</div>
 				</div>
+			</div>
+			<div className="full-menu">
+				{this.renderMenu()}
 			</div>
 	</div>
 	)
 }
+
 }

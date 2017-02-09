@@ -1,45 +1,22 @@
 import React, {
 	Component
 } from 'react'
-import * as Actions from '../actions/Actions'
-import VarStore from '../stores/VarStore'
+import MobileToggleSwitch from '../components/MobileToggleSwitch'
+
 // import Map from './components/GoogleMap'
 // import MenuFavorites from './components/MenuFavorites'
 
 export default class Home extends Component {
 
-toggleNav(){
-	Actions.toggleNav();
-}
-
-componentWillMount(){
-	VarStore.on("change", this.updateNav.bind(this))
-	this.updateNav();
-}
-
-updateNav(){
-	this.setState({
-		navIsOpen: VarStore.navIsOpen
-	})
-}
-
-getStyles(){
-	if(!this.state.navIsOpen){
-		return " collapsed"
-	}else{
-		return ""
-	}
-}
-
 render() {
 
 	return (
 		<div className="cover">
-			<div id="background-image">
+			<div className="background-image">
 				<div className="wrapper">
 					<div className="container">
 						<div className="front-matter">
-						<div className="mobile toggleSwitch"><a className={this.getStyles()} href="#" onClick={this.toggleNav.bind(this)}>+</a></div>
+							<MobileToggleSwitch/>
 							<img className="logo small" src="/assets/logo-light.png" alt="The Dead Cow at The Tannery logo"/>
 							<img className="logo mobile" src="/assets/icon-light.png" alt="Dead Cow at The Tannery Logo" />
 							<div className="cover-text">
