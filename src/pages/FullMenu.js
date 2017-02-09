@@ -197,6 +197,16 @@ renderMenuItems(section, isSub){
 	}
 }
 
+renderSubSectionBanner(sub){
+	if(sub.title){
+		return(
+			<div className="container menu-subsection-banner">
+				<h3 className="menu-subsection-title">{sub.title}</h3>
+			</div>
+		)
+	}
+}
+
 renderMenuSubSections(section){
 	let subSec = []
 	if(this.state.subSections){
@@ -204,12 +214,8 @@ renderMenuSubSections(section){
 			if(sub.childOf.indexOf(section)>-1){
 				subSec.push(
 					<div key={UUID.v4()} className="menu-subsection">
-						<div className="container menu-subsection-banner">
-
-							<h3 className="menu-subsection-title">{sub.title}</h3>
-						</div>
+						{this.renderSubSectionBanner(sub)}
 						<div className="container">
-
 							{this.renderMenuItems(sub.slug, true)}
 						</div>
 					</div>

@@ -19,7 +19,7 @@ body {
 .container {
 	margin: 0 auto;
 	display: flex;
-	width: 1300px;
+	width: 1200px;
 	padding: 0 125px;
 	box-sizing: border-box;
 }
@@ -76,8 +76,6 @@ body {
 	li {
 		display: inline;
 		margin-left: 20px;
-
-
 	}
 
 	.links{
@@ -166,7 +164,8 @@ body {
 .full-menu{
 
 	.menu-section{
-		padding: 25px 0;
+		padding-top: 50px;
+		padding-bottom: 30px;
 
 		.container{
 			display: flex;
@@ -176,7 +175,7 @@ body {
 		}
 
 		.menu-section-title{
-			margin-bottom: 15px;
+			margin-bottom: 20px;
 		}
 	}
 
@@ -189,7 +188,9 @@ body {
 
 	.menu-subsection{
 
+
 		.menu-subsection-title{
+			margin-top: 10px;
 			margin-bottom: 20px;
 			text-transform: uppercase;
 			font-weight: lighter;
@@ -274,10 +275,9 @@ body {
 
 }
 
-
 @media (max-width: 1300px) {
 	.container {
-		width: 1100px;
+		width: 1000px;
 	}
 
 	.cover {
@@ -291,7 +291,9 @@ body {
 		}
 	}
 }
-@media (max-width: 1100px) {
+
+@media (max-width: 1000px) {
+
 	.container {
 		width: 100%;
 	}

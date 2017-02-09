@@ -45,7 +45,7 @@
 			"childOf": "beverages"
 		},{
 			"slug": "plates",
-			"title": "Plates & Platters, served individually or family-style; your choice of two sides",
+			"title": "Plates & Platters, served individually or family-style; Your choice of two sides",
 			"childOf": "dinner"
 		}, {
 			"slug": "sides",
@@ -218,7 +218,7 @@
 			"category": "beverages",
 			"subCategory": "smoothies"
 		}, {
-			"title": "Whole Milk, Fresh Squeezed OJ, Apple Juice, Coke/Diet Coke/7UP/Italian Soda",
+			"title": "Whole Milk, Fresh Squeezed OJ, Apple Juice, Coke / Diet Coke / 7UP / Italian Soda",
 			"description": null,
 			"price": [3, 5],
 			"addons": [{
@@ -276,7 +276,25 @@
 			"addons": null,
 			"category": "dinner",
 			"subCategory": "plates"
-		}, {
+		},
+
+		{
+			"title": "Starches",
+			"description": "Rotating selection of rice, grains, and potatoes",
+			"price": [22],
+			"addons": null,
+			"category": "dinner",
+			"subCategory": "sides"
+		},
+		{
+			"title": "Vegetables",
+			"description": "Rotating selection of seasonal vegetables",
+			"price": [12],
+			"addons": null,
+			"category": "dinner",
+			"subCategory": "sides"
+		},
+		{
 			"title": "Dead Cow",
 			"description": "Vodka, local ginger beer, lime juice",
 			"price": [8],
@@ -317,14 +335,14 @@
 			"price": [7, 9],
 			"addons": null,
 			"category": "bar",
-			"subCategory": "wine - beer"
+			"subCategory": "wine-beer"
 		}, {
 			"title": "Beer",
 			"description": "bottled and draft, local favorites or premium",
 			"price": [6, 8],
 			"addons": null,
 			"category": "bar",
-			"subCategory": "wine - beer"
+			"subCategory": "wine-beer"
 		}, {
 			"title": "House-Made Daily Specials",
 			"description": "House-made selections of sweet delights",
