@@ -14,6 +14,9 @@ ReactDOM.render(
 			<IndexRoute/>
 			<Route path='/opening-soon' component={OpeningSoon}/>
 		</Route>
+		<Route path="*">
+			<IndexRedirect to='/'></IndexRedirect>
+		</Route>
 		</Route>
 	</Router>
 	 ,
