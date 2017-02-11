@@ -1,28 +1,30 @@
-import {EventEmitter} from 'events'
+import {
+	EventEmitter
+} from 'events'
 import dispatcher from "../dispatcher"
 
 class VarStore extends EventEmitter {
 
-  constructor(){
-    super()
-    this.navIsOpen = false
-  }
+	constructor() {
+		super()
+		this.navIsOpen = false
+		this.isLoggedIn = false
+	}
 
-  navIsOpen(){
-    console.log("yes");
-  }
+	handleActions(action) {
 
-  handleActions(action){
-
-    switch (action.type) {
-      case "TOGGLE_NAV":
-        this.navIsOpen = !this.navIsOpen
-        this.emit("change")
-        console.log(this.navIsOpen)
-        break;
-      default:
-    }
-  }
+		switch (action.type) {
+			case "TOGGLE_NAV":
+				this.navIsOpen = !this.navIsOpen
+				this.emit("change")
+				console.log(this.navIsOpen)
+				break;
+			case "SET_LOGGED_IN_STATUS":
+				this.isLoggedIn = action.isLoggedIn
+				this.emit("change")
+			default:
+		}
+	}
 }
 
 const varStore = new VarStore()

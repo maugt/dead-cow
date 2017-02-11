@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import firebase from 'firebase'
 import {browserHistory} from 'react-router'
+import MobileToggleSwitch from '../components/MobileToggleSwitch'
 
 export default class OpeningSoon extends Component {
 
@@ -23,7 +24,6 @@ export default class OpeningSoon extends Component {
             var errorMessage = error.message;
             console.error(errorCode, errorMessage)
         });
-        browserHistory.push('/')
     }
 
     handleEmailChange(event) {
@@ -37,22 +37,22 @@ export default class OpeningSoon extends Component {
     render() {
         return (
             <div className="login">
-                <div className="container">
-                    <div className="page-front-matter">
-                        <h1>Login</h1>
+                <div className="background-image">
+                    <div className="wrapper">
+
+                        <div className="container">
+                            <MobileToggleSwitch/>
+                            <div className="page-front-matter">
+                                <h1>Login</h1>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className="container">
                     <form onSubmit={this.handleSubmit}>
-                        <label>
-                            Name:
-                            <input type="text" value={this.state.value} onChange={this.handleEmailChange}/>
-                        </label>
-                        <label>
-                            Password:
-                            <input type="password" value={this.state.password} onChange={this.handlePasswordChange}/>
-                        </label>
-                        <input type="submit" value="Submit"/>
+                        <input type="text" placeholder="Email" value={this.state.value} onChange={this.handleEmailChange}/>
+                        <input type="password" placeholder="Password" value={this.state.password} onChange={this.handlePasswordChange}/>
+                        <input className="submit" type="submit" value="Submit"/>
                     </form>
                 </div>
             </div>

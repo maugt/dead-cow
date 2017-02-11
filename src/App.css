@@ -1,9 +1,9 @@
 body {
-  background: #222222;
-  margin: 0; }
+  margin: 0;
+  background: #222; }
   body * {
     font-family: 'Slabo 27px', serif;
-    color: #eeeeee; }
+    color: #eee; }
   body a {
     text-decoration: none; }
   body h1,
@@ -16,34 +16,34 @@ body {
     margin: 0; }
 
 .container {
-  margin: 0 auto;
   display: flex;
+  box-sizing: border-box;
   width: 1200px;
-  padding: 0 125px;
-  box-sizing: border-box; }
+  margin: 0 auto;
+  padding: 0 125px; }
 
 .page-front-matter {
   display: flex;
   flex-direction: column;
-  margin-bottom: 25px;
   min-height: 300px;
+  margin-bottom: 25px;
   justify-content: flex-end; }
   .page-front-matter h1 {
     margin: 10px auto; }
 
 .background-image {
+  width: 100%;
   background: url("/assets/Placeholder.jpg");
-  background-size: cover;
-  width: 100%; }
+  background-size: cover; }
 
 .wrapper {
   background-color: rgba(34, 34, 34, 0.7); }
 
 .nav {
   font-size: 15px;
-  height: 11vh;
   display: flex;
   flex-direction: row;
+  height: 11vh;
   align-items: center; }
   .nav .container {
     position: relative;
@@ -53,52 +53,52 @@ body {
   .nav a {
     text-decoration: none; }
   .nav h1 span {
-    font-weight: 100;
     font-size: 17px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-left: 5px;
+    font-weight: 100;
     position: relative;
-    top: 0; }
+    top: 0;
+    margin-left: 5px;
+    letter-spacing: 1px;
+    text-transform: uppercase; }
   .nav li {
     display: inline;
     margin-left: 20px; }
   .nav .links {
     display: flex;
-    align-items: baseline;
-    flex-direction: row; }
+    flex-direction: row;
+    align-items: baseline; }
   .nav .social {
     margin-left: 10px; }
     .nav .social a {
       margin: 0 4px; }
       .nav .social a img {
-        height: 15px;
-        width: 15px; }
+        width: 15px;
+        height: 15px; }
 
 .cover .container {
-  padding: 0 125px;
   flex-direction: column;
-  justify-content: space-between;
-  height: 89vh; }
+  height: 89vh;
+  padding: 0 125px;
+  justify-content: space-between; }
 
 .cover .front-matter {
-  margin-top: 100px;
   display: flex;
   flex-direction: row;
+  margin-top: 100px;
   justify-content: space-between; }
 
 .cover .info {
   display: flex;
-  justify-content: center;
   flex-direction: row;
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  justify-content: center; }
   .cover .info a {
     text-decoration: none; }
   .cover .info * {
     display: flex;
     padding-right: 5px; }
   .cover .info *:not(:last-child):after {
-    content: " | "; }
+    content: ' | '; }
 
 .cover h3 {
   font-family: 'Gloria Hallelujah';
@@ -108,12 +108,12 @@ body {
   text-shadow: 0 0 2px #6dcff6; }
 
 .cover .slogan {
-  text-align: start;
-  margin-right: 50px;
-  margin-top: 50px;
+  font-size: 35px;
   font-weight: normal;
-  letter-spacing: 1px;
-  font-size: 35px; }
+  margin-top: 50px;
+  margin-right: 50px;
+  text-align: start;
+  letter-spacing: 1px; }
 
 .cover .logo {
   width: 375px;
@@ -139,27 +139,27 @@ body {
     color: #222; }
 
 .full-menu .menu-subsection .menu-subsection-title {
+  font-size: 15px;
+  font-weight: lighter;
   margin-top: 10px;
   margin-bottom: 20px;
-  text-transform: uppercase;
-  font-weight: lighter;
-  font-size: 15px; }
+  text-transform: uppercase; }
 
 .full-menu .menu-subsection .menu-subsection-banner {
   display: flex;
   justify-content: center; }
 
 .full-menu .menu-item {
-  width: 50%;
-  flex-grow: 1;
   box-sizing: border-box;
-  margin-bottom: 20px; }
+  width: 50%;
+  margin-bottom: 20px;
+  flex-grow: 1; }
   .full-menu .menu-item .menu-item-banner {
     display: flex;
     flex-direction: row;
+    margin-bottom: 5px;
     justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: 5px; }
+    align-items: baseline; }
     .full-menu .menu-item .menu-item-banner .fill {
       margin-left: 10px;
       border-bottom: 1px dashed;
@@ -167,9 +167,9 @@ body {
   .full-menu .menu-item .menu-item-desc {
     font-size: 14px; }
   .full-menu .menu-item .menu-item-price {
+    font-weight: bold;
     display: flex;
-    flex-direction: row;
-    font-weight: bold; }
+    flex-direction: row; }
     .full-menu .menu-item .menu-item-price p {
       margin-left: 10px; }
   .full-menu .menu-item .menu-item-add-ons {
@@ -182,16 +182,39 @@ body {
       .full-menu .menu-item .menu-item-add-ons .menu-item-add-on .menu-item-add-on-price {
         margin-left: 5px; }
         .full-menu .menu-item .menu-item-add-ons .menu-item-add-on .menu-item-add-on-price:before {
-          content: "$"; }
+          content: '$'; }
       .full-menu .menu-item .menu-item-add-ons .menu-item-add-on:before {
-        content: "+";
-        padding-right: 5px; }
+        padding-right: 5px;
+        content: '+'; }
   .full-menu .menu-item:nth-child(2n+1) {
     padding-right: 10px; }
   .full-menu .menu-item:nth-child(2n) {
     padding-left: 10px; }
   .full-menu .menu-item:last-child:nth-child(odd) {
     padding: 0; }
+
+.login form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px; }
+
+.login input {
+  color: #eee;
+  font-size: 12px;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 1px;
+  border: 2px solid #eee;
+  background-color: #222; }
+  .login input:focus {
+    color: #222;
+    background-color: #eee;
+    outline: none; }
+
+.login .submit {
+  background: #eee;
+  color: #222;
+  cursor: pointer !important; }
 
 @media (max-width: 1300px) {
   .container {
@@ -206,24 +229,23 @@ body {
   .container {
     width: 100%; }
   .cover .front-matter {
-    margin-top: 50px;
     flex-direction: column;
-    align-items: center;
-    margin: 0;
+    width: 100%;
+    margin: 50px 0 0;
     padding: 0;
-    width: 100%; }
+    align-items: center; }
   .cover .container {
+    padding: 0;
     align-items: center;
-    justify-content: space-between;
-    padding: 0; }
+    justify-content: space-between; }
   .cover .info {
-    margin-bottom: 25px;
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 25px; }
   .cover .logo {
     width: 250px;
     height: 250px;
-    margin-left: 0;
-    margin-top: 50px; }
+    margin-top: 50px;
+    margin-left: 0; }
   .cover .slogan {
     font-size: 30px;
     margin-top: 50px;
@@ -234,8 +256,8 @@ body {
 
 @media (max-width: 680px) {
   .toggleSwitch {
-    width: 100%;
     font-size: 35px;
+    width: 100%;
     margin-top: 25px;
     justify-content: center; }
   .small {
@@ -243,9 +265,9 @@ body {
   .mobile {
     display: inherit; }
   .container {
-    padding: 0 50px;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    padding: 0 50px; }
   .cover .logo {
     width: 200px;
     height: 200px;
@@ -258,21 +280,21 @@ body {
     flex-direction: column;
     justify-content: flex-start; }
   .cover .slogan {
-    text-align: center;
     font-size: 30px;
-    margin-right: 0; }
+    margin-right: 0;
+    text-align: center; }
   .cover h3 {
-    text-align: center;
-    font-size: 30px; }
+    font-size: 30px;
+    text-align: center; }
   .cover .info {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center; }
+    text-align: center;
+    align-items: center; }
     .cover .info * {
       display: block;
-      padding: 0;
-      margin-bottom: 5px; }
+      margin-bottom: 5px;
+      padding: 0; }
     .cover .info *:not(:last-child):after {
       content: none; }
   .full-menu .menu-item {
@@ -280,11 +302,11 @@ body {
     .full-menu .menu-item:nth-child(n) {
       padding: 0; }
   .nav {
-    padding: 0;
-    height: 190px;
-    transition: height 0.25s;
     overflow: hidden;
-    width: 100%; }
+    width: 100%;
+    height: 190px;
+    padding: 0;
+    transition: height 0.25s; }
     .nav .container {
       display: flex;
       flex-direction: column;
@@ -298,21 +320,21 @@ body {
       .nav h1 span {
         display: none; }
     .nav ul {
-      padding: 0;
-      margin-top: 0;
       display: flex;
       flex-direction: column;
+      margin-top: 0;
+      padding: 0;
       align-items: center; }
       .nav ul li {
         font-size: 20px;
-        margin-left: 0;
-        margin-bottom: 10px; }
+        margin-bottom: 10px;
+        margin-left: 0; }
     .nav .social {
       margin: 0; }
       .nav .social a {
         margin: 0 7px; }
         .nav .social a img {
-          height: 20px;
-          width: 20px; }
+          width: 20px;
+          height: 20px; }
   .nav.collapsed {
     height: 0; } }
