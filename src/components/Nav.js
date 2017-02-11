@@ -26,7 +26,7 @@ export default class Nav extends Component {
         if (this.state.isLoggedIn) {
             return (
                 <li>
-                    <a href="/menu">Full Menu</a>
+                    {link}
                 </li>
             )
         }
@@ -46,7 +46,9 @@ export default class Nav extends Component {
 
                         <ul>
                             {/* <li><a href="/specials"><span>Daily </span>Specials</a></li> */}
-                            {this.renderPrivateLink()}
+                            {this.renderPrivateLink(
+                                <a href="/menu">Full Menu</a>
+                            )}
 
                         </ul>
                         <div className="social">
