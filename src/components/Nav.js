@@ -36,8 +36,8 @@ export default class Nav extends Component {
 							<div className="links">
 
 							<ul>
-								{/* <li><a href="/specials">Daily Specials</a></li> */}
-								{/* <li><a href="/menu">Full Menu</a></li> */}
+								{/* <li><a href="/specials"><span>Daily </span>Specials</a></li> */}
+								<li><a href="/menu">Full Menu</a></li>
 
 							</ul>
 							<div className="social">

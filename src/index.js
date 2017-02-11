@@ -4,21 +4,21 @@ import {Route, IndexRoute, IndexRedirect, Router, browserHistory} from 'react-ro
 import App from './App';
 import OpeningSoon from './pages/OpeningSoon'
 import Home from './pages/Home'
+import FullMenu from './pages/FullMenu'
 import './index.css';
 
 ReactDOM.render(
-	<Router history={browserHistory}>
-		<Route path='/' component={App}>
-		<IndexRedirect to="/opening-soon"/>
-		<Route component={Home}>
-			<IndexRoute/>
-			<Route path='/opening-soon' component={OpeningSoon}/>
-		</Route>
-		<Route path="*">
-			<IndexRedirect to='/'></IndexRedirect>
-		</Route>
-		</Route>
-	</Router>
-	 ,
-	document.getElementById('app')
-);
+    <Router history={browserHistory}>
+    <Route path='/' component={App}>
+        <IndexRedirect to="/opening-soon"/>
+        <Route component={Home}>
+            <IndexRoute/>
+            <Route path='/opening-soon' component={OpeningSoon}></Route>
+        </Route>
+
+        <Route path="/menu" component={FullMenu}></Route>
+        <Route path="*">
+            <IndexRedirect to='/'></IndexRedirect>
+        </Route>
+    </Route>
+</Router>, document.getElementById('app'));
