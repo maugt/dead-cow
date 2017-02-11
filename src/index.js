@@ -5,6 +5,8 @@ import App from './App';
 import OpeningSoon from './pages/OpeningSoon'
 import Home from './pages/Home'
 import FullMenu from './pages/FullMenu'
+import Login from './pages/Login'
+import Logout from './pages/Logout'
 import './index.css';
 
 ReactDOM.render(
@@ -15,10 +17,11 @@ ReactDOM.render(
             <IndexRoute/>
             <Route path='/opening-soon' component={OpeningSoon}></Route>
         </Route>
-
+        <Route path="/login" component={Login}></Route>
+        <Route path="/logout" component={Logout}></Route>
         <Route path="/menu" component={FullMenu}></Route>
         <Route path="*">
             <IndexRedirect to='/'></IndexRedirect>
         </Route>
     </Route>
-</Router>, document.getElementById('app'));
+</Router>, document.getElementById('app'))
