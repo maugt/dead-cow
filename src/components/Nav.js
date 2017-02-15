@@ -39,16 +39,15 @@ export default class Nav extends Component {
                 <div className="container">
                     <h1>
                         <a href="/">Dead Cow
-                            <span>at The Tannery</span>
+                            <h3>at The Tannery</h3>
                         </a>
                     </h1>
                     <div className="links">
 
                         <ul>
                             {/* <li><a href="/specials"><span>Daily </span>Specials</a></li> */}
-                            {this.renderPrivateLink(
-                                <a href="/menu">Full Menu</a>
-                            )}
+                            <a href="/menu">Full Menu</a>
+                            <a href="/about">About</a>
 
                         </ul>
                         <div className="social">

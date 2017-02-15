@@ -20,6 +20,14 @@ body {
 	p {
 		margin: 0;
 	}
+
+	h3 {
+		display: inherit;
+		font-weight: normal;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-size: 15px;
+	}
 }
 
 .container {
@@ -28,6 +36,7 @@ body {
 	width: 1200px;
 	margin: 0 auto;
 	padding: 0 125px;
+	flex-direction: column;
 }
 
 .page-front-matter {
@@ -39,6 +48,14 @@ body {
 
 	h1 {
 		margin: 10px auto;
+	}
+}
+
+.page-content {
+	margin: 40px 0;
+
+	p {
+		margin-bottom: 1rem;
 	}
 }
 
@@ -64,6 +81,7 @@ body {
 	.container {
 		position: relative;
 		display: flex;
+		flex-direction: row;
 		justify-content: space-between;
 		align-items: baseline;
 	}
@@ -178,6 +196,10 @@ body {
 }
 
 .full-menu {
+	.page-content {
+		margin: 0;
+	}
+
 	.menu-section {
 		padding-top: 50px;
 		padding-bottom: 30px;

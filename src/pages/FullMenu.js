@@ -239,13 +239,15 @@ export default class FullMenu extends Component {
                             <MobileToggleSwitch/>
                             <div className="page-front-matter">
                                 <h1>Menu</h1>
-                                <p>Our menu selections vary daily, so come in to see what today's specials are</p>
+                                <h3>Our menu selections vary daily, so come in to see what today's specials are</h3>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="full-menu">
-                    {this.renderMenu()}
+                    <div className="page-content">
+                        {this.renderMenu()}
+                    </div>
                 </div>
             </div>
         )
