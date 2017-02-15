@@ -14,5 +14,5 @@ build
 .env
 npm-debug.log
 
-#firebaseConstants
-src/constants/FirebaseConfig.json
+#credentials
+src/constants/credentials

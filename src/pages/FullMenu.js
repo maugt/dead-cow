@@ -4,7 +4,7 @@ import VarStore from '../stores/VarStore'
 import MobileToggleSwitch from '../components/MobileToggleSwitch'
 import UUID from 'uuid'
 import data from '../menu.json'
-import C from '../constants/FirebaseConfig.json'
+import C from '../constants/credentials/FirebaseConfig.json'
 
 firebase.initializeApp(C)
 
@@ -236,7 +236,7 @@ export default class FullMenu extends Component {
                             <MobileToggleSwitch/>
                             <div className="page-front-matter">
                                 <h1>Menu</h1>
-                                <h3>Our menu selections vary daily, so come in to see what today's specials are</h3>
+                                <h3>Our menu selections vary daily, so come in to see what's being served up today!</h3>
                             </div>
                         </div>
                     </div>
