@@ -309,10 +309,11 @@ body {
 
 @media (max-width: 680px) {
   .toggleSwitch {
-    font-size: 35px;
     width: 100%;
     margin-top: 25px;
     justify-content: center; }
+    .toggleSwitch a {
+      font-size: 35px; }
   .small {
     display: none; }
   .mobile {
