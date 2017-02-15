@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './App.css';
+import './app.css';
 import Nav from './components/Nav'
 import * as Actions from './actions/Actions'
 import firebase from 'firebase'

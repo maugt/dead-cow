@@ -46,8 +46,12 @@ export default class Nav extends Component {
 
                         <ul>
                             {/* <li><a href="/specials"><span>Daily </span>Specials</a></li> */}
-                            <a href="/menu">Full Menu</a>
-                            <a href="/about">About</a>
+                            <li>
+                                <a href="/menu">Full Menu</a>
+                            </li>
+                            <li>
+                                <a href="/about">About</a>
+                            </li>
 
                         </ul>
                         <div className="social">
