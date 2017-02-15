@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-// import {browserHistory} from 'react-router'
 import MobileToggleSwitch from '../components/MobileToggleSwitch'
 
 export default class FullAbout extends Component {
@@ -29,6 +28,12 @@ export default class FullAbout extends Component {
 
                             <p>The Dead Cow leverages the successes of the previous establishments, while avoiding their missteps with responsiveness to customer demand and careful attention to inventory control and cost accounting.
                             </p>
+                            <h2>About the Chefs</h2>
+
+                            <p>Owner and Executive Chef Shannon Madison has over 25 years of industry business management experience, with tenure growing industry icons that include Apple Computer and Google, Inc. Shannon earned her Grand Diploma in Culinary Arts from the distinguished French Culinary Institute (now known as the International Culinary Center) and received training under Top Chef Master and James Beard Award nominee Chris Cosentino at Cockscomb in San Francisco, California, and from Chef Sam Nuckols of Liholiho Yacht Club and Petit Crenn. Shannon was drawn to Santa Cruz to work with Chef Zachary Mazi for the experimental kitchen, Lionfish, in Santa Cruz, California, but found her true passion serving pop-up meals for the artist community at the Tannery during the Thursday Art Markets.</p>
+                            <p>In addition to her direct culinary experience, Shannon serves on the board of directors for the American Institute of Wine & Food, a non-profit founded by Julia Child, Robert Mondavi, and Richard Graff. During her tenure, Shannon has worked closely with and continues to receive guidance from such culinary luminaries as Jacques Pépin, Daniel Boulud, Dorothy Hamilton, José Andrés and a host of others.
+                            </p>
+                            <p>General Manager and Chef de Cuisine JP Parvis has extensive experience in the Culinary industry, Manager of Zingerman’s Deli’s Next Door Cafe, Chef de cuisine at Ulterior/ Lionfish, Sous Chef at Red and 515 his participation in the Tannery community, and his prior successful experience with the Art Bar makes him the most qualified person for the position in matters of both Front and Back of house operations.</p>
 
                         </div>
                     </div>

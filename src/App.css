@@ -49,6 +49,9 @@ body {
   margin: 40px 0; }
   .page-content p {
     margin-bottom: 1rem; }
+  .page-content h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem; }
 
 .background-image {
   width: 100%;
@@ -154,8 +157,7 @@ body {
   margin: 0; }
 
 .full-menu .menu-section {
-  padding-top: 50px;
-  padding-bottom: 30px; }
+  padding-bottom: 2rem; }
   .full-menu .menu-section .container {
     display: flex;
     flex-direction: row;
@@ -209,6 +211,8 @@ body {
     .full-menu .menu-item .menu-item-add-ons .menu-item-add-on {
       display: flex;
       flex-direction: row; }
+      .full-menu .menu-item .menu-item-add-ons .menu-item-add-on p {
+        margin: 0; }
       .full-menu .menu-item .menu-item-add-ons .menu-item-add-on .menu-item-add-on-price {
         margin-left: 5px; }
         .full-menu .menu-item .menu-item-add-ons .menu-item-add-on .menu-item-add-on-price:before {

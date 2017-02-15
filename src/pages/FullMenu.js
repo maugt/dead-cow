@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import firebase from 'firebase'
-import * as Actions from '../actions/Actions'
 import VarStore from '../stores/VarStore'
 import MobileToggleSwitch from '../components/MobileToggleSwitch'
 import UUID from 'uuid'
@@ -11,18 +10,28 @@ firebase.initializeApp(C)
 
 export default class FullMenu extends Component {
 
-    toggleNav() {
-        Actions.toggleNav();
+    constructor() {
+        super();
+        this.state = {
+            sections: [],
+            items: [],
+            notes: []
+        }
+    }
+
+    componentDidMount() {
+        console.log("mounted!")
     }
 
     componentWillMount() {
-
-        VarStore.on("change", this.updateNav.bind(this))
-        this.updateNav();
         this.firebaseRef = firebase.database().ref("menu")
-        this.resetFirebase()
+
+        if (VarStore.isLoggedIn) {
+            this.resetFirebase()
+        }
 
         this.firebaseRef.child('items').on('value', function(dataSnapshot) {
+            console.log("items have a value!")
             var items = []
             dataSnapshot.forEach(function(childSnapshot) {
                 var item = childSnapshot.val();
@@ -97,18 +106,6 @@ export default class FullMenu extends Component {
 
     componentWillUnmount() {
         this.firebaseRef.off()
-    }
-
-    updateNav() {
-        this.setState({navIsOpen: VarStore.navIsOpen})
-    }
-
-    getStyles() {
-        if (!this.state.navIsOpen) {
-            return " collapsed"
-        } else {
-            return ""
-        }
     }
 
     renderMenuItemPrices(item) {

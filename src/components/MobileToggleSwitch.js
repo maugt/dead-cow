@@ -1,38 +1,42 @@
-import React, {
-	Component
-} from 'react'
+import React, {Component} from 'react'
 import * as Actions from '../actions/Actions'
 import VarStore from '../stores/VarStore'
 
 export default class MenuItem extends Component {
 
-toggleNav(){
-	Actions.toggleNav();
-}
+    constructor() {
+        super();
+        this.state = {
+            navIsOpen: false
+        }
+    }
 
-componentWillMount(){
-	VarStore.on("change", this.updateNav.bind(this))
-	this.updateNav();
-}
+    toggleNav() {
+        Actions.toggleNav();
+    }
 
-updateNav(){
-	this.setState({
-		navIsOpen: VarStore.navIsOpen
-	})
-}
+    componentWillMount() {
+        VarStore.on("change", this.updateNav.bind(this))
+    }
 
-getStyles(){
-	if(!this.state.navIsOpen){
-		return " collapsed"
-	}else{
-		return ""
-	}
-}
+    updateNav() {
+        this.setState({navIsOpen: VarStore.navIsOpen})
+    }
 
-render() {
+    getStyles() {
+        if (!this.state.navIsOpen) {
+            return " collapsed"
+        } else {
+            return ""
+        }
+    }
 
-	return (
-		<div className="mobile toggleSwitch"><a className={this.getStyles()} href="#" onClick={this.toggleNav.bind(this)}>+</a></div>
-	)
-}
+    render() {
+
+        return (
+            <div className="mobile toggleSwitch">
+                <a className={this.getStyles()} href="#" onClick={this.toggleNav.bind(this)}>+</a>
+            </div>
+        )
+    }
 }

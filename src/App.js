@@ -4,19 +4,21 @@ import Nav from './components/Nav'
 import Footer from './components/Footer'
 import * as Actions from './actions/Actions'
 import firebase from 'firebase'
-import {browserHistory} from 'react-router'
 
 export default class App extends Component {
-    render() {
+
+    componentWillMount() {
 
         firebase.auth().onAuthStateChanged(user => {
             if (user) {
-                browserHistory.push('/')
                 Actions.setLoggedInStatus(true)
             } else {
                 Actions.setLoggedInStatus(false)
             }
         });
+    }
+
+    render() {
 
         return (
             <div>

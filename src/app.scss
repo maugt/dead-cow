@@ -70,6 +70,11 @@ body {
 	p {
 		margin-bottom: 1rem;
 	}
+
+	h2 {
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+	}
 }
 
 .background-image {
@@ -218,8 +223,8 @@ body {
 	}
 
 	.menu-section {
-		padding-top: 50px;
-		padding-bottom: 30px;
+		// padding-top: 30px;
+		padding-bottom: 2rem;
 
 		.container {
 			display: flex;
@@ -297,6 +302,10 @@ body {
 			.menu-item-add-on {
 				display: flex;
 				flex-direction: row;
+
+				p {
+					margin: 0;
+				}
 
 				.menu-item-add-on-price {
 					margin-left: 5px;
