@@ -10,7 +10,6 @@ class VarStore extends EventEmitter {
     }
 
     handleActions(action) {
-
         switch (action.type) {
             case "TOGGLE_NAV":
                 this.navIsOpen = !this.navIsOpen
@@ -19,6 +18,7 @@ class VarStore extends EventEmitter {
                 break;
             case "SET_LOGGED_IN_STATUS":
                 this.isLoggedIn = action.isLoggedIn
+                // console.log("set logged in status", this.isLoggedIn);
                 this.emit("change");
                 break
             default:

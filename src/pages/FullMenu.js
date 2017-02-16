@@ -19,19 +19,17 @@ export default class FullMenu extends Component {
         }
     }
 
-    componentDidMount() {
-        console.log("mounted!")
-    }
-
     componentWillMount() {
         this.firebaseRef = firebase.database().ref("menu")
 
-        if (VarStore.isLoggedIn) {
-            this.resetFirebase()
-        }
+        firebase.auth().onAuthStateChanged(user => {
+            if (user) {
+                this.resetFirebase()
+            }
+        }).bind(this)
 
         this.firebaseRef.child('items').on('value', function(dataSnapshot) {
-            console.log("items have a value!")
+            // console.log("items have a value!")
             var items = []
             dataSnapshot.forEach(function(childSnapshot) {
                 var item = childSnapshot.val();
@@ -73,7 +71,7 @@ export default class FullMenu extends Component {
     }
 
     resetFirebase() {
-
+        console.log("database: reseeded")
         this.firebaseRef.set({})
         let sortIndex = 0;
         for (let e of data.sections) {
@@ -100,6 +98,12 @@ export default class FullMenu extends Component {
                 note: e
             }
             this.firebaseRef.child('notes').push(f)
+            sortIndex++
+        }
+        sortIndex = 0;
+        for (let e of data.specials) {
+            e.sortIndex = sortIndex
+            this.firebaseRef.child('specials').push(e)
             sortIndex++
         }
     }
@@ -228,6 +232,7 @@ export default class FullMenu extends Component {
     }
 
     render() {
+        document.title = "Dead Cow - Menu"
         return (
             <div className="menu">
                 <div className="background-image">

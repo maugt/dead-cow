@@ -1,6 +1,8 @@
 import React, {Component} from 'react'
 import firebase from 'firebase'
 import MobileToggleSwitch from '../components/MobileToggleSwitch'
+import * as Actions from '../actions/Actions'
+import {browserHistory} from 'react-router'
 
 export default class OpeningSoon extends Component {
 
@@ -22,6 +24,9 @@ export default class OpeningSoon extends Component {
             var errorCode = error.code;
             var errorMessage = error.message;
             console.error(errorCode, errorMessage)
+        }).then(() => {
+            Actions.setLoggedInStatus(true)
+            browserHistory.push('/')
         });
     }
 

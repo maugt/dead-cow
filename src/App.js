@@ -8,18 +8,16 @@ import firebase from 'firebase'
 export default class App extends Component {
 
     componentWillMount() {
-
         firebase.auth().onAuthStateChanged(user => {
             if (user) {
                 Actions.setLoggedInStatus(true)
             } else {
                 Actions.setLoggedInStatus(false)
             }
-        });
+        }).bind(this)
     }
 
     render() {
-
         return (
             <div>
                 <Nav/> {this.props.children}

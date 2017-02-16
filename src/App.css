@@ -4,17 +4,10 @@ body {
   body * {
     font-family: 'Slabo 27px', serif;
     color: #eee;
-    font-size: 15px; }
+    font-size: 15px;
+    margin: 0; }
   body a {
     text-decoration: none; }
-  body h1,
-  body h2,
-  body h3,
-  body h4,
-  body h5,
-  body h6,
-  body p {
-    margin: 0; }
   body h1 {
     font-size: 32px; }
   body h2 {
@@ -49,24 +42,25 @@ body {
   margin: 40px 0; }
   .page-content p {
     margin-bottom: 1rem; }
+    .page-content p a {
+      margin: 0 0.5ex; }
   .page-content h2 {
     margin-top: 2rem;
     margin-bottom: 1rem; }
 
 .background-image {
   width: 100%;
-  background: url("/assets/Placeholder.jpg");
-  background-size: cover; }
+  background: url("/assets/Cow.jpg");
+  background-size: cover;
+  background-position: bottom; }
+
+.breakup {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover; }
 
 .wrapper {
-  background-color: rgba(34, 34, 34, 0.7); }
-
-.toggleSwitch {
-  width: 100%;
-  margin-top: 25px;
-  justify-content: center; }
-  .toggleSwitch a {
-    font-size: 35px; }
+  background-color: rgba(34, 34, 34, 0.65); }
 
 .nav {
   height: 11vh;
@@ -106,11 +100,6 @@ body {
     .nav .social img {
       width: 15px;
       height: 15px; }
-
-.cover .background-image {
-  background: url("/assets/Placeholder.jpg");
-  background-size: cover;
-  width: 100%; }
 
 .cover .container {
   flex-direction: column;
@@ -158,7 +147,7 @@ body {
   height: 375px; }
 
 .google-map {
-  height: 600px;
+  height: 60vh;
   width: 100%; }
 
 .mobile {
@@ -216,13 +205,13 @@ body {
       margin-left: 10px;
       margin-bottom: 0; }
   .full-menu .menu-item .menu-item-add-ons {
-    font-size: 13px;
     font-style: italic;
     margin-top: 5px; }
     .full-menu .menu-item .menu-item-add-ons .menu-item-add-on {
       display: flex;
       flex-direction: row; }
       .full-menu .menu-item .menu-item-add-ons .menu-item-add-on p {
+        font-size: 13px;
         margin: 0; }
       .full-menu .menu-item .menu-item-add-ons .menu-item-add-on .menu-item-add-on-price {
         margin-left: 5px; }
@@ -264,7 +253,7 @@ body {
 .footer {
   display: flex;
   justify-content: space-between;
-  margin: 25px 0; }
+  margin: 25px 0 50px; }
   .footer h3 {
     font-size: 15px;
     margin-bottom: 15px; }
@@ -279,6 +268,18 @@ body {
   .footer .footer-logo {
     width: 100px;
     height: 100px; }
+
+.daily-specials * {
+  font-family: 'Gloria Hallelujah'; }
+
+.daily-specials .special {
+  display: flex; }
+  .daily-specials .special:nth-child(3n) * {
+    color: #6dcff6; }
+  .daily-specials .special:nth-child(3n-1) * {
+    color: #a3d39c; }
+  .daily-specials .special:nth-child(3n+1) * {
+    color: #f49ac1; }
 
 @media (max-width: 1300px) {
   .container {
@@ -327,17 +328,26 @@ body {
     display: flex;
     flex-direction: column;
     padding: 0 50px; }
+  .toggleSwitch {
+    width: 100%;
+    justify-content: center;
+    margin-top: 15px; }
+    .toggleSwitch a {
+      font-size: 35px; }
   .cover .logo {
     width: 200px;
     height: 200px;
     margin-top: 25px; }
   .cover .container {
     height: 100vh;
+    box-sizing: border-box;
     justify-content: space-between; }
   .cover .front-matter {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; }
+    justify-content: flex-start;
+    margin-top: 0;
+    padding: 0; }
   .cover .slogan {
     font-size: 30px;
     margin-right: 0;

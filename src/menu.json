@@ -360,5 +360,24 @@
 
     "notes": [
         "All cocktails made with low-alcohol wine-based spirits"
+    ],
+    "specials": [{
+            "title": "Your Ass is Grass",
+            "description": "a delicious letter of the alphabet",
+            "price": 5,
+            "color": "green"
+        },
+        {
+            "title": "Blue Moon",
+            "description": "a delicious letter of the alphabet",
+            "price": 5,
+            "color": "blue"
+        },
+        {
+            "title": "sunset delight",
+            "description": "a delicious letter of the alphabet",
+            "price": 5,
+            "color": "pink"
+        }
     ]
 }
