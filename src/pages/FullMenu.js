@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import firebase from 'firebase'
-import VarStore from '../stores/VarStore'
 import MobileToggleSwitch from '../components/MobileToggleSwitch'
 import UUID from 'uuid'
 import data from '../menu.json'
