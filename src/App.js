@@ -22,7 +22,7 @@ export default class App extends Component {
         return (
             <div>
                 <Nav/> {this.props.children}
-                <TwitterBar/>
+
                 <Footer/>
             </div>
         );

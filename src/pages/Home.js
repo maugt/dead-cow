@@ -14,7 +14,7 @@ export default class Home extends Component {
                 <Cover children={this.props.children}/>
                 <About/>
                 <GoogleMap/>
-                <DailySpecials/>
+
             </div>
         )
     }
