@@ -3,6 +3,7 @@ $blue-chalk: #6dcff6;
 $pink-chalk: #f49ac1;
 $light: #eee;
 $dark: #222;
+$page-section-vertical-margin: 25px;
 
 body {
 	margin: 0;
@@ -53,7 +54,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-height: 300px;
-	margin-bottom: 25px;
+	margin-bottom: $page-section-vertical-margin;
 	justify-content: flex-end;
 
 	h1 {
@@ -62,7 +63,7 @@ body {
 }
 
 .page-content {
-	margin: 40px 0;
+	margin: $page-section-vertical-margin 0;
 
 	p {
 		margin-bottom: 1rem;
@@ -402,29 +403,63 @@ body {
 }
 
 .daily-specials {
+	padding: $page-section-vertical-margin 0;
+	background-image: url('/assets/Chalkboard.jpg');
+	background-size: cover;
+
 	* {
 		font-family: 'Gloria Hallelujah';
 	}
 
+	h2 {
+		font-size: 32px;
+	}
+
+	.specials {
+		display: flex;
+		flex-wrap: wrap;
+		// justify-content: center;
+	}
+
 	.special {
 		display: flex;
+		flex-direction: column;
+		margin: 5px 0;
+		width: 50%;
 
-		&:nth-child(3n) {
+		.banner {
+			display: flex;
+			flex-direction: row;
+
 			* {
-				color: $blue-chalk;
+				font-size: 24px;
+			}
+
+			.price {
+				margin-left: 10px;
 			}
 		}
 
-		&:nth-child(3n-1) {
-			* {
-				color: $green-chalk;
-			}
+		.description {
+			font-size: 16px;
 		}
+	}
 
-		&:nth-child(3n+1) {
-			* {
-				color: $pink-chalk;
-			}
+	.blue {
+		* {
+			color: $blue-chalk;
+		}
+	}
+
+	.green {
+		* {
+			color: $green-chalk;
+		}
+	}
+
+	.pink {
+		* {
+			color: $pink-chalk;
 		}
 	}
 }

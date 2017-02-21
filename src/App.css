@@ -39,7 +39,7 @@ body {
     margin: 10px auto; }
 
 .page-content {
-  margin: 40px 0; }
+  margin: 25px 0; }
   .page-content p {
     margin-bottom: 1rem; }
     .page-content p a {
@@ -269,16 +269,36 @@ body {
     width: 100px;
     height: 100px; }
 
-.daily-specials * {
-  font-family: 'Gloria Hallelujah'; }
-
-.daily-specials .special {
-  display: flex; }
-  .daily-specials .special:nth-child(3n) * {
+.daily-specials {
+  padding: 25px 0;
+  background-image: url("/assets/Chalkboard.jpg");
+  background-size: cover; }
+  .daily-specials * {
+    font-family: 'Gloria Hallelujah'; }
+  .daily-specials h2 {
+    font-size: 32px; }
+  .daily-specials .specials {
+    display: flex;
+    flex-wrap: wrap; }
+  .daily-specials .special {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+    width: 50%; }
+    .daily-specials .special .banner {
+      display: flex;
+      flex-direction: row; }
+      .daily-specials .special .banner * {
+        font-size: 24px; }
+      .daily-specials .special .banner .price {
+        margin-left: 10px; }
+    .daily-specials .special .description {
+      font-size: 16px; }
+  .daily-specials .blue * {
     color: #6dcff6; }
-  .daily-specials .special:nth-child(3n-1) * {
+  .daily-specials .green * {
     color: #a3d39c; }
-  .daily-specials .special:nth-child(3n+1) * {
+  .daily-specials .pink * {
     color: #f49ac1; }
 
 @media (max-width: 1300px) {

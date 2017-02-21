@@ -29,10 +29,12 @@ export default class DailySpecials extends Component {
         let sp = []
         this.state.specials.map(x => {
             sp.push(
-                <div key={UUID.v4()} className="special">
-                    <p className="special-title">{x.title}</p>
-                    <p className="special-price">{x.price}</p>
-                    <p className="special-description">{x.description}</p>
+                <div key={UUID.v4()} className={"special " + x.color}>
+                    <div className="banner">
+                        <p className="title">{x.title}</p>
+                        <p className="price">{x.price}</p>
+                    </div>
+                    <p className="description">{x.description}</p>
                 </div>
             )
 
@@ -46,8 +48,10 @@ export default class DailySpecials extends Component {
         return (
             <div className='daily-specials'>
                 <div className="container">
-                    <h1>Daily Specials</h1>
-                    {this.renderSpecials()}
+                    <h2>Daily Specials</h2>
+                    <div className="specials">
+                        {this.renderSpecials()}
+                    </div>
                 </div>
             </div>
         )

@@ -15,7 +15,6 @@ export default class Home extends Component {
                 <About/>
                 <GoogleMap/>
                 <DailySpecials/>
-                <img className="breakup" src="/assets/Counter.jpg" alt="The Dead Cow Counter"/>
             </div>
         )
     }

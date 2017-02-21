@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './app.css';
 import Nav from './components/Nav'
 import Footer from './components/Footer'
+import TwitterBar from './components/TwitterBar'
 import * as Actions from './actions/Actions'
 import firebase from 'firebase'
 
@@ -21,6 +22,7 @@ export default class App extends Component {
         return (
             <div>
                 <Nav/> {this.props.children}
+                <TwitterBar/>
                 <Footer/>
             </div>
         );
