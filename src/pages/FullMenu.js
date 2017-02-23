@@ -128,6 +128,7 @@ export default class FullMenu extends Component {
                 addOns.push(
                     <div key={UUID.v4()} className="menu-item-add-on">
                         <p className="menu-item-add-on-title">{i.title}</p>
+
                         <p className="menu-item-add-on-price">{i.price}</p>
                     </div>
 
@@ -141,19 +142,32 @@ export default class FullMenu extends Component {
         }
     }
 
+    renderSectionNotes(section) {
+        let menuNotes = this.state.notes
+        if (section) {
+            for (let i of menuNotes) {
+                // console.log(i.note)
+                if (i.note.section.indexOf(section) > -1) {
+                    return (
+                        <div className="container">
+                            <div className="menu-section-note">
+                                <h3>{i.note.note}</h3>
+                            </div>
+                        </div>
+                    )
+                }
+            }
+        }
+    }
+
     renderMenuItem(item) {
 
         return (
             <div key={UUID.v4()} className="menu-item">
                 <div className="menu-item-banner">
                     <h4 className="menu-item-title">{item.title}</h4>
-                    <div className="fill"></div>
-                    <div className="menu-item-price">
-                        {this.renderMenuItemPrices(item)}
-                    </div>
                 </div>
                 <p className="menu-item-desc">{item.description}</p>
-                {this.renderMenuItemAddOns(item)}
             </div>
         )
     }
@@ -199,6 +213,7 @@ export default class FullMenu extends Component {
                             {this.renderSubSectionBanner(sub)}
                             <div className="container">
                                 {this.renderMenuItems(sub.slug, true)}
+
                             </div>
                         </div>
                     )
@@ -222,6 +237,7 @@ export default class FullMenu extends Component {
                             {this.renderMenuItems(section.slug, false)}
                         </div>
                         {this.renderMenuSubSections(section.slug)}
+                        {this.renderSectionNotes(section.slug)}
                     </div>
                 )
                 return section

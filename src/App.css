@@ -165,6 +165,12 @@ body {
     justify-content: space-between; }
   .full-menu .menu-section .menu-section-title {
     margin-bottom: 20px; }
+  .full-menu .menu-section .menu-section-note {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+    .full-menu .menu-section .menu-section-note h3 {
+      margin-top: 10px; }
 
 .full-menu .menu-section:nth-child(2n+1) {
   background: #eee; }

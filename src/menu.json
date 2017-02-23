@@ -43,11 +43,11 @@
         "childOf": "beverages"
     }, {
         "slug": "plates",
-        "title": "Plates & Platters, served individually or family-style; Your choice of two sides",
+        "title": "plates & platters feature roasted, braised, or grilled proteins served individually or family-style with your choice of two sides",
         "childOf": "dinner"
     }, {
         "slug": "sides",
-        "title": "Sides, served individually or family-style",
+        "title": "Sides",
         "childOf": "dinner"
     }, {
         "slug": "cocktails",
@@ -65,7 +65,7 @@
             "subCategory": null
         }, {
             "title": "Hot Cereal or (Cold) Yogurt",
-            "description": "Daily hot cereal or yogurt",
+            "description": "Daily hot cereal or yogurt with your choice of toppings",
             "price": [4],
             "addons": [{
                 "title": "with your choice of toppings",
@@ -108,28 +108,28 @@
             "subCategory": null
         }, {
             "title": "Red",
-            "description": "Rotating sandwich featuring meats such as beef, ham, pastrami or sausages",
+            "description": "Red meats include beef, ham, pastrami or sausages",
             "price": [9],
             "addons": null,
             "category": "lunch",
             "subCategory": "sandwiches"
         }, {
             "title": "White",
-            "description": "Rotating sandwich featuring meats such as poultry or pork",
+            "description": "White meats include poultry and pork",
             "price": [8],
             "addons": null,
             "category": "lunch",
             "subCategory": "sandwiches"
         }, {
             "title": "Blue",
-            "description": "Rotating seafood (finfish or shellfish) sandwich",
+            "description": "Blue sandwiches are seafood (fin fish and shellfish) based",
             "price": [9],
             "addons": null,
             "category": "lunch",
             "subCategory": "sandwiches"
         }, {
             "title": "Green",
-            "description": "Rotating vegetarian sandwich",
+            "description": "Green sandwiches are vegetarian",
             "price": [7],
             "addons": null,
             "category": "lunch",
@@ -178,7 +178,7 @@
             "subCategory": "coffee"
         }, {
             "title": "Café Latte",
-            "description": "espresso, steamed milk",
+            "description": "even balance of steamed milk and espresso",
             "price": [2.75],
             "addons": null,
             "category": "beverages",
@@ -192,7 +192,7 @@
             "subCategory": "coffee"
         }, {
             "title": "Latte Macchiato",
-            "description": "espresso, steamed milk",
+            "description": "robust espresso forward with steamed milk",
             "price": [2.75],
             "addons": null,
             "category": "beverages",
@@ -225,7 +225,7 @@
             "category": "beverages",
             "subCategory": "fridge"
         }, {
-            "title": "Roasted Nutes",
+            "title": "Roasted Nuts",
             "description": "Savory or sweet, house roasted",
             "price": [3],
             "addons": null,
@@ -240,35 +240,35 @@
             "subCategory": null
         }, {
             "title": "Mezze",
-            "description": "Choice of meat, cheese, marinated olives, house-made pickles and roasted vegetables, large or small platter",
+            "description": "Select your combinations of meats, cheeses, house-made olives, pickles, and roasted vegetables. Large or small platter",
             "price": [4, 7],
             "addons": null,
             "category": "snacks",
             "subCategory": null
         }, {
             "title": "Red",
-            "description": "Rotating red meat (beef/lamb/venison/wild boar) selection, grilled, roasted, or braised",
+            "description": "Red meat plates include beef, ham, pastrami or sausages",
             "price": [14],
             "addons": null,
             "category": "dinner",
             "subCategory": "plates"
         }, {
             "title": "White",
-            "description": "Rotating poultry or pork selection, grilled, roasted, or braised",
+            "description": "White meat plates include poultry and pork",
             "price": [12],
             "addons": null,
             "category": "dinner",
             "subCategory": "plates"
         }, {
             "title": "Blue",
-            "description": "Rotating seafood (finfish/shellfish) selection, grilled, roasted, or braised",
+            "description": "Blue plates are seafood (fin fish and shellfish) based",
             "price": [14],
             "addons": null,
             "category": "dinner",
             "subCategory": "plates"
         }, {
             "title": "Green",
-            "description": "Rotating seasonal vegetables selection, grilled, roasted, or braised",
+            "description": "Green plates are vegetarian",
             "price": [12],
             "addons": null,
             "category": "dinner",
@@ -358,9 +358,10 @@
 
     ],
 
-    "notes": [
-        "All cocktails made with low-alcohol wine-based spirits"
-    ],
+    "notes": [{
+        "note": "All cocktails made with low-alcohol wine-based spirits",
+        "section": "bar"
+    }],
     "specials": [{
             "title": "Your Sass is Grass",
             "description": "a delicious letter of the alphabet",
