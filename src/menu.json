@@ -277,7 +277,7 @@
 
         {
             "title": "Starches",
-            "description": "Rotating selection of rice, grains, and potatoes",
+            "description": "freshliy prepared rice, grains, and potatoes",
             "price": [22],
             "addons": null,
             "category": "dinner",
@@ -285,7 +285,7 @@
         },
         {
             "title": "Vegetables",
-            "description": "Rotating selection of seasonal vegetables",
+            "description": "local vegetables, in season",
             "price": [12],
             "addons": null,
             "category": "dinner",

@@ -11,6 +11,7 @@ export default class Cover extends Component {
                         <div className="container">
                             <div className="front-matter">
                                 <MobileToggleSwitch/>
+                                <h1 className="mobile">Dead Cow</h1>
                                 <img className="logo small" src="/assets/logo-light.png" alt="The Dead Cow at The Tannery logo"/>
                                 <img className="logo mobile" src="/assets/icon-light.png" alt="Dead Cow at The Tannery Logo"/>
                                 <div className="cover-text">
