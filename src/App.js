@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import './app.css';
+import React, { Component } from 'react';
+import './App.css';
 import Nav from './components/Nav'
 import Footer from './components/Footer'
 // import TwitterBar from './components/TwitterBar'
@@ -21,9 +21,9 @@ export default class App extends Component {
     render() {
         return (
             <div>
-                <Nav/> {this.props.children}
+                <Nav /> {this.props.children}
 
-                <Footer/>
+                <Footer />
             </div>
         );
     }
