@@ -26,9 +26,6 @@ export default class Cover extends Component {
                 <div>
                   <a href="tel:+18318547458">831.854.7458</a>
                 </div>
-                <div>
-                  <a>Opening Soon...</a>
-                </div>
               </div>
             </div>
           </div>
