@@ -50,6 +50,14 @@ body {
 	flex-direction: column;
 }
 
+.breakup {
+	max-height: 350px;
+	overflow: hidden;
+	width: 100%;
+	object-fit: cover;
+	opacity: 0.8;
+}
+
 .page-front-matter {
 	display: flex;
 	flex-direction: column;
@@ -428,14 +436,13 @@ body {
 	.specials {
 		display: flex;
 		flex-wrap: wrap;
-		// justify-content: center;
 	}
 
 	.special {
 		display: flex;
 		flex-direction: column;
 		margin: 5px 0;
-		width: 50%;
+		flex: 1;
 
 		.banner {
 			display: flex;
@@ -472,6 +479,26 @@ body {
 			color: $pink-chalk;
 		}
 	}
+
+	input {
+		color: $dark;
+		background: $light;
+		padding: 5px 10px;
+		border-color: $dark;
+		border: 2px solid $dark;
+
+	}
+
+	.button {
+		color: $dark;
+		font-size: 12px;
+		margin-bottom: 10px;
+		padding: 10px 15px;
+		border-radius: 1px;
+		cursor: pointer;
+
+	}
+
 }
 @media (max-width: 1300px) {
 	.container {
@@ -700,4 +727,5 @@ body {
 			// align-items: center;
 		}
 	}
+
 }
