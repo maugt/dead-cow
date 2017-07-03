@@ -11,19 +11,18 @@ import Logout from './pages/Logout'
 import './index.css';
 
 ReactDOM.render(
-    <Router history={browserHistory}>
-    <Route path='/' component={App}>
-        <IndexRedirect to="/opening-soon"/>
-        <Route component={Home}>
-            <IndexRoute/>
-            <Route path='/opening-soon' component={OpeningSoon}></Route>
-        </Route>
-        <Route path="/login" component={Login}></Route>
-        <Route path="/logout" component={Logout}></Route>
-        <Route path="/menu" component={FullMenu}></Route>
-        <Route path="/about" component={FullAbout}></Route>
-        <Route path="*">
-            <IndexRedirect to='/'></IndexRedirect>
-        </Route>
+  <Router history={browserHistory}>
+  <Route path='/' component={App}>
+    <Route component={Home}>
+      <IndexRoute/>
+      <Route path='/opening-soon' component={OpeningSoon}></Route>
     </Route>
+    <Route path="/login" component={Login}></Route>
+    <Route path="/logout" component={Logout}></Route>
+    <Route path="/menu" component={FullMenu}></Route>
+    <Route path="/about" component={FullAbout}></Route>
+    <Route path="*">
+      <IndexRedirect to='/'></IndexRedirect>
+    </Route>
+  </Route>
 </Router>, document.getElementById('app'))
