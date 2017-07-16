@@ -43,46 +43,11 @@ export default class DailySpecials extends Component {
   }
 
   renderSpecials() {
-    let sp = []
-    if (this.state.isEditing) {
-      this.state.specials.map(x => {
-        sp.push(
-          <div key={x.key} className="special">
-            <input type="text" id={x.sortIndex} name="title" value={x.title} onChange={this.onFieldChange.bind(this)}/>
-            <input type="text" id={x.sortIndex} name="price" value={x.price} onChange={this.onFieldChange.bind(this)}/>
-            <input type="text" id={x.sortIndex} name="description" value={x.description} onChange={this.onFieldChange.bind(this)}/>
-          </div>
-        )
-
-        return x;
-      })
-    } else {
-      this.state.specials.map(x => {
-        if (x.title) {
-
-          sp.push(
-            <div key={UUID.v4()} className={"special " + x.color}>
-              <div className="banner">
-                <p className="title">{x.title}</p>
-                <p className="price">{x.price}</p>
-              </div>
-              <p className="description">{x.description}</p>
-            </div>
-          )
-        }
-        return x;
-      })
-    }
-    if (sp.length > 0) {
-
-      return sp
-    } else {
-      return (
-        <div className="pink">
-          <h3>Come on in to see what we're serving up today!</h3>
-        </div>
-      )
-    }
+    return (
+      <div className="pink">
+        <h3>Come on in to see what we're serving up today!</h3>
+      </div>
+    )
   }
 
   save() {
