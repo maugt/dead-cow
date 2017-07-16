@@ -59,7 +59,6 @@ export default class DailySpecials extends Component {
   }
 
   renderSpecials() {
-<<<<<<< HEAD
     let sp = []
     if (this.state.isEditing) {
       this.state.specials.map(x => {
@@ -304,13 +303,7 @@ export default class DailySpecials extends Component {
         </div>
       )
     }
-=======
-    return (
-      <div className="pink">
-        <h3>Come on in to see what we're serving up today!</h3>
-      </div>
-    )
->>>>>>> dev/update-menu-fetch
+
   }
 
   save() {

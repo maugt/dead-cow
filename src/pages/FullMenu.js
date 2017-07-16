@@ -24,7 +24,7 @@ export default class FullMenu extends Component {
 
     this.firebaseRef.child('items').on('value', function(dataSnapshot) {
       // console.log("items have a value!")
-      console.log(dataSnapshot.val())
+      // console.log(dataSnapshot.val())
       this.setState({items: dataSnapshot.val()});
     }.bind(this));
 
