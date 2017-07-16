@@ -383,6 +383,8 @@ body {
     margin-top: 50px;
     margin-right: 0;
     text-align: center; }
+  .daily-specials .specials {
+    grid-template-columns: 1fr; }
   .nav h3 {
     display: none; } }
 
