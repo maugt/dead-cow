@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "the-dead-cow"
+    "default": "the-dead-cow",
+    "production": "the-dead-cow"
   }
 }
