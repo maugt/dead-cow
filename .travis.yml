@@ -1,14 +1,8 @@
 language: node_js
-<<<<<<< HEAD
 dist: trusty
 branches:
   only:
     - staging
-=======
-branches:
-  only:
-    - master
->>>>>>> dev/update-menu-fetch
 
 before_script:
   - npm install
@@ -19,8 +13,4 @@ script:
 
 
 after_success:
-<<<<<<< HEAD
   - firebase deploy --token=${FIREBASE_API_TOKEN} -P staging
-=======
-  - firebase deploy --token=${FIREBASE_API_TOKEN} -P production
->>>>>>> dev/update-menu-fetch
