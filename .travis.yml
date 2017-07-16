@@ -5,6 +5,7 @@ branches:
     - staging
 
 before_script:
+  - nvm install 8.0
   - npm install
   - npm install -g firebase-tools
 
