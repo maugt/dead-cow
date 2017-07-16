@@ -3,7 +3,7 @@ $blue-chalk: #6dcff6;
 $pink-chalk: #f49ac1;
 $light: #eee;
 $dark: #222;
-$page-section-vertical-margin: 25px;
+$page-section-vertical-margin: 40px;
 
 body {
 	margin: 0;
@@ -82,7 +82,7 @@ body {
 	}
 
 	h2 {
-		margin-top: 2rem;
+		// margin-top: 2rem;
 		margin-bottom: 1rem;
 	}
 }
@@ -424,6 +424,7 @@ body {
 	padding: $page-section-vertical-margin 0;
 	background-image: url('/assets/Chalkboard.jpg');
 	background-size: cover;
+	overflow: scroll;
 
 	* {
 		font-family: 'Gloria Hallelujah';
@@ -431,52 +432,101 @@ body {
 
 	h2 {
 		font-size: 32px;
+		grid-column: 1 / -1;
+	}
+
+	h3 {
+		font-size: 24px;
+		justify-content: center;
+	}
+
+	h4 {
+		font-size: 20px;
+	}
+
+	h3,
+	h4 {
+		grid-column: 1 / -1;
 	}
 
 	.specials {
-		display: flex;
-		flex-wrap: wrap;
+		display: grid;
+		grid-column-gap: 40px;
+		grid-row-gap: 20px;
+		grid-template-columns: 1fr 1fr;
 	}
 
-	.special {
-		display: flex;
-		flex-direction: column;
-		margin: 5px 0;
-		flex: 1;
+	.special-section {
+		display: grid;
+		grid-gap: 5px;
+		grid-template-columns: repeat(auto-fill, minmax(300, auto));
+		grid-template-rows: 40px;
+		grid-auto-rows: minmax(25px, auto);
+	}
 
-		.banner {
-			display: flex;
-			flex-direction: row;
+	.special-item {
+		display: grid;
+		grid-template-columns: 1fr 2em;
+	}
 
-			* {
-				font-size: 24px;
-			}
+	.special-item-category {
+		grid-column: 1 / -1;
+		grid-row: 1/ auto;
+	}
 
-			.price {
-				margin-left: 10px;
-			}
-		}
-
-		.description {
-			font-size: 16px;
-		}
+	.proteins {
+		grid-column: 1 / auto;
+		grid-row: span 3;
 	}
 
 	.blue {
+		color: $blue-chalk;
+
 		* {
 			color: $blue-chalk;
 		}
 	}
 
 	.green {
+		color: $green-chalk;
+
 		* {
 			color: $green-chalk;
 		}
 	}
 
 	.pink {
+		color: $pink-chalk;
+
 		* {
 			color: $pink-chalk;
+		}
+	}
+
+	.bar,
+	.fritattas,
+	.lunch,
+	.salads,
+	.sides {
+		@extend .green;
+	}
+
+	.burritos-paninis,
+	.dinner,
+	.sandwiches,
+	.starches {
+		@extend .blue;
+	}
+
+	.breakfast,
+	.proteins,
+	.soups {
+		@extend .pink;
+	}
+
+	.special-item {
+		* {
+			color: $light;
 		}
 	}
 
