@@ -47,7 +47,7 @@ export default class FullMenu extends Component {
     }.bind(this));
 
     this.firebaseRef.child('notes').on('value', function(dataSnapshot) {
-      var notes = [];
+      // var notes = [];
       // dataSnapshot.forEach(function(childSnapshot) {
       //   var item = childSnapshot.val();
       //   item['.key'] = childSnapshot.key;
