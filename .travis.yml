@@ -1,15 +1,15 @@
 language: node_js
 branches:
   only:
-    - master
     - staging
 
 before_script:
+  - npm install
   - npm install -g firebase-tools
 
 script:
   - npm run build
-  
+
 
 after_success:
   - firebase deploy --token=${FIREBASE_API_TOKEN} -P staging
