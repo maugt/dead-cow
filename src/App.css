@@ -163,6 +163,7 @@ body {
   margin: 0; }
 
 .full-menu .menu-section {
+  padding-top: 30px;
   padding-bottom: 2rem; }
   .full-menu .menu-section .container {
     display: flex;
