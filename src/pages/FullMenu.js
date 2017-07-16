@@ -13,53 +13,47 @@ export default class FullMenu extends Component {
     super();
     this.state = {
       sections: [],
+      subSections: [],
       items: [],
       notes: []
     }
   }
 
   componentWillMount() {
-    this.firebaseRef = firebase.database().ref("menu")
+    this.firebaseRef = firebase.database().ref('menu');
 
     this.firebaseRef.child('items').on('value', function(dataSnapshot) {
       // console.log("items have a value!")
-      var items = []
-      dataSnapshot.forEach(function(childSnapshot) {
-        var item = childSnapshot.val();
-        item['.key'] = childSnapshot.key;
-        items.push(item);
-      });
-      this.setState({items: items});
+      console.log(dataSnapshot.val())
+      this.setState({items: dataSnapshot.val()});
     }.bind(this));
 
     this.firebaseRef.child('sections').on('value', function(dataSnapshot) {
-      var sections = [];
-      dataSnapshot.forEach(function(childSnapshot) {
-        var item = childSnapshot.val();
-        item['.key'] = childSnapshot.key;
-        sections.push(item);
-      });
-      this.setState({sections: sections});
+      // dataSnapshot.forEach(function(childSnapshot) {
+      //   var item = childSnapshot.val();
+      //   item['.key'] = childSnapshot.key;
+      //   sections.push(item);
+      // });
+      this.setState({sections: dataSnapshot.val()});
     }.bind(this));
 
     this.firebaseRef.child('subSections').on('value', function(dataSnapshot) {
-      var subSections = [];
-      dataSnapshot.forEach(function(childSnapshot) {
-        var item = childSnapshot.val();
-        item['.key'] = childSnapshot.key;
-        subSections.push(item);
-      });
-      this.setState({subSections: subSections});
+      // dataSnapshot.forEach(function(childSnapshot) {
+      //   var item = childSnapshot.val();
+      //   item['.key'] = childSnapshot.key;
+      //   subSections.push(item);
+      // });
+      this.setState({subSections: dataSnapshot.val()});
     }.bind(this));
 
     this.firebaseRef.child('notes').on('value', function(dataSnapshot) {
       var notes = [];
-      dataSnapshot.forEach(function(childSnapshot) {
-        var item = childSnapshot.val();
-        item['.key'] = childSnapshot.key;
-        notes.push(item);
-      });
-      this.setState({notes: notes});
+      // dataSnapshot.forEach(function(childSnapshot) {
+      //   var item = childSnapshot.val();
+      //   item['.key'] = childSnapshot.key;
+      //   notes.push(item);
+      // });
+      this.setState({notes: dataSnapshot.val()});
     }.bind(this));
   }
 
@@ -140,12 +134,11 @@ export default class FullMenu extends Component {
     let menuNotes = this.state.notes
     if (section) {
       for (let i of menuNotes) {
-        // console.log(i.note)
-        if (i.note.section.indexOf(section) > -1) {
+        if (i.section.indexOf(section) > -1) {
           return (
             <div className="container">
               <div className="menu-section-note">
-                <h3>{i.note.note}</h3>
+                <h3>{i.note}</h3>
               </div>
             </div>
           )
@@ -221,7 +214,7 @@ export default class FullMenu extends Component {
   renderMenu() {
     let sec = [];
     if (this.state.sections) {
-      data.sections.map(section => {
+      this.state.sections.map(section => {
         sec.push(
           <div key={UUID.v4()} className="menu-section">
             <div className="container">
