@@ -1,18 +1,17 @@
 language: node_js
 node_js:
-  - "7"
+- '7'
 dist: trusty
 branches:
   only:
-    - staging
-
+  - staging
 before_script:
-  - npm install
-  - npm install -g firebase-tools
-
+- npm install
+- npm install -g firebase-tools
 script:
-  - npm run build
-
-
+- npm run build
 after_success:
-  - firebase deploy --token=${FIREBASE_API_TOKEN} -P staging
+- firebase deploy --token=${FIREBASE_API_TOKEN} -P staging
+env:
+  global:
+    secure: NtttDQ1X8VLLTrkVGykb2/yd5LdpkzHwMx+fJAaj1e6fiaN+880YH2kW611+ZhBHEiMDD2Np7XyJeSGveA325WrTouL2RMGWCGl9wthnqBL27tIDk3rR85CNS4JqyRLFkTGfyZUL3+4+c/ngXVggrvEDZcr9c1dBKKoVQJCWtaFFbAi/eJ+D+SdGfNC+be1O98cfhtZyMBHlrH0S9JkkkYFi/yYf8+YX1jPKzD1z4Djl3ULPrAyXk0qPWKAdCfiSb64b8Mu4pCNkt/AjiI21Uf8OFFesOHOoE2f3Y0Vabevcsue1d1gM2bNIzvG7byQJx+URNkuz1VLvJL/pln5W3ifeTgNI99I4wPfCJMwu/Euab1ypoKgrD/Er7oW30AMl4FjbRQI980/r9edY02C2kT4bIkB9cewIplVD39PZ8qRZ1/QkF08jRtbHDWOAQLkUvubyTmSl8z5RVKjWwy7NFfUw7nWV44nW976FTja3XxFSqmPisikJuyib22Kby0kj8wTZrwNIGztFQp1dTaKMN9/5eCwqcidf7oA6bmXoTCag0TVjjDVr+OOSWq8qJ48CDoB8qw0t08cCu/X7UCUEX5rhqjc0mbwzEHmozEwEnLRHvrlJ+3tyuVx9Zv9uSh+9ZmKorYQqlzqTvFGYQk8jiV0QMT3PTSwdI0x2qA5En30=
