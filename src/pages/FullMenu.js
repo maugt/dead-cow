@@ -24,7 +24,7 @@ export default class FullMenu extends Component {
 
     this.firebaseRef.child('items').on('value', function(dataSnapshot) {
       // console.log("items have a value!")
-      console.log(dataSnapshot.val())
+      // console.log(dataSnapshot.val())
       this.setState({items: dataSnapshot.val()});
     }.bind(this));
 
@@ -47,7 +47,7 @@ export default class FullMenu extends Component {
     }.bind(this));
 
     this.firebaseRef.child('notes').on('value', function(dataSnapshot) {
-      var notes = [];
+      // var notes = [];
       // dataSnapshot.forEach(function(childSnapshot) {
       //   var item = childSnapshot.val();
       //   item['.key'] = childSnapshot.key;
@@ -235,7 +235,6 @@ export default class FullMenu extends Component {
 
   render() {
     document.title = "Dead Cow - Menu"
-    console.log(this.state)
     return (
       <div className="menu">
         <div className="background-image">

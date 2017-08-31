@@ -40,19 +40,18 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 300px;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
   justify-content: flex-end; }
   .page-front-matter h1 {
     margin: 10px auto; }
 
 .page-content {
-  margin: 25px 0; }
+  margin: 40px 0; }
   .page-content p {
     margin-bottom: 1rem; }
     .page-content p a {
       margin: 0 0.5ex; }
   .page-content h2 {
-    margin-top: 2rem;
     margin-bottom: 1rem; }
 
 .background-image {
@@ -164,6 +163,7 @@ body {
   margin: 0; }
 
 .full-menu .menu-section {
+  padding-top: 30px;
   padding-bottom: 2rem; }
   .full-menu .menu-section .container {
     display: flex;
@@ -283,36 +283,57 @@ body {
     height: 100px; }
 
 .daily-specials {
-  padding: 25px 0;
+  padding: 40px 0;
   background-image: url("/assets/Chalkboard.jpg");
-  background-size: cover; }
+  background-size: cover;
+  overflow: scroll; }
   .daily-specials * {
     font-family: 'Gloria Hallelujah'; }
   .daily-specials h2 {
-    font-size: 32px; }
+    font-size: 32px;
+    grid-column: 1 / -1; }
+  .daily-specials h3 {
+    font-size: 24px;
+    justify-content: center; }
+  .daily-specials h4 {
+    font-size: 20px; }
+  .daily-specials h3,
+  .daily-specials h4 {
+    grid-column: 1 / -1; }
   .daily-specials .specials {
-    display: flex;
-    flex-wrap: wrap; }
-  .daily-specials .special {
-    display: flex;
-    flex-direction: column;
-    margin: 5px 0;
-    flex: 1; }
-    .daily-specials .special .banner {
-      display: flex;
-      flex-direction: row; }
-      .daily-specials .special .banner * {
-        font-size: 24px; }
-      .daily-specials .special .banner .price {
-        margin-left: 10px; }
-    .daily-specials .special .description {
-      font-size: 16px; }
-  .daily-specials .blue * {
+    display: grid;
+    grid-column-gap: 40px;
+    grid-row-gap: 20px;
+    grid-template-columns: 1fr 1fr; }
+  .daily-specials .special-section {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fill, minmax(300, auto));
+    grid-template-rows: 40px;
+    grid-auto-rows: minmax(25px, auto); }
+  .daily-specials .special-item {
+    display: grid;
+    grid-template-columns: 1fr 2em; }
+  .daily-specials .special-item-category {
+    grid-column: 1 / -1;
+    grid-row: 1/ auto; }
+  .daily-specials .proteins {
+    grid-column: 1 / auto;
+    grid-row: span 3; }
+  .daily-specials .blue, .daily-specials .burritos-paninis, .daily-specials .dinner, .daily-specials .sandwiches, .daily-specials .starches {
     color: #6dcff6; }
-  .daily-specials .green * {
+    .daily-specials .blue *, .daily-specials .burritos-paninis *, .daily-specials .dinner *, .daily-specials .sandwiches *, .daily-specials .starches * {
+      color: #6dcff6; }
+  .daily-specials .green, .daily-specials .bar, .daily-specials .fritattas, .daily-specials .lunch, .daily-specials .salads, .daily-specials .sides {
     color: #a3d39c; }
-  .daily-specials .pink * {
+    .daily-specials .green *, .daily-specials .bar *, .daily-specials .fritattas *, .daily-specials .lunch *, .daily-specials .salads *, .daily-specials .sides * {
+      color: #a3d39c; }
+  .daily-specials .pink, .daily-specials .breakfast, .daily-specials .proteins, .daily-specials .soups {
     color: #f49ac1; }
+    .daily-specials .pink *, .daily-specials .breakfast *, .daily-specials .proteins *, .daily-specials .soups * {
+      color: #f49ac1; }
+  .daily-specials .special-item * {
+    color: #eee; }
   .daily-specials input {
     color: #222;
     background: #eee;
@@ -362,6 +383,8 @@ body {
     margin-top: 50px;
     margin-right: 0;
     text-align: center; }
+  .daily-specials .specials {
+    grid-template-columns: 1fr; }
   .nav h3 {
     display: none; } }
 
