@@ -1,0 +1,3 @@
+## About Face
+
+Three tanneries, including the Salz Tannery, operated where Pogonip Creek meets the San Lorenzo River. The tanneries fueled the economy of Santa Cruz County and the Central Coast over the span of 145 years. In the late ‘60’s, Salz Tannery President [?] Lezin offered his son, 15 year old Jeremy Lezin, the opportunity to sell leather scraps from the tannery. Jeremy cleaned out an old lawnmower shed and opened up shop as The Dead Cow, which thrived for over a decade. The Salz family owned and operated the business until it closed in 2001 due to the lower-cost leather production in China and Asia.
