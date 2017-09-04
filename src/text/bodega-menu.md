@@ -34,7 +34,8 @@ Creative preparations baked fresh in our 700ºf pizza oven
 
 
 ### Grab & Go
-Our deli case holds a selection of quick bites for patrons on the go. Stop in for pre-made rotating salad selections, or any of our standard baguettes:
+Our deli case holds a selection of quick bites for patrons on the go.   
+Stop in for pre-made rotating salad selections, or any of our standard baguettes:
 - **Jambon-Beurre/Jambon-Fromage** simple ham & butter on baguette, plain or with cheese
 - **Thon-Crudités-Oeufs** tuna, lettuce, tomato and hard-boiled eggs
 - **Salami** salami and butter

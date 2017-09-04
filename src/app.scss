@@ -346,6 +346,7 @@ h2{
 		margin-top: 2rem;
 		margin-bottom: 1rem;
 		font-style: bold;
+		text-align: center;
 	}
 
 	h4{
@@ -354,13 +355,13 @@ h2{
 	}
 	p{
 		font-style: italic;
+		
 	}
 
 	strong{
-		&:after{
-			content: "\a";
-			white-space: pre;
-		}
+		display: block;
+		margin-bottom: .25rem;
+		
 	}
 	
 }

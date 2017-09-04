@@ -234,7 +234,8 @@ h2 {
 .menu h3 {
   margin-top: 2rem;
   margin-bottom: 1rem;
-  font-style: bold; }
+  font-style: bold;
+  text-align: center; }
 
 .menu h4 {
   margin-top: 2rem;
@@ -243,9 +244,9 @@ h2 {
 .menu p {
   font-style: italic; }
 
-.menu strong:after {
-  content: "\a";
-  white-space: pre; }
+.menu strong {
+  display: block;
+  margin-bottom: .25rem; }
 
 .login form {
   display: flex;
