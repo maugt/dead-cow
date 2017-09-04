@@ -13,12 +13,17 @@ export default class Home extends Component {
 		return (
 			<div className="home">
 				<Cover children={this.props.children} />
-
-				<About slug={'name'} />
-				<About slug={'concept'} />
-				<About slug={'chef'} />
+				<div className="page-content">
+					<div className="container">
+						<div className="about-snippets">
+							<About slug={'concept'} />
+							<About slug={'name'} />
+							<About slug={'chef'} />
+						</div>
+					</div>
+				</div >
 				<GoogleMap />
-			</div>
+			</div >
 		)
 	}
 }

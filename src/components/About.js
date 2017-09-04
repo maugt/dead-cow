@@ -8,14 +8,12 @@ export default class MiniAbout extends Component {
 		const s = require(`../text/about-${this.props.slug}-short.md`)
 
 		return (
-			<div className="page-content">
-				<div className="container">
-					<h2>
-						About the {this.props.slug}
-					</h2>
-					<Markdown source={s} />
-					<a href={`about#about-${this.props.slug}`}> more... </a>
-				</div>
+			<div className="mini-about">
+				<h2>
+					About the {this.props.slug}
+				</h2>
+				<Markdown source={s} />
+				<a href={`about#about-${this.props.slug}`}> more... </a>
 			</div>
 		)
 	}

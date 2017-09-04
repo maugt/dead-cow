@@ -200,6 +200,11 @@ h2 {
   .home a, .home a:visited {
     color: #eee; }
 
+.about-snippets {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px; }
+
 .about {
   background: #eee;
   color: #222; }
