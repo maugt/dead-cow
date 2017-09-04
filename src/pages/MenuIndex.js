@@ -2,8 +2,7 @@ import React, { Component } from 'react'
 import firebase from 'firebase'
 import C from '../constants/credentials/FirebaseConfig.json'
 import Markdown from 'react-markdown'
-import MobileToggleSwitch from '../components/MobileToggleSwitch'
-
+import PageHeader from '../components/PageHeader'
 import menuTop from '../text/menu-top.md'
 import cafeMenu from '../text/cafe-menu.md'
 import bodegaMenu from '../text/bodega-menu.md'
@@ -34,51 +33,40 @@ export default class FullMenu extends Component {
 		document.title = "Dead Cow - Menus"
 		return (
 			<div className="menu">
-				<div className="background-image">
-					<div className="wrapper">
-						<div className="container">
-							<MobileToggleSwitch />
-							<div className="page-front-matter">
-								<h1>Menus</h1>
+				<PageHeader img="veggies" title="Menus" />
+				<div className="section">
+					<div className="container">
+						<div className="page-content">
+							<div className="callout">
+								<h4>Sneak peak!</h4>
 							</div>
+							<h2>The Dead Cow Cuisine</h2>
+							<Markdown source={menuTop} />
 						</div>
 					</div>
 				</div>
-				<div className="full-about">
-					<div className="section">
-						<div className="container">
-							<div className="page-content">
-								<div className="callout">
-									<h4>Sneak peak!</h4>
-								</div>
-								<h2>The Dead Cow Cuisine</h2>
-								<Markdown source={menuTop} />
-							</div>
+				<div className="section">
+					<div className="container">
+						<div className="page-content">
+							<Markdown source={cafeMenu} />
 						</div>
 					</div>
-					<div className="section">
-						<div className="container">
-							<div className="page-content">
-								<Markdown source={cafeMenu} />
-							</div>
-						</div>
-					</div>
-					<div className="section">
-						<div className="container">
-							<div className="page-content">
+				</div>
+				<div className="section">
+					<div className="container">
+						<div className="page-content">
 
-								<Markdown source={bodegaMenu} />
-							</div>
+							<Markdown source={bodegaMenu} />
 						</div>
 					</div>
-					<div className="section">
-						<div className="container">
-							<div className="page-content">
-								<div className="callout">
-									<h4>Coming soon!</h4>
-								</div>
-								<Markdown source={bistroMenu} />
+				</div>
+				<div className="section">
+					<div className="container">
+						<div className="page-content">
+							<div className="callout">
+								<h4>Coming soon!</h4>
 							</div>
+							<Markdown source={bistroMenu} />
 						</div>
 					</div>
 				</div>

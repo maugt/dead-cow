@@ -30,9 +30,8 @@ body {
 .container {
   display: flex;
   box-sizing: border-box;
-  width: 1200px;
+  width: 1000px;
   margin: 0 auto;
-  padding: 0 125px;
   flex-direction: column; }
 
 .breakup {
@@ -52,15 +51,33 @@ h2 {
     position: absolute;
     top: -100px; }
 
-.page-front-matter {
-  display: flex;
-  flex-direction: column;
-  min-height: 300px;
-  margin-bottom: 20px;
-  justify-content: flex-end;
-  color: #eee; }
-  .page-front-matter h1 {
-    margin: 10px auto; }
+.page-header {
+  width: 100%;
+  background: #222;
+  height: 400px;
+  display: grid;
+  grid-template-rows: 1fr auto auto 15px;
+  grid-template-columns: 1fr 1000px 1fr; }
+  .page-header img {
+    opacity: .6;
+    grid-row: 1 / -1;
+    grid-column: 1 / span 3;
+    object-fit: cover;
+    width: 100%;
+    z-index: 0; }
+  .page-header h1, .page-header h3 {
+    grid-column: 2 / span 1;
+    z-index: 100;
+    color: #eee; }
+  .page-header h1 {
+    grid-row: 2/ span 1; }
+  .page-header h3 {
+    grid-row: 3/ span 1; }
+  .page-header .toggleSwitch {
+    grid-row: 1;
+    grid-column: 2;
+    justify-content: center;
+    z-index: 200; }
 
 .page-content {
   margin: 40px 0; }
@@ -156,7 +173,6 @@ h2 {
     flex-direction: column;
     height: 89vh;
     min-height: 650px;
-    padding: 0 125px;
     justify-content: space-between; }
   .cover .front-matter {
     display: flex;
@@ -219,10 +235,10 @@ h2 {
 
 .menu .section {
   margin: 0; }
-  .menu .section:nth-child(2n) {
+  .menu .section:nth-child(2n+1) {
     background: #222;
     color: #eee; }
-    .menu .section:nth-child(2n) .callout {
+    .menu .section:nth-child(2n+1) .callout {
       color: #6dcff6; }
 
 .menu ul {
@@ -312,75 +328,11 @@ footer {
     width: 100px;
     height: 100px; }
 
-.daily-specials {
-  padding: 40px 0;
-  background-image: url("/assets/Chalkboard.jpg");
-  background-size: cover;
-  overflow: scroll; }
-  .daily-specials * {
-    font-family: 'Gloria Hallelujah'; }
-  .daily-specials h2 {
-    font-size: 32px;
-    grid-column: 1 / -1; }
-  .daily-specials h3 {
-    font-size: 24px;
-    justify-content: center; }
-  .daily-specials h4 {
-    font-size: 20px; }
-  .daily-specials h3,
-  .daily-specials h4 {
-    grid-column: 1 / -1; }
-  .daily-specials .specials {
-    display: grid;
-    grid-column-gap: 40px;
-    grid-row-gap: 20px;
-    grid-template-columns: 1fr 1fr; }
-  .daily-specials .special-section {
-    display: grid;
-    grid-gap: 5px;
-    grid-template-columns: repeat(auto-fill, minmax(300, auto));
-    grid-template-rows: 40px;
-    grid-auto-rows: minmax(25px, auto); }
-  .daily-specials .special-item {
-    display: grid;
-    grid-template-columns: 1fr 2em; }
-  .daily-specials .special-item-category {
-    grid-column: 1 / -1;
-    grid-row: 1/ auto; }
-  .daily-specials .proteins {
-    grid-column: 1 / auto;
-    grid-row: span 3; }
-  .daily-specials .blue, .daily-specials .burritos-paninis, .daily-specials .dinner, .daily-specials .sandwiches, .daily-specials .starches {
-    color: #6dcff6; }
-    .daily-specials .blue *, .daily-specials .burritos-paninis *, .daily-specials .dinner *, .daily-specials .sandwiches *, .daily-specials .starches * {
-      color: #6dcff6; }
-  .daily-specials .green, .daily-specials .bar, .daily-specials .fritattas, .daily-specials .lunch, .daily-specials .salads, .daily-specials .sides {
-    color: #a3d39c; }
-    .daily-specials .green *, .daily-specials .bar *, .daily-specials .fritattas *, .daily-specials .lunch *, .daily-specials .salads *, .daily-specials .sides * {
-      color: #a3d39c; }
-  .daily-specials .pink, .daily-specials .breakfast, .daily-specials .proteins, .daily-specials .soups {
-    color: #f49ac1; }
-    .daily-specials .pink *, .daily-specials .breakfast *, .daily-specials .proteins *, .daily-specials .soups * {
-      color: #f49ac1; }
-  .daily-specials .special-item * {
-    color: #eee; }
-  .daily-specials input {
-    color: #222;
-    background: #eee;
-    padding: 5px 10px;
-    border-color: #222;
-    border: 2px solid #222; }
-  .daily-specials .button {
-    color: #222;
-    font-size: 12px;
-    margin-bottom: 10px;
-    padding: 10px 15px;
-    border-radius: 1px;
-    cursor: pointer; }
-
 @media (max-width: 1300px) {
   .container {
-    width: 1000px; }
+    width: 800px; }
+  .page-header {
+    grid-template-columns: 1fr 800px 1fr; }
   .cover .logo {
     width: 300px;
     height: 300px; }
@@ -389,7 +341,12 @@ footer {
 
 @media (max-width: 1000px) {
   .container {
-    width: 100%; }
+    width: 100%;
+    padding-left: 90px;
+    padding-right: 90px; }
+  .page-header {
+    width: 100%;
+    grid-template-columns: 90px 1fr 90px; }
   .cover .front-matter {
     flex-direction: column;
     width: 100%;

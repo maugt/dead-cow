@@ -4,6 +4,7 @@ $pink-chalk: #f49ac1;
 $light: #eee;
 $dark: #222;
 $page-section-vertical-margin: 40px;
+$container-width: 1000px;
 
 .space{
 	height: 11vh;
@@ -59,9 +60,8 @@ body {
 .container {
 	display: flex;
 	box-sizing: border-box;
-	width: 1200px;
+	width: 1000px;
 	margin: 0 auto;
-	padding: 0 125px;
 	flex-direction: column;
 }
 
@@ -86,16 +86,47 @@ h2{
 	}
 }
 
-.page-front-matter {
-	display: flex;
-	flex-direction: column;
-	min-height: 300px;
-	margin-bottom: 20px;
-	justify-content: flex-end;
-	color: $light;
-	h1 {
-		margin: 10px auto;
+.page-header{
+	width: 100%;
+	background: $dark;
+	height: 400px;
+	display: grid;
+	// overflow: hidden;
+
+	grid-template-rows: 1fr auto auto 15px;
+	grid-template-columns: 1fr 1000px 1fr;
+
+	img{
+		opacity: .6;
+		grid-row: 1 / -1;
+		grid-column: 1 / span 3;
+		object-fit: cover;
+		width: 100%;
+		z-index: 0;
 	}
+
+	h1, h3{
+		grid-column: 2 / span 1;
+		z-index: 100;
+		color: $light;
+	}
+
+	h1{
+		grid-row: 2/ span 1;
+	}
+
+	h3{
+		grid-row: 3/ span 1;
+	}
+
+	.toggleSwitch{
+		grid-row: 1;
+		grid-column: 2;
+		justify-content: center;
+		z-index: 200;
+	}
+
+	
 }
 
 .page-content {
@@ -241,7 +272,6 @@ h2{
 		flex-direction: column;
 		height: 89vh;
 		min-height: 650px;
-		padding: 0 125px;
 		justify-content: space-between;
 	}
 
@@ -332,7 +362,7 @@ h2{
 
 .menu{
 	.section{
-		&:nth-child(2n){
+		&:nth-child(2n+1){
 			background: $dark;
 			color: $light;
 			.callout{
@@ -459,139 +489,13 @@ footer{
 	}
 }
 
-.daily-specials {
-	padding: $page-section-vertical-margin 0;
-	background-image: url('/assets/Chalkboard.jpg');
-	background-size: cover;
-	overflow: scroll;
-
-	* {
-		font-family: 'Gloria Hallelujah';
-	}
-
-	h2 {
-		font-size: 32px;
-		grid-column: 1 / -1;
-	}
-
-	h3 {
-		font-size: 24px;
-		justify-content: center;
-	}
-
-	h4 {
-		font-size: 20px;
-	}
-
-	h3,
-	h4 {
-		grid-column: 1 / -1;
-	}
-
-	.specials {
-		display: grid;
-		grid-column-gap: 40px;
-		grid-row-gap: 20px;
-		grid-template-columns: 1fr 1fr;
-	}
-
-	.special-section {
-		display: grid;
-		grid-gap: 5px;
-		grid-template-columns: repeat(auto-fill, minmax(300, auto));
-		grid-template-rows: 40px;
-		grid-auto-rows: minmax(25px, auto);
-	}
-
-	.special-item {
-		display: grid;
-		grid-template-columns: 1fr 2em;
-	}
-
-	.special-item-category {
-		grid-column: 1 / -1;
-		grid-row: 1/ auto;
-	}
-
-	.proteins {
-		grid-column: 1 / auto;
-		grid-row: span 3;
-	}
-
-	.blue {
-		color: $blue-chalk;
-
-		* {
-			color: $blue-chalk;
-		}
-	}
-
-	.green {
-		color: $green-chalk;
-
-		* {
-			color: $green-chalk;
-		}
-	}
-
-	.pink {
-		color: $pink-chalk;
-
-		* {
-			color: $pink-chalk;
-		}
-	}
-
-	.bar,
-	.fritattas,
-	.lunch,
-	.salads,
-	.sides {
-		@extend .green;
-	}
-
-	.burritos-paninis,
-	.dinner,
-	.sandwiches,
-	.starches {
-		@extend .blue;
-	}
-
-	.breakfast,
-	.proteins,
-	.soups {
-		@extend .pink;
-	}
-
-	.special-item {
-		* {
-			color: $light;
-		}
-	}
-
-	input {
-		color: $dark;
-		background: $light;
-		padding: 5px 10px;
-		border-color: $dark;
-		border: 2px solid $dark;
-
-	}
-
-	.button {
-		color: $dark;
-		font-size: 12px;
-		margin-bottom: 10px;
-		padding: 10px 15px;
-		border-radius: 1px;
-		cursor: pointer;
-
-	}
-
-}
 @media (max-width: 1300px) {
-	.container {
-		width: 1000px;
+	.container{
+		width: 800px;
+	}
+
+	.page-header{
+		grid-template-columns: 1fr 800px 1fr;
 	}
 
 	.cover {
@@ -608,6 +512,13 @@ footer{
 @media (max-width: 1000px) {
 	.container {
 		width: 100%;
+		padding-left:90px ;
+		padding-right:90px ;
+	}
+
+	.page-header{
+		width: 100%;
+		grid-template-columns: 90px 1fr 90px;
 	}
 
 	.cover {
