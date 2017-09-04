@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Route, IndexRoute, IndexRedirect, Router, browserHistory } from 'react-router'
 import App from './App';
-import OpeningSoon from './pages/OpeningSoon'
 import Home from './pages/Home'
 import MenuIndex from './pages/MenuIndex'
 import FullAbout from './pages/FullAbout'
