@@ -13,10 +13,8 @@ export default class MiniAbout extends Component {
 					<h2>
 						About the {this.props.slug}
 					</h2>
-					<p>
-						<Markdown source={s} />
-						<a href={`about#about-${this.props.slug}`}> more... </a>
-					</p>
+					<Markdown source={s} />
+					<a href={`about#about-${this.props.slug}`}> more... </a>
 				</div>
 			</div>
 		)

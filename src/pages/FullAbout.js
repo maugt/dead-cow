@@ -27,18 +27,17 @@ export default class FullAbout extends Component {
 					<div className="container">
 						<div className="page-content">
 							<div id="about-name">
-								<h3>The Name</h3>
-								<img src='/assets/salz-tannery.png' />
+								<h2>The Name</h2>
+								<img alt="" src='/assets/salz-tannery.png' />
 								<Markdown source={name} />
 							</div>
 							<div id="about-concept">
-
-								<h3>The Concept </h3>
-								<img src='/assets/Salsa.jpg' />
+								<h2>The Concept </h2>
+								<img alt="" src='/assets/Salsa.jpg' />
 								<Markdown source={concept} />
 							</div>
 							<div id="about-chef">
-								<h3>The Chef</h3>
+								<h2>The Chef</h2>
 								<Markdown source={chef} />
 							</div>
 						</div>
