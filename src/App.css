@@ -252,11 +252,11 @@ h2 {
   display: block;
   margin-bottom: .25rem; }
 
-.menu .callout {
+.callout {
   height: 0;
   width: 100%;
   text-align: right; }
-  .menu .callout h4 {
+  .callout h4 {
     position: relative;
     transform: rotate(7deg) translateY(-80px);
     font-family: "Gloria Hallelujah";

@@ -15,9 +15,6 @@ ReactDOM.render(
 		<Route path='/' component={App}>
 			<Route component={Home}>
 				<IndexRoute />
-				<IndexRedirect to="/opening-soon"></IndexRedirect>
-				<Route path='/opening-soon' component={OpeningSoon}></Route>
-
 			</Route>
 			<Route path="/login" component={Login}></Route>
 			<Route path="/logout" component={Logout}></Route>

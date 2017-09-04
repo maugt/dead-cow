@@ -373,19 +373,21 @@ h2{
 		margin-bottom: .25rem;
 	}
 
-	.callout{
-		height: 0;
-		width: 100%;
-		text-align: right;
-		
-		h4{
-			position: relative;
-			transform: rotate(7deg) translateY(-80px);
-			font-family: "Gloria Hallelujah";
-			font-size: 40px;
-		}
-	}
 	
+}
+
+
+.callout{
+	height: 0;
+	width: 100%;
+	text-align: right;
+	
+	h4{
+		position: relative;
+		transform: rotate(7deg) translateY(-80px);
+		font-family: "Gloria Hallelujah";
+		font-size: 40px;
+	}
 }
 
 .login {
