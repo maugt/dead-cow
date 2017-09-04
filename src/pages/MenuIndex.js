@@ -33,7 +33,7 @@ export default class FullMenu extends Component {
 
 		document.title = "Dead Cow - Menus"
 		return (
-			<div className="about">
+			<div className="menu">
 				<div className="background-image">
 					<div className="wrapper">
 						<div className="container">
@@ -45,23 +45,40 @@ export default class FullMenu extends Component {
 					</div>
 				</div>
 				<div className="full-about">
-					<div className="container">
-						<div className="page-content">
-							<h2>The Dead Cow Cuisine</h2>
-							<Markdown source={menuTop} />
+					<div className="section">
+						<div className="container">
+							<div className="page-content">
+								<h2>The Dead Cow Cuisine</h2>
+								<Markdown source={menuTop} />
+							</div>
 						</div>
-						<div className="section">
-							<Markdown source={cafeMenu} />
+					</div>
+					<div className="section">
+						<div className="container">
+							<div className="page-content">
+								<Markdown source={cafeMenu} />
+							</div>
 						</div>
-						<div className="section">
-							<Markdown source={bodegaMenu} />
+					</div>
+					<div className="section">
+						<div className="container">
+							<div className="page-content">
+
+								<Markdown source={bodegaMenu} />
+							</div>
 						</div>
-						<div className="section">
-							<Markdown source={bistroMenu} />
+					</div>
+					<div className="section">
+						<div className="container">
+							<div className="page-content">
+
+								<Markdown source={bistroMenu} />
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+
 		)
 	}
 
