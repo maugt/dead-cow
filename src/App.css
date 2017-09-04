@@ -12,7 +12,7 @@ body {
     font-weight: bold; }
   body h1, body h2, body h3, body h4, body a {
     font-family: 'Roboto Slab', 'serif'; }
-  body p, body p a {
+  body p, body p a, body li {
     font-family: 'Raleway'; }
   body h1 {
     font-size: 32px; }
