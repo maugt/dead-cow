@@ -13,9 +13,9 @@ export default class NavLinks extends Component {
 					<li>
 						<a href="/about">About</a>
 					</li>
-					<li>
+					{/* <li>
 						<a href="#daily-specials">Daily Specials</a>
-					</li>
+					</li> */}
 
 				</ul>
 			</div>

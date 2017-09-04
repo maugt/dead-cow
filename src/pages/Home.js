@@ -17,9 +17,6 @@ export default class Home extends Component {
 				<About slug={'name'} />
 				<About slug={'concept'} />
 				<About slug={'chef'} />
-
-				<img className="breakup" src="/assets/Veggies.jpg" alt="" />
-
 				<GoogleMap />
 			</div>
 		)
