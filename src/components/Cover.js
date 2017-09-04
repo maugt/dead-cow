@@ -16,7 +16,7 @@ export default class Cover extends Component {
 								<img className="logo mobile" src="/assets/icon-light.png" alt="Dead Cow at The Tannery Logo" />
 								<div className="cover-text">
 									<h2 className='slogan'>Decidedly Local,<br />Aggresively Seasonal</h2>
-									<h4>now open!!</h4>
+									<h4>opening soon...</h4>
 								</div>
 							</div>
 							<div className="info">
