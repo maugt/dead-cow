@@ -14,7 +14,6 @@ body {
 	margin: 0;
 
 	* {
-		font-family: 'Raleway', sans-serif;
 		font-size: 15px;
 		margin: 0;
 	}
@@ -24,9 +23,15 @@ body {
 		font-weight: bold;
 	}
 
-	h1, h2, h3, h4, strong {
+	h1, h2, h3, h4 ,a{
 		font-family: 'Roboto Slab', 'serif';
 	}
+
+	p, p a{
+		font-family: 'Raleway'
+	}
+
+	
 
 	h1 {
 		font-size: 32px;
@@ -146,12 +151,14 @@ h2{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	padding-top: 5px;
+	padding-bottom: 5px;
 	background: $dark;
 	color: $light;
 	position: fixed;
 	width: 100%;
 	z-index: 1000;
+
+	font-family: "Roboto Slab", serif;
 
 	a, a:visited{
 		color:$light
@@ -361,7 +368,6 @@ h2{
 	strong{
 		display: block;
 		margin-bottom: .25rem;
-		
 	}
 	
 }
@@ -401,7 +407,8 @@ footer{
 	background: $dark;
 	color: $light;
 	a, a:visited{
-		color: $light
+		color: $light;
+		font-weight: normal;
 	}
 }
 
