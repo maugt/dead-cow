@@ -321,7 +321,7 @@ h2{
 	grid-gap: 30px;
 }
 
-.about{
+.about, .menu{
 	background: $light;
 	color: $dark;
 	a, a:visited{
@@ -334,6 +334,9 @@ h2{
 		&:nth-child(2n){
 			background: $dark;
 			color: $light;
+			.callout{
+				color: $blue-chalk
+			}
 		}
 		margin: 0;
 	}
@@ -368,6 +371,19 @@ h2{
 	strong{
 		display: block;
 		margin-bottom: .25rem;
+	}
+
+	.callout{
+		height: 0;
+		width: 100%;
+		text-align: right;
+		
+		h4{
+			position: relative;
+			transform: rotate(7deg) translateY(-80px);
+			font-family: "Gloria Hallelujah";
+			font-size: 40px;
+		}
 	}
 	
 }

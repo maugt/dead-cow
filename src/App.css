@@ -210,10 +210,10 @@ h2 {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px; }
 
-.about {
+.about, .menu {
   background: #eee;
   color: #222; }
-  .about a, .about a:visited {
+  .about a, .about a:visited, .menu a, .menu a:visited {
     color: #222; }
 
 .menu .section {
@@ -221,6 +221,8 @@ h2 {
   .menu .section:nth-child(2n) {
     background: #222;
     color: #eee; }
+    .menu .section:nth-child(2n) .callout {
+      color: #6dcff6; }
 
 .menu ul {
   display: grid;
@@ -249,6 +251,16 @@ h2 {
 .menu strong {
   display: block;
   margin-bottom: .25rem; }
+
+.menu .callout {
+  height: 0;
+  width: 100%;
+  text-align: right; }
+  .menu .callout h4 {
+    position: relative;
+    transform: rotate(7deg) translateY(-80px);
+    font-family: "Gloria Hallelujah";
+    font-size: 40px; }
 
 .login form {
   display: flex;

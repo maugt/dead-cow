@@ -48,6 +48,9 @@ export default class FullMenu extends Component {
 					<div className="section">
 						<div className="container">
 							<div className="page-content">
+								<div className="callout">
+									<h4>Sneak peak!</h4>
+								</div>
 								<h2>The Dead Cow Cuisine</h2>
 								<Markdown source={menuTop} />
 							</div>
@@ -71,7 +74,9 @@ export default class FullMenu extends Component {
 					<div className="section">
 						<div className="container">
 							<div className="page-content">
-
+								<div className="callout">
+									<h4>Coming soon!</h4>
+								</div>
 								<Markdown source={bistroMenu} />
 							</div>
 						</div>
