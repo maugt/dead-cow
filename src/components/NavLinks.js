@@ -7,9 +7,9 @@ export default class NavLinks extends Component {
 			<div className="navigation">
 				<ul>
 					{/* <li><a href="/specials"><span>Daily </span>Specials</a></li> */}
-					{/* <li>
-            <a href="/menu">Menu</a>
-          </li> */}
+					<li>
+						<a href="/menus">Menus</a>
+					</li>
 					<li>
 						<a href="/about">About</a>
 					</li>
