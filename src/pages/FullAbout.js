@@ -2,12 +2,13 @@ import React, { Component } from 'react'
 import MobileToggleSwitch from '../components/MobileToggleSwitch'
 import Markdown from 'react-markdown'
 
-import * as s from '../text/test.md'
+import name from '../text/about-name.md'
+import concept from '../text/about-concept.md'
+import chef from '../text/about-chef.md'
 
 export default class FullAbout extends Component {
 
 	render() {
-		console.log(s)
 		document.title = "Dead Cow - About"
 		return (
 			<div className="about">
@@ -25,7 +26,21 @@ export default class FullAbout extends Component {
 				<div className="full-about">
 					<div className="container">
 						<div className="page-content">
-							<Markdown source={s} />
+							<div id="about-name">
+								<h3>The Name</h3>
+								<img src='/assets/salz-tannery.png' />
+								<Markdown source={name} />
+							</div>
+							<div id="about-concept">
+
+								<h3>The Concept </h3>
+								<img src='/assets/Salsa.jpg' />
+								<Markdown source={concept} />
+							</div>
+							<div id="about-chef">
+								<h3>The Chef</h3>
+								<Markdown source={chef} />
+							</div>
 						</div>
 					</div>
 				</div>

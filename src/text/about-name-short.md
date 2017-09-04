@@ -1,0 +1,1 @@
+Three tanneries, including the Salz Tannery, operated where Pogonip Creek meets the San Lorenzo River. Our name pays homage to the rich history of the Tannery, and to the efforts of those involved in guiding its course towards its current creative purpose.

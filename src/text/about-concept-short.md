@@ -1,0 +1,1 @@
+Driven by the Farm-to-Table philosophy of Chef Shannon Madison, our Mission is to serve the Santa Cruz Tannery Arts Center as a family and artist-friendly food and beverage community gathering place. We create local, organic, sustainable menus that are vegan first, using dairy for flavor enhancement, with a reduced emphasis on animal proteins. 
