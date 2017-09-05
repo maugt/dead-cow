@@ -1,4 +1,3 @@
-## Dead Cow Evening Bistro
 Coming Soon! Starting at 5:30pm for Theater and Special Events, join us for leisurely nibbles to accompany your favorite evening beverages, or a quick bite before the show.
 
 ### Nibbles

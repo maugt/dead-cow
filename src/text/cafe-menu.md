@@ -1,5 +1,3 @@
-## Dead Cow Cafe
-
 Featuring our coffee and breakfast selections
 
 ### Breakfast

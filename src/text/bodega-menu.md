@@ -1,5 +1,3 @@
-## Dead Cow Bodega
-
 Supporting our local community with an array of retail convenience items as well as a full lunch menu featuring our deli items and hot flatbread pizzas 
 
 ### Lunch
