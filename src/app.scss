@@ -91,7 +91,7 @@ h2{
 	background: $dark;
 	height: 400px;
 	display: grid;
-	// overflow: hidden;
+	overflow: hidden;
 
 	grid-template-rows: 1fr auto auto 15px;
 	grid-template-columns: 1fr 1000px 1fr;
@@ -158,7 +158,7 @@ h2{
 
 .background-image {
 	width: 100%;
-	background: url("/assets/Cow.jpg");
+	background: url("/assets/cow.jpg");
 	background-size: cover;
 	background-position: bottom;
 }

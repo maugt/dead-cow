@@ -23,7 +23,7 @@ export default class FullAbout extends Component {
 							</div>
 							<div className="section">
 								<h2><span id="about-concept" > </span>About The Concept </h2>
-								<img alt="" src='/assets/Salsa.jpg' />
+								<img alt="" src='/assets/salsa.jpg' />
 								<Markdown source={concept} />
 							</div>
 							<div className="section">
