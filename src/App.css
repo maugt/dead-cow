@@ -17,13 +17,15 @@ body {
   body h1 {
     font-size: 32px; }
   body h2 {
-    font-size: 24px; }
+    font-size: 26px; }
   body h3 {
     display: inherit;
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 17px; }
+  body h4 {
+    font-size: 20px; }
   body p {
     line-height: 1.5em; }
 
@@ -61,11 +63,11 @@ h2 {
   grid-template-columns: 1fr 1000px 1fr; }
   .page-header img {
     opacity: .6;
-    grid-row: 1 / -1;
+    grid-row: 1 / 5;
     grid-column: 1 / span 3;
-    object-fit: cover;
-    width: 100%;
-    z-index: 0; }
+    height: 100%;
+    z-index: 0;
+    object-fit: cover; }
   .page-header h1, .page-header h3 {
     grid-column: 2 / span 1;
     z-index: 100;
@@ -370,6 +372,11 @@ footer {
 @media (max-width: 680px) {
   .mobile {
     display: inherit; }
+  .page-header {
+    grid-template-columns: 50px 1fr 50px;
+    height: 270px; }
+  .page-content img {
+    height: 150px; }
   .nav {
     flex-direction: column;
     padding: 0; }
@@ -378,7 +385,7 @@ footer {
       flex-direction: column;
       align-items: center;
       transition: all .25s;
-      height: 200px; }
+      height: 220px; }
     .nav .collapsed {
       padding: 0;
       height: 0;
@@ -393,17 +400,17 @@ footer {
       flex-direction: column;
       align-items: center; }
     .nav .navigation {
-      margin-bottom: 10px; }
+      margin-bottom: 5px; }
       .nav .navigation ul {
         padding: 0;
         display: flex;
         flex-direction: column;
         align-items: center; }
         .nav .navigation ul li {
-          margin: 0; }
+          margin: 3px 0; }
     .nav .social {
       padding: 0;
-      margin: 10px 0; }
+      margin: 15px 0; }
       .nav .social img {
         width: 25px;
         height: 25px;
@@ -452,10 +459,13 @@ footer {
       padding: 0; }
     .cover .info *:not(:last-child):after {
       content: none; }
-  .full-menu .menu-item {
-    width: 100%; }
-    .full-menu .menu-item:nth-child(n) {
-      padding: 0; }
+  .container {
+    padding: 0 50px; }
+  .menu ul {
+    grid-template-columns: 1fr;
+    grid-row-gap: 15px; }
+  .about-snippets {
+    grid-template-columns: 1fr; }
   .footer {
     flex-direction: column;
     align-items: center;

@@ -55,7 +55,6 @@ export default class FullMenu extends Component {
 				<div className="section">
 					<div className="container">
 						<div className="page-content">
-
 							<Markdown source={bodegaMenu} />
 						</div>
 					</div>
