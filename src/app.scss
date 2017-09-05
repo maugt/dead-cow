@@ -104,7 +104,8 @@ h2{
 		opacity: .6;
 		grid-row: 1 / 5;
 		grid-column: 1 / span 3;
-		height: 100%;
+		width: 100%;
+		min-height: 100%;
 		z-index: 0;
 		object-fit: cover;
 	}
