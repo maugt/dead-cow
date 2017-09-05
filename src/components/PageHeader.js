@@ -6,7 +6,7 @@ export default class ContactInfo extends Component {
 	render() {
 		return (
 			<div className="page-header">
-				<img src={"/assets/" + this.props.img + ".jpg"} alt="" />
+				<img src={"assets/" + this.props.img + ".jpg"} alt="" />
 				<MobileToggleSwitch />
 
 				<h1>{this.props.title}</h1>
