@@ -7,7 +7,7 @@ $page-section-vertical-margin: 40px;
 $container-width: 1000px;
 
 .space{
-	height: 11vh;
+	height: 75px;
 	background: $dark;
 }
 
@@ -119,13 +119,6 @@ h2{
 		grid-row: 3/ span 1;
 	}
 
-	.toggleSwitch{
-		grid-row: 1;
-		grid-column: 2;
-		justify-content: center;
-		z-index: 200;
-	}
-
 	
 }
 
@@ -178,12 +171,11 @@ h2{
 .nav {
 	box-shadow: 0 0 5px $dark;
 	transition: height .25s;
-	height: 11vh;
-	min-height: 75px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	padding-bottom: 5px;
+	padding-top: 15px;
+	padding-bottom: 20px;
 	background: $dark;
 	color: $light;
 	position: fixed;
@@ -254,8 +246,6 @@ h2{
 }
 
 .shrink{
-	height: 0px;
-	min-height: 55px;
 	h1{
 		font-size: 20px;
 	}
@@ -572,60 +562,108 @@ footer{
 // mobile
 @media (max-width: 680px) {
 
-	.nav{
-		position: relative;
-	}
-
-	.small {
-		display: none;
-	}
-
-	.mobile {
+	.mobile{
 		display: inherit;
 	}
 
-	.container {
-		display: flex;
+	.nav{
 		flex-direction: column;
-		padding: 0 50px;
-	}
+		padding: 0;
 
-	.toggleSwitch {
-		a {
-			color: $light;
-			cursor: pointer;
-			font-size: 35px;
+		.container{
+			padding: 25px 0;
+			flex-direction: column;
+			align-items: center;
+			transition: all .25s;
+			height: 200px;
 		}
-		width: 100%;
-		justify-content: center;
-		margin-top: 15px;
+		.collapsed{
+			padding: 0;
+			height: 0;
+			overflow: hidden;
+		}
+
+		a{
+			font-size: 25px;
+		}
+
+		.nav-title{
+			margin-bottom: 10px;
+
+			h1{
+				font-size: 30px;
+			}
+		}
+		.links{
+			flex-direction: column;
+			align-items: center;
+		}
+		
+		.navigation{
+			margin-bottom: 10px;
+
+			
+			ul{
+				padding: 0;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				li{
+					margin: 0;
+				}
+			}
+		}
+
+		.social{
+			padding: 0;
+			margin: 10px 0;
+
+
+			img{
+				width: 25px;
+				height: 25px;
+				margin: 0 5px;
+			}
+		}
+
+		.toggleSwitch{
+			img{
+				width: 60px;
+			}
+			padding: 10px;
+		}
 	}
 
 	.cover {
-
-		
 		.logo {
-			width: 170px;
-			height: 170px;
-			margin-top: 25px;
+			width: 210px;
+			height: 210px;
+			margin-top: 60px;
+			margin-bottom: 0px;
 		}
 		
 		.container {
-			height: 100vh;
 			box-sizing: border-box;
 			justify-content: space-between;
+			height: 50vh;
 		}
 
 		.front-matter {
 			display: flex;
 			flex-direction: column;
 			justify-content: flex-start;
+			align-items: center;
 			margin-top: 0;
 			padding: 0;
 		}
 
+		.cover-text{
+			text-align: center;
+		}
+
 		.slogan {
-			font-size: 30px;
+			margin-top: 25px;
+			font-size: 25px;
 			margin-right: 0;
 			text-align: center;
 		}
@@ -668,69 +706,6 @@ footer{
 		}
 	}
 
-	.nav {
-		overflow: hidden;
-		width: 100%;
-		height: 230px;
-		padding: 0;
-		background: $dark;
-		*{
-			color: $light;
-		}
-
-		.container {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-		}
-
-		.links {
-			flex-direction: column;
-			align-items: center;
-		}
-
-		.navigation {
-			* {
-				font-size: 20px;
-			}
-		}
-
-		h1 {
-			margin-top: 0;
-			margin-bottom: 10px;
-		}
-
-		.navigation {
-			ul {
-				display: flex;
-				flex-direction: column;
-				margin-top: 0;
-				padding: 0;
-				align-items: center;
-
-				li {
-					font-size: 20px;
-					margin-bottom: 10px;
-					margin-left: 0;
-				}
-			}
-		}
-
-		.social {
-			margin: 0;
-
-			img {
-				width: 20px;
-				height: 20px;
-			}
-		}
-	}
-
-	.nav.collapsed {
-		height: 0;
-		min-height: 0;
-	}
-
 	.footer {
 		flex-direction: column;
 		align-items: center;
@@ -745,9 +720,6 @@ footer{
 			text-align: center;
 			// align-items: center;
 		}
-	}
-	.space{
-		display: none;
 	}
 
 }

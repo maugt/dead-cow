@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import VarStore from "../stores/VarStore"
 import NavLinks from "../components/NavLinks"
 import SocialLinks from '../components/SocialLinks'
+import MobileToggleSwitch from '../components/MobileToggleSwitch'
 
 export default class Nav extends Component {
 
@@ -15,8 +16,10 @@ export default class Nav extends Component {
 	}
 
 	handleScroll() {
+
 		this.setState({
-			shrink: window.scrollY > 10
+			shrink: window.scrollY > 10,
+			navIsOpen: false
 		})
 	}
 
@@ -30,17 +33,18 @@ export default class Nav extends Component {
 		this.setState({ navIsOpen: VarStore.navIsOpen, isLoggedIn: VarStore.isLoggedIn })
 	}
 
-
-
-	getStyles() {
-		let styles = ""
-		if (!this.state.navIsOpen) {
-			styles += " collapsed"
-		}
+	getShrink() {
 		if (this.state.shrink) {
-			styles += " shrink"
+			return " shrink"
 		}
-		return styles
+		return ""
+	}
+
+	getCollapsed() {
+		if (!this.state.navIsOpen) {
+			return " collapsed"
+		}
+		return ""
 	}
 
 	renderPrivateLink(link) {
@@ -56,8 +60,8 @@ export default class Nav extends Component {
 
 	render() {
 		return (
-			<div className={"nav" + this.getStyles()}>
-				<div className="container">
+			<div className={"nav" + this.getShrink()}>
+				<div className={"container" + this.getCollapsed()}>
 					<div className="nav-title">
 						<a id="nav-title" href="/">
 							<h1>Dead Cow</h1>
@@ -69,6 +73,7 @@ export default class Nav extends Component {
 						<SocialLinks />
 					</div>
 				</div>
+				<MobileToggleSwitch />
 			</div>
 		)
 	}

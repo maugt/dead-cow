@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import MobileToggleSwitch from '../components/MobileToggleSwitch'
 
 export default class Cover extends Component {
 
@@ -10,10 +9,7 @@ export default class Cover extends Component {
 					<div className="wrapper">
 						<div className="container">
 							<div className="front-matter">
-								<MobileToggleSwitch />
-								<h1 className="mobile">Dead Cow</h1>
-								<img className="logo small" src="/assets/logo-light.png" alt="The Dead Cow at The Tannery logo" />
-								<img className="logo mobile" src="/assets/icon-light.png" alt="Dead Cow at The Tannery Logo" />
+								<img className="logo" src="/assets/logo-light.png" alt="The Dead Cow at The Tannery logo" />
 								<div className="cover-text">
 									<h2 className='slogan'>Decidedly Local,<br />Aggresively Seasonal</h2>
 									<h4>NOW OPEN!</h4>
