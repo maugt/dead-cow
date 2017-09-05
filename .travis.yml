@@ -5,14 +5,12 @@ dist: trusty
 branches:
   only:
   - staging
-script:
+
+before_deploy: 
 - npm run build
-before_script:
-- npm install -g firebase-tools
-script:
-- npm run build
-after_success:
-- firebase deploy --token=${FIREBASE_API_TOKEN} -P staging
-env:
-  global:
-  - secure: AXHVGYkAd/f0dhqHDLtSEzpUyA+EFGUzU2+bPbhw4BQthiJMW+KGos8wMK0Q/5EURhqrN3BpugUEhnQw4w0pEfc6H9BFaqGYcbcAHSnYtcZXnYo51iJBZ97a/t4cQlrmKRar7kwJRMnsiBrzoeoW2oA2tfHNwcSkUBWGmbiDTyYDLr3MvQRpXYvaWl0POFeiAkuYkSNtvziuDXVLNIJ1QKPBEMC6hV/e//E9XNur3lhxROouIAsQ1zZCXUamESeDr7Ddx3tStehfnS7Deefta1gFUI+BtCe7t7XuBuz1mz/3ZtNX7B78fQ3pOjPmiF0+HdW41/HNmcIiFiGMKfm/uyKEu7X66MGtLB9bPR7xRB8K6AHPI+1yxOjDK1wYMzzgMc2psaPUPWyvZtP4brijkJ1ZI9nfWsBGOwDB8VkdyUBsCLlBUnuNT4Ka8aDH9TETQnYvEYeMYA182uRog56vPQZpqQJBkkCbHUctjS2UBHbLyqhueEjx3d3yghBlQn/vC2f17tD+W74dtKlgVrfJaLDx38+cLYO0a7jbSvlUh1HrARycfN9KbNeDGJb1it/DPwo6t6tnKPnKHKywSePkF8rLHB6CkUWL6Nz7wRGQWqwSwzd0tdZ+vxi7A5/7UewZhJIQCWiOXvSQGIIZ+Mt7OV9I5DaoBwLZcjEKaDoUlD0=
+
+deploy: 
+  provider: firebase
+  token:
+    secure: AXHVGYkAd/f0dhqHDLtSEzpUyA+EFGUzU2+bPbhw4BQthiJMW+KGos8wMK0Q/5EURhqrN3BpugUEhnQw4w0pEfc6H9BFaqGYcbcAHSnYtcZXnYo51iJBZ97a/t4cQlrmKRar7kwJRMnsiBrzoeoW2oA2tfHNwcSkUBWGmbiDTyYDLr3MvQRpXYvaWl0POFeiAkuYkSNtvziuDXVLNIJ1QKPBEMC6hV/e//E9XNur3lhxROouIAsQ1zZCXUamESeDr7Ddx3tStehfnS7Deefta1gFUI+BtCe7t7XuBuz1mz/3ZtNX7B78fQ3pOjPmiF0+HdW41/HNmcIiFiGMKfm/uyKEu7X66MGtLB9bPR7xRB8K6AHPI+1yxOjDK1wYMzzgMc2psaPUPWyvZtP4brijkJ1ZI9nfWsBGOwDB8VkdyUBsCLlBUnuNT4Ka8aDH9TETQnYvEYeMYA182uRog56vPQZpqQJBkkCbHUctjS2UBHbLyqhueEjx3d3yghBlQn/vC2f17tD+W74dtKlgVrfJaLDx38+cLYO0a7jbSvlUh1HrARycfN9KbNeDGJb1it/DPwo6t6tnKPnKHKywSePkF8rLHB6CkUWL6Nz7wRGQWqwSwzd0tdZ+vxi7A5/7UewZhJIQCWiOXvSQGIIZ+Mt7OV9I5DaoBwLZcjEKaDoUlD0=
+  message: Zoom! There it goes!
