@@ -33,7 +33,7 @@ export default class FullMenu extends Component {
 		document.title = "Dead Cow - Menus"
 		return (
 			<div className="menu">
-				<PageHeader img="veggies" title="Menus" />
+				<PageHeader img="colored-veggies" title="Menus" />
 				<div className="section">
 					<div className="container">
 						<div className="page-content">
