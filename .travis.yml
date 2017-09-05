@@ -2,11 +2,9 @@ language: node_js
 node_js:
 - '7'
 dist: trusty
-
-before_deploy: 
+before_deploy:
 - npm run build
-
-deploy: 
+deploy:
 - provider: firebase
   skip_cleanup: true
   token:
@@ -15,3 +13,6 @@ deploy:
   message: Staged!
   on:
     branch: staging
+notifications:
+  slack:
+    secure: JhLz/TNH7v5BgTwIMoC200jaJx+CrxRfjUc0MMYriK+wq6Ydrnx3wQUQNNIq3zu35aiAarAZyiZvkG4c1/oYwbIVvw3QiJ1zrzjwMmgmarVVF67G//qun746x/bPzSH4Cb6B8zXVA6cH/0hxaq8NnQDRYHmrLuF4dKn9/zuwH97BqRkcpyOFmcKRu22GPSpQgmAKzicU6KFaLVMusABrs6mYecqlmSqrGlSZaK5O9TGlhga9c/efhGzHy7s3RsqZJmfZA2Wv6m0HQlMZvhfTynRXQIPQFDLpFW2BOlikT6HP62mESFPNNwc1ai9NIf9dlb8Je0V+whQ7geWsuOjGknCxeajq84I8q/vClEcG/vONcyOU9oUe4qx5el7zMd3ZSqpKTSkfhhrQ2HBwQ/RnTNnXCunkkJz54FAI2h2vJdEI2RCRM6df4EPURnWw0Zavhd6dyoRjeldkhs5mi1zAR+O8gsA/LBI5vmmE8thGDOeCZ3VybGVAu4qhUjoh0isN+6PcbrMy+B8a7RLnq+P978hTjXSf70jjZWFExcuvM8B/AtI9GDRRYngikNiEgcN6CbXxk7fWW4T8Oiq0LY+htF467dIsKejdWrONvhMAw8wWJUqXDFODC64kUQhXrLtvt1FCmu+JM6WzaHHqU0+1Cfqo0aIzdAvHEzQCGXTCu7k=
