@@ -8,32 +8,32 @@ import chef from '../text/about-chef.md'
 
 export default class FullAbout extends Component {
 
-	render() {
-		document.title = "Dead Cow - About"
-		return (
-			<div className="about">
-				<PageHeader img="chips-and-salsa" title="About" subtitle="Decidedly Local & Aggressively Seasonal" />
-				<div className="full-about">
-					<div className="container">
-						<div className="page-content">
-							<div className="section">
-								<h2><span id="about-name" > </span>About The Name</h2>
-								<img alt="" src='/assets/salz-tannery.png' />
-								<Markdown source={name} />
-							</div>
-							<div className="section">
-								<h2><span id="about-concept" > </span>About The Concept </h2>
-								<img alt="" src='/assets/chips-and-salsa.jpg' />
-								<Markdown source={concept} />
-							</div>
-							<div className="section">
-								<h2><span id="about-chef" > </span>About The Chef</h2>
-								<Markdown source={chef} />
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		)
-	}
+  render () {
+    document.title = 'Dead Cow - About'
+    return (
+      <div className='about'>
+        <PageHeader img='salad' title='About' subtitle='Decidedly Local & Aggressively Seasonal' />
+        <div className='full-about'>
+          <div className='container'>
+            <div className='page-content'>
+              <div className='section'>
+                <h2><span id='about-name' ></span>The Name</h2>
+                <img alt='' src='/assets/salz-tannery.png' />
+                <Markdown source={name} />
+              </div>
+              <div className='section'>
+                <h2><span id='about-concept' ></span>The Concept</h2>
+                <img alt='' src='/assets/salad.jpg' />
+                <Markdown source={concept} />
+              </div>
+              <div className='section'>
+                <h2><span id='about-chef' ></span>The Chef</h2>
+                <Markdown source={chef} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    )
+  }
 }
