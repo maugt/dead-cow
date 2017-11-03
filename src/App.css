@@ -190,9 +190,13 @@ h2 {
   .cover h4 {
     font-family: 'Gloria Hallelujah';
     font-size: 40px;
-    margin-top: 0;
+    margin-top: 20px;
     color: #6dcff6;
     text-shadow: 0 0 2px #6dcff6; }
+  .cover .chalkBoard {
+    font-family: 'Gloria Hallelujah';
+    font-size: 24px;
+    width: 400px; }
   .cover .slogan {
     font-size: 35px;
     font-weight: normal;
