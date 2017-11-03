@@ -1,49 +1,49 @@
-The Bodega supports our local community with an array of retail convenience items as well as a full lunch menu includes hot flatbread pizzas, and an array of soups, sandwiches and salads with something to satisfy every craving. 
+The Dead Cow features a full lunch menu that includes hot flatbread pizzas, and an array of soups, sandwiches and salads with something to satisfy every craving.
 
-Fresh-made from scratch in-house, our flatbreads, sandwiches and salads use local, sustainable, organic ingredients whenever possible and our ingredients change with the freshest in season produce.
+Fresh-made from scratch in-house, our flatbreads, sandwiches and salads use local, sustainable, organic ingredients whenever possible and our ingredients change with the freshest in season produce. 
 
-### Sandwiches
-
-Our sandwich selection is ever-changing, but always features a [Selection of the Moment](#) in each of the following four sandwich categories:
-- **Grazers** vegetarian/vegan sandwiches where you’ll never miss the meat
-- **Swimmers** all manner of pescatarian pleasures
-- **Clucks** lighter meat offerings with the perfect balance of proteins and vegetables
-- **Meat Lovers** indulge in your favorite responsibly-sourced animal proteins
-
-
-### Salads
-Our salad rotations accommodate many dietary restrictions, and are primarily vegan or vegetarian (as labeled). Animal proteins are (generally) optional. You’re sure to find something in Selections of the Moment to fit your appetite in one of our four salad categories:
-- **Pasta** prepared with fresh seasonal produce and house-made sauces
-- **Pulse** gluten-free legumes packed with vegetable proteins
-- **Grain** a variety of non-GMO seeds as a base for a filling seasonal plate
-- **Green** leafy greens direct from Salinas Valley with a perfect combination of mild, crisp, bitter, tart and peppery flavors and fresh, seasonal compliments
-
-All dressings are made in-house and can be purchased separately. 
 
 ### Flatbreads
-Creative preparations baked fresh in our 700ºf pizza oven
-- **Caprese** seasonal tomatoes, fresh mozzarella, basil
-- **Pepperoni** tomato sauce, local uncured pepperoni, mozzarella
-- **Pesto** house-made pesto, balsamic onions, roasted red peppers, chicken, romano-pecorino
-- **Piadini** flatbread lightly grilled with olive oil, topped with meat, cheese, and leafy greens, then folded like a taco 
+Try it “Piadina Style” with fresh greens! 
 
+- **Caprese** season’s best fresh roma tomatoes, fresh mozzarella, pesto (basil, extra-virgin olive oil, parmesan cheese)
+- **Pepperoni** red sauce (tomatoes, garlic, extra-virgin olive oil), pepperoni, shredded mozzarella
+- **Pesto Veggie** fresh mozzarella, roasted red peppers, spinach, romano-pecorino.
+- **BBQ Chicken** bbq sauce, chicken, pickled red onion, shredded mozzarella
+- **Pork & Apple** red sauce, canadian bacon, apple, shredded mozzarella
 
-### Deli
-Our deli case holds a selection of quick bites for patrons on the go.    
-Stop in for pre-made rotating salad selections, or any of our standard baguettes:
-- **The Monet** *(Jambon-Beurre/Jambon-Fromage)* simple ham & butter on francese baguette, plain or with cheese
-- **The Gauguin** *(Thon-Crudités-Oeufs)* tuna, lettuce, tomato and hard-boiled eggs on francese baguette
-- **The Pépin** *(Poulet-Crudités)* chicken, lettuce and tomato on sourdough baguette
-- **The van Dijck** *(Saucisson Sec)* uncured local hard sausage on sourdough baguette
-- **The Linh Chi** *(Bánh Mì)* tofu, pork, or chicken with shredded pickle, cucumbers, and cilantro on sweet french baguette
-- **The Picasso** *(Pan Bagnat)* tomatoes, olives, roasted peppers, garlic and olive oil on hearty country wheat baguette
+### Baguettes
+These simple sandwich options are always ready to go from our deli case
+available as Half or Whole. 
 
-### Bar
-Beer and Wine service begins at 11am.
+- **The Monet** (Jambon Beurre/Jambon Fromage)
+ham & butter, or ham & cheese
+- **The Van Dijck** (Saucisson Sec)
+sliced hard sausage, cornichon, pickled red onion
+- **The Pépin** (Poulet Crudités)
+Rosie’s Organic roasted chicken breast, romaine lettuce, sliced heirloom tomatoes from Post Street Farms
+- **The Picasso** (Caprese) 
+tomatoes, fresh mozzarella, pesto
+
+### Specialties of the moment
+Seasonal ingredients, made with love
+
+- **The Shalom Panini** smoked Corralitos turkey with apples, carrots, spinach and fresh mozzarella on Golden Sheaf sliced sourdough. Dressed with coconut oil, honey, and a splash of Sriracha and toasted.
+- **Pasta Antipasti Salad** penne pasta with pickled vegetables in a tangy dressing.   
+Available in Single or Sharing portions.
+- **Quinoa & Kale Salad** quinoa, roasted garlic, kale, artichoke hearts, sun-dried tomatoes, dressed with lemon and extra-virgin olive oil.    
+Available in Single or Sharing portions.
+- **Chopped Veggie Salad** Earthbound Farms organic romaine, Post Street Farms squash, cucumber, carrot, red onion, baby bell pepper, radish, dressed with house-made Vidalia Onion dressing.    
+Available in Single or Sharing portions.
+- **Vegetable Barley Soup** barley, carrots, zucchini, corn, onions in tomato vegetable broth, 100% organic.
+
 
 ### Nibbles
 For a quick bite or lighter fare, we offer a rotating selection of
 - **Mixed Nuts** House-made sweet or savory
-- **Dips & Chips** creative mixtures and conveyors 
-- **Pickles** the season's best produce preserved at the peak of flavor
+- **Dips & Chips** creative mixtures and conveyors, come into the cafe to see what we’re serving this week!
+- **Pickles** the season's best produce preserved at the peak of flavor, in sweet and sour varieties
 - **Charcuterie** local cured meats and cheeses
+
+### Dessert
+House-made specials of the moment round out your dining experience, or finish with your selection of local artisan cheeses served with biscuits and fruit compote
