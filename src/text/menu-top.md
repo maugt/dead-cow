@@ -2,4 +2,4 @@ The Dead Cow is “Decidedly Local & Aggressively Seasonal.” We’re lucky to 
 
 Read through a description of our menu below, or check out our Seasonal Selections for our current menu items and Specials of the Moment. Our food is casual European-inspired “bistro” cuisine with a multi-ethnic California flair.
 
-The Dead Cow is opening in stages, some items may not yet be available. Evening service will be available by announcement, check out our [Facebook Page](https://www.facebook.com/deadcowsc) for details!
+The Dead Cow is opening in stages, some items may not yet be available. Evening service will be available by announcement, check out our [Facebook Page](http://www.facebook.com/deadcowsc) for details!
