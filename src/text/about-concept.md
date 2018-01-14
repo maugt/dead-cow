@@ -1,5 +1,5 @@
 Driven by the Farm-to-Table philosophy of Chef Shannon Madison, our Mission is to serve the Santa Cruz Tannery Arts Center as a family and artist-friendly food and beverage community gathering place. We create local, organic, sustainable menus that are vegan first, using dairy for flavor enhancement, with a reduced emphasis on animal proteins. We offer casual preparations but employ fine-dining attention to detail and quality. Our plates are inspired by the mediterranean climate and produce of California. We strive to provide a welcoming venue with a great tasting food and beverage draw, while catering to popular dietary restrictions with locally and sustainably-sourced, healthy preparations.
-The Dead Cow supports the Tannery community with product offerings that enhance the lives of both residents and tenants, with nourishing meals, restorative beverages, and retail necessities.
+Bistro One Twelve supports the Tannery community with product offerings that enhance the lives of both residents and tenants, with nourishing meals, restorative beverages, and retail necessities.
 
 Our morning food and beverage program starts you day with high quality coffee drinks, breakfast foods for dining on premises or to-go, and a comfortable environment with wifi and power for our working/studying patrons.  
     
