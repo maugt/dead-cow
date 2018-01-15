@@ -1,19 +1,25 @@
-The Dead Cow features a full lunch menu that includes hot flatbread pizzas, and an array of soups, sandwiches and salads with something to satisfy every craving.
+Bistro One Twelve features a full lunch menu that includes classic french-style baguette sandwiches, artisanal flatbread pizzas, and seasonal soups and salads with something to satisfy every craving.
 
-Fresh-made from scratch in-house, our flatbreads, sandwiches and salads use local, sustainable, organic ingredients whenever possible and our ingredients change with the freshest in season produce. 
+Fresh-made from scratch in-house, our flatbreads, sandwiches and salads use local, sustainable, organic ingredients whenever possible. Our ingredients change with the freshest in-season produce. 
 
+### Specialties of the Moment
+Seasonal ingredients, made with love
+
+- **The Bistro Reubin Panini** El Salchichero lean smoked pastrami, cole slaw, swiss cheese, bbq ranch on Santa Cruz sliced sourdough, grilled on our panini press.
+
+- **Kerala Kichari Stew**
+masoor dal, channa, rajma, rice, carrot, onion, tomato, spinach, ginger, cleansing curry spices (not spicy!), garnished with cilantro
 
 ### Flatbreads
 Try it “Piadina Style” with fresh greens! 
 
-- **Caprese** season’s best fresh roma tomatoes, fresh mozzarella, pesto (basil, extra-virgin olive oil, parmesan cheese)
-- **Pepperoni** red sauce (tomatoes, garlic, extra-virgin olive oil), pepperoni, shredded mozzarella
-- **Pesto Veggie** fresh mozzarella, roasted red peppers, spinach, romano-pecorino.
-- **BBQ Chicken** bbq sauce, chicken, pickled red onion, shredded mozzarella
-- **Pork & Apple** red sauce, canadian bacon, apple, shredded mozzarella
+- **Margherita** organic, vine-ripened tomatoes, fresh mozzarella, finished with balsamic glaze
+- **Salsiccia** red sauce (tomatoes, garlic, extra-virgin olive oil), dry-cured sausage, shredded mozzarella, oregano
+- **alla Fiamma** nut-free pesto (basil, parmesan, olive oil, garlic)and fresh mozzarella, with roasted vegetables including red peppers, spinach, and mushrooms, finished with pecorino-romano. [Vegans: omit pesto & cheese]
+- **Pulcino** red sauce, shredded chicken breast, pickled red onion, shredded mozzarella, cilantro
 
-### Baguettes
-These simple sandwich options are always ready to go from our deli case
+### French-Style Baguettes
+Deliberately simple sandwiches bursting with fresh flavors, 
 available as Half or Whole. 
 
 - **The Monet** (Jambon Beurre/Jambon Fromage)
@@ -21,29 +27,28 @@ ham & butter, or ham & cheese
 - **The Van Dijck** (Saucisson Sec)
 sliced hard sausage, cornichon, pickled red onion
 - **The Pépin** (Poulet Crudités)
-Rosie’s Organic roasted chicken breast, romaine lettuce, sliced heirloom tomatoes from Post Street Farms
+local, organic roasted chicken breast, romaine lettuce, sliced heirloom tomatoes from Post Street Farms
+- **The Audubon** (La Dinde Brie)
+Corralitos smoked turkey, fig jam, full cream brie
 - **The Picasso** (Caprese) 
 tomatoes, fresh mozzarella, pesto
+- **The Linh Chi** (Bánh Mì) 
+tofu or chicken with pickled carrot, daikon, cucumber, and cilantro dressed with hoisin mayo and jalapeños on the side [vegans: omit mayo]
 
-### Specialties of the moment
+
+### Salads
 Seasonal ingredients, made with love
 
-- **The Shalom Panini** smoked Corralitos turkey with apples, carrots, spinach and fresh mozzarella on Golden Sheaf sliced sourdough. Dressed with coconut oil, honey, and a splash of Sriracha and toasted.
-- **Pasta Antipasti Salad** penne pasta with pickled vegetables in a tangy dressing.   
-Available in Single or Sharing portions.
-- **Quinoa & Kale Salad** quinoa, roasted garlic, kale, artichoke hearts, sun-dried tomatoes, dressed with lemon and extra-virgin olive oil.    
-Available in Single or Sharing portions.
-- **Chopped Veggie Salad** Earthbound Farms organic romaine, Post Street Farms squash, cucumber, carrot, red onion, baby bell pepper, radish, dressed with house-made Vidalia Onion dressing.    
-Available in Single or Sharing portions.
-- **Vegetable Barley Soup** barley, carrots, zucchini, corn, onions in tomato vegetable broth, 100% organic.
-
+- **Quinoa & Kale Salad** quinoa, roasted garlic, kale, artichoke hearts, sun-dried tomatoes, dressed with lemon and extra-virgin olive oil
+- **Classic Caesar Salad** Earthbound Farms organic romaine, fresh-baked seasoned croutons, asiago cheese, house-made caesar dressing (garlic, worchestershire, lemon juice, red wine vinegar, dijon mustard, extra virgin olive oil, parmesan cheese, anchovies)
+- **Bistro Coleslaw** red and green cabbage, shredded carrots, sweet onion, celery seeds, with a light vinegar & oil dressing
 
 ### Nibbles
 For a quick bite or lighter fare, we offer a rotating selection of
-- **Mixed Nuts** House-made sweet or savory
+- **Mixed Nuts** a selection of sweet and savory house-made nuts
 - **Dips & Chips** creative mixtures and conveyors, come into the cafe to see what we’re serving this week!
-- **Pickles** the season's best produce preserved at the peak of flavor, in sweet and sour varieties
-- **Charcuterie** local cured meats and cheeses
+- **Pickles** the season's best produce, preserved at the peak of flavor, in sweet and sour varieties
+- **Charcuterie** local cured meats from El Salchichero, paired with gourmet cheeses
 
 ### Dessert
 House-made specials of the moment round out your dining experience, or finish with your selection of local artisan cheeses served with biscuits and fruit compote
