@@ -64,7 +64,7 @@ export default class Nav extends Component {
 				<div className={"container" + this.getCollapsed()}>
 					<div className="nav-title">
 						<a id="nav-title" href="/">
-							<h1>Dead Cow</h1>
+							<h1>Bistro One Twelve</h1>
 							<h3>at The Tannery</h3>
 						</a>
 					</div>

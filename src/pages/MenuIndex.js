@@ -30,14 +30,14 @@ export default class FullMenu extends Component {
 
 	render() {
 
-		document.title = "Dead Cow - Menus"
+		document.title = "Bistro One Twelve - Menus"
 		return (
 			<div className="menu">
 				<PageHeader img="colored-veggies" title="Menus" />
 				<div className="section">
 					<div className="container">
 						<div className="page-content">
-							<h2>The Dead Cow Cuisine</h2>
+							<h2>Bistro Cuisine</h2>
 							<Markdown source={menuTop} />
 						</div>
 					</div>
