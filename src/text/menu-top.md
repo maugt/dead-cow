@@ -2,4 +2,4 @@ Bistro One Twelve is “Decidedly Local & Aggressively Seasonal.” We’re luck
 
 Read through a description of our menu below, or check out our Seasonal Selections for our current menu items and Specials of the Moment. Our food is casual European-inspired “bistro” cuisine with a multi-ethnic California flair.
 
-Bistro One Twelve is aggressively seasonal, some items may not be available. Evening service will be available by announcement, check out our [Facebook Page](http://www.facebook.com/deadcowsc) for details!
+Bistro One Twelve is aggressively seasonal, some items may not be available. Evening service will be available by announcement, check out our [Facebook Page](http://www.facebook.com/bistro112sc) for details!
