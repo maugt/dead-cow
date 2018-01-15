@@ -2,10 +2,10 @@ Bistro One Twelve features a full lunch menu that includes classic french-style 
 
 Fresh-made from scratch in-house, our flatbreads, sandwiches and salads use local, sustainable, organic ingredients whenever possible. Our ingredients change with the freshest in-season produce. 
 
-### Specialties of the moment
+### Specialties of the Moment
 Seasonal ingredients, made with love
 
-- **The Bistro Reubin Panini** El Sachichero lean smoked pastrami, cole slaw, swiss cheese, bbq ranch on Corralitos on Santa Cruz sliced sourdough, grilled on our panini press.
+- **The Bistro Reubin Panini** El Salchichero lean smoked pastrami, cole slaw, swiss cheese, bbq ranch on Santa Cruz sliced sourdough, grilled on our panini press.
 
 - **Kerala Kichari Stew**
 masoor dal, channa, rajma, rice, carrot, onion, tomato, spinach, ginger, cleansing curry spices (not spicy!), garnished with cilantro
@@ -36,18 +36,18 @@ tomatoes, fresh mozzarella, pesto
 tofu or chicken with pickled carrot, daikon, cucumber, and cilantro dressed with hoisin mayo and jalapeños on the side [vegans: omit mayo]
 
 
-##Salads
+### Salads
 Seasonal ingredients, made with love
 
-- **Quinoa & Kale Salad** quinoa, roasted garlic, kale, artichoke hearts, sun-dried tomatoes, dressed with lemon and extra-virgin olive oil.    
-- **Classic Caesar Salad** Earthbound Farms organic romaine, fresh-baked seasoned croutons, asiago cheese, house-made caesar dressing (garlic, worchestershire, lemon juice, red wine vinegar, dijon mustard, extra virgin olive oil, parmesan cheese, anchovies).
+- **Quinoa & Kale Salad** quinoa, roasted garlic, kale, artichoke hearts, sun-dried tomatoes, dressed with lemon and extra-virgin olive oil
+- **Classic Caesar Salad** Earthbound Farms organic romaine, fresh-baked seasoned croutons, asiago cheese, house-made caesar dressing (garlic, worchestershire, lemon juice, red wine vinegar, dijon mustard, extra virgin olive oil, parmesan cheese, anchovies)
 - **Bistro Coleslaw** red and green cabbage, shredded carrots, sweet onion, celery seeds, with a light vinegar & oil dressing
 
 ### Nibbles
 For a quick bite or lighter fare, we offer a rotating selection of
 - **Mixed Nuts** a selection of sweet and savory house-made nuts
 - **Dips & Chips** creative mixtures and conveyors, come into the cafe to see what we’re serving this week!
-- **Pickles** the season's best produce preserved at the peak of flavor, in sweet and sour varieties
+- **Pickles** the season's best produce, preserved at the peak of flavor, in sweet and sour varieties
 - **Charcuterie** local cured meats from El Salchichero, paired with gourmet cheeses
 
 ### Dessert
