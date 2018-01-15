@@ -27,8 +27,8 @@ A graceful style that's medium-weight, with spicy, floral flavors of wilted rose
 
 ### Beer
 - **From our local brewers**
-*South Forty (Pale Ale)*
-Corralitos Brewing Co, Corralitos, CA
+- **South Forty (Pale Ale)**
+*Corralitos Brewing Co, Corralitos, CA*
 ABV: 5.6%, 47 IBUs
 This year round offering is well balanced with Pale, Munich and Crystal malts and features Summit hops.
 - **Richter Red (American Amber/Red Ale)**
