@@ -9,7 +9,7 @@ import chef from '../text/about-chef.md'
 export default class FullAbout extends Component {
 
 	render() {
-		document.title = 'Dead Cow - About'
+		document.title = 'Bistro One Twelve - About'
 		return (
 			<div className='about'>
 				<PageHeader img='salad' title='About' subtitle='Decidedly Local & Aggressively Seasonal' />
@@ -22,7 +22,7 @@ export default class FullAbout extends Component {
 								<Markdown source={name} />
 							</div>
 							<div className='section'>
-								<h2><span id='about-concept' ></span>The Dead Cow Cuisine</h2>
+								<h2><span id='about-concept' ></span>Bistro Cuisine</h2>
 								<img alt='' src='/assets/salad.jpg' />
 								<Markdown source={concept} />
 							</div>

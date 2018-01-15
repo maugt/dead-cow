@@ -11,7 +11,7 @@ export default class Footer extends Component {
 			<footer>
 				<div className="container">
 					<div className='footer'>
-						<img className="footer-logo" src="/assets/icon-light.png" alt="Dead Cow at The Tannery Logo" />
+						<img className="footer-logo" src="/assets/icon-light.png" alt="Bistro One Twelve at The Tannery Logo" />
 						<div className="footer-nav">
 							<h3>Navigation</h3>
 							<NavLinks />
