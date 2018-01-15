@@ -15,6 +15,9 @@ export default class Cover extends Component {
 									<h4>NOW OPEN!</h4>
 									<div className="chalkBoard">Breakfast and lunch fare, from 7am to 5:30pm, Monday through Friday.
 Expanded hours coming soon!</div>
+									 <h4>What happened to the cow?!</h4>
+                                                                        <div className="chalkBoard">Read about our name change <a href="about#about-name">here.</a></div>
+
 
 								</div>
 							</div>
