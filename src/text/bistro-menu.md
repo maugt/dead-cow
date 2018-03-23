@@ -1,5 +1,5 @@
 ### Wine
-- **Highlights from California's best wine regions**
+Highlights from California's best wine regions
 - **2015 Joel Gott Pinot Gris**
 *Willamette Valley*
 Aromas of Fuji apple, ripe peach, and honey with floral notes. The wine opens with crisp flavors of Bartlett pear followed by the light sweetness of Honeydew melon, and a long, balanced finish with bright citrus flavors.
@@ -26,7 +26,7 @@ A bouquet bursting with notes of dark fruit and hints of spice leads into a stru
 A graceful style that's medium-weight, with spicy, floral flavors of wilted rose and raspberry. Well-focused and persistent, maintaining its graceful balance and ending clean, with fine-grained tannins.
 
 ### Beer
-- **From our local brewers**
+From our local brewers
 - **South Forty (Pale Ale)**
 *Corralitos Brewing Co, Corralitos, CA*
 ABV: 5.6%, 47 IBUs

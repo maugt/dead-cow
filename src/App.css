@@ -437,7 +437,7 @@ footer {
   .cover .container {
     box-sizing: border-box;
     justify-content: space-between;
-    height: 50vh; }
+    height: 100vh; }
   .cover .front-matter {
     display: flex;
     flex-direction: column;
