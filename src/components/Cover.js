@@ -12,11 +12,11 @@ export default class Cover extends Component {
 								<img className='logo' src='/assets/logo-light.png' alt='Bistro One Twelve at The Tannery logo' />
 								<div className='cover-text'>
 									<h2 className='slogan'>Decidedly Local,<br />Aggressively Seasonal</h2>
-									<h4>NOW OPEN!</h4>
-									<div className="chalkBoard">Breakfast and lunch fare, from 7am to 5:30pm, Monday through Friday.
-Expanded hours coming soon!</div>
-									 <h4>What happened to the cow?!</h4>
-                                                                        <div className="chalkBoard">Read about our name change <a href="about#about-name">here.</a></div>
+									<h4>New Summer Hours!</h4>
+									<div className="chalkBoard">Now serving breakfast and lunch fare, 7am–5:30pm, Monday through Thursday, and until 9:30pm on Friday
+</div>
+									 <h4>Weekend Hours</h4>
+                                                                        <div className="chalkBoard">Saturdays, 11:30am–8:30pm. Sundays, 10am–2pm</div>
 
 
 								</div>
