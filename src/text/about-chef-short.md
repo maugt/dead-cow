@@ -1,1 +1,0 @@
-Owner and Executive Chef Shannon Madison has over 25 years of industry business management experience, with tenure growing industry icons that include Apple Computer and Google. Shannon earned her Grand Diploma in Culinary Arts from the distinguished French Culinary Institute (now known as the International Culinary Center).

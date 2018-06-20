@@ -400,61 +400,25 @@ h2{
 		margin-top: 2rem;
 		margin-bottom:.5rem;
 	}
-	p{
-		font-style: italic;
-		
-	}
 
-	strong{
+	.name {
 		display: block;
 		margin-bottom: .25rem;
+		font-weight: bold;
 	}
 
+	.info{
+		display: block;
+	}
+
+ 	.note, .info {
+		font-style: italic;
+	}
+
+	.abv:before , .ibu:before{
+		content: " - "
+	}
 	
-}
-
-
-.callout{
-	height: 0;
-	width: 100%;
-	text-align: right;
-	
-	h4{
-		position: relative;
-		transform: rotate(7deg) translateY(-80px);
-		font-family: "Gloria Hallelujah";
-		font-size: 40px;
-	}
-}
-
-.login {
-	form {
-		display: flex;
-		flex-direction: column;
-		margin-top: 50px;
-	}
-
-	input {
-		color: $light;
-		font-size: 12px;
-		margin-bottom: 10px;
-		padding: 10px 15px;
-		border-radius: 1px;
-		border: 2px solid $light;
-		background-color: $dark;
-
-		&:focus {
-			color: $dark;
-			background-color: $light;
-			outline: none;
-		}
-	}
-
-	.submit {
-		background: $light;
-		color: $dark;
-		cursor: pointer !important;
-	}
 }
 
 footer{

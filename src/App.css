@@ -264,45 +264,19 @@ h2 {
   margin-top: 2rem;
   margin-bottom: .5rem; }
 
-.menu p {
+.menu .name {
+  display: block;
+  margin-bottom: .25rem;
+  font-weight: bold; }
+
+.menu .info {
+  display: block; }
+
+.menu .note, .menu .info {
   font-style: italic; }
 
-.menu strong {
-  display: block;
-  margin-bottom: .25rem; }
-
-.callout {
-  height: 0;
-  width: 100%;
-  text-align: right; }
-  .callout h4 {
-    position: relative;
-    transform: rotate(7deg) translateY(-80px);
-    font-family: "Gloria Hallelujah";
-    font-size: 40px; }
-
-.login form {
-  display: flex;
-  flex-direction: column;
-  margin-top: 50px; }
-
-.login input {
-  color: #eee;
-  font-size: 12px;
-  margin-bottom: 10px;
-  padding: 10px 15px;
-  border-radius: 1px;
-  border: 2px solid #eee;
-  background-color: #222; }
-  .login input:focus {
-    color: #222;
-    background-color: #eee;
-    outline: none; }
-
-.login .submit {
-  background: #eee;
-  color: #222;
-  cursor: pointer !important; }
+.menu .abv:before, .menu .ibu:before {
+  content: " - "; }
 
 footer {
   background: #222;

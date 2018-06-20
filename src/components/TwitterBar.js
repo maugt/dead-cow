@@ -1,23 +1,23 @@
-import React, {Component} from 'react'
-import Twitter from 'twitter'
-import T from '../constants/credentials/TwitterConfig.json'
+import React, { Component } from 'react'
 
 export default class TwitterBar extends Component {
 
-    constructor() {
-        super();
-        this.state = {
-            tweet: "@theArtBarSc We're gonna eat you so muchhhhhh"
-        }
+  constructor () {
+    super()
+    this.state = {
+      tweet: "@theArtBarSc We're gonna eat you so muchhhhhh"
     }
+  }
 
-    render() {
-        return (
-            <div className="twitter-bar">
-                <div className="container">
-                    <p>{this.state.tweet}</p>
-                </div>
-            </div>
-        )
-    }
+  render () {
+    return (
+      <div className='twitter-bar'>
+        <div className='container'>
+          <p>
+            {this.state.tweet}
+          </p>
+        </div>
+      </div>
+    )
+  }
 }
