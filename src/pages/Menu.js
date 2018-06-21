@@ -23,13 +23,13 @@ export default class FullMenu extends Component {
         })
       })
 
-    // fetch(buildUrl('regions/data/MenuNotes'))
-    //   .then(res => res.json())
-    //   .then(json => {
-    //     this.setState({
-    //       notes: json
-    //     })
-    //   })
+    fetch(buildUrl('regions/data/MenuNotes'))
+      .then(res => res.json())
+      .then(json => {
+        this.setState({
+          notes: json
+        })
+      })
   }
 
   componentWillUnmount() { }
@@ -43,10 +43,10 @@ export default class FullMenu extends Component {
         <div className='page-content'>
           <div className='container'>
             <h2>Bistro Cuisine</h2>
-            {/* <Markdown source={this.state.notes.Cuisine} /> */}
+            <Markdown source={this.state.notes.cuisine} />
             <h2>Morning</h2>
             <p>
-              {this.state.notes.Morning}
+              {this.state.notes.morning}
             </p>
             <h3>Breakfast</h3>
             <MenuSection note={this.state.notes.breakfast} category='breakfast' data={this.state.menu} />
