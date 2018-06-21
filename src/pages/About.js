@@ -5,24 +5,24 @@ import Markdown from 'react-markdown'
 
 export default class About extends Component {
 
-  constructor () {
+  constructor() {
     super()
     this.state = {
-      text: {}
+      about: {}
     }
   }
 
-  componentWillMount () {
+  componentWillMount() {
     fetch(buildUrl('regions/data/About'))
       .then(res => res.json())
       .then(json => {
         this.setState({
-          text: json
+          about: json
         })
       })
   }
 
-  render () {
+  render() {
     document.title = 'Bistro One Twelve - About'
     return (
       <div className='about'>
@@ -33,16 +33,16 @@ export default class About extends Component {
               <div className='section'>
                 <h2><span id='about-name' ></span>The Name</h2>
                 <img alt='' src='/assets/salz-tannery.png' />
-                <Markdown source={this.state.text.AboutName} />
+                <Markdown source={this.state.about.name} />
               </div>
               <div className='section'>
                 <h2><span id='about-concept' ></span>Bistro Cuisine</h2>
                 <img alt='' src='/assets/salad.jpg' />
-                <Markdown source={this.state.text.AboutConcept} />
+                <Markdown source={this.state.about.concept} />
               </div>
               <div className='section'>
                 <h2><span id='about-chef' ></span>The Chef</h2>
-                <Markdown source={this.state.text.AboutChef} />
+                <Markdown source={this.state.about.chef} />
               </div>
             </div>
           </div>

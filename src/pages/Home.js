@@ -5,24 +5,24 @@ import { buildUrl } from '../lib/apiTools'
 
 export default class Home extends Component {
 
-  constructor () {
+  constructor() {
     super()
     this.state = {
-      text: {}
+      about: {}
     }
   }
 
-  componentWillMount () {
+  componentWillMount() {
     fetch(buildUrl('regions/data/About'))
       .then(res => res.json())
       .then(json => {
         this.setState({
-          text: json
+          about: json
         })
       })
   }
 
-  render () {
+  render() {
     return (
       <div className='home'>
         <Cover children={this.props.children} />
@@ -32,21 +32,21 @@ export default class Home extends Component {
               <div className='mini-about'>
                 <h2>About the Concept</h2>
                 <p>
-                  {this.state.text.AboutConceptShort}
+                  {this.state.about.conceptShort}
                 </p>
                 <a href='about#about-concept'>more...</a>
               </div>
               <div className='mini-about'>
                 <h2>About the Name</h2>
                 <p>
-                  {this.state.text.AboutNameShort}
+                  {this.state.about.nameShort}
                 </p>
                 <a href='about#about-name'>more...</a>
               </div>
               <div className='mini-about'>
                 <h2>About the Chef</h2>
                 <p>
-                  {this.state.text.AboutChefShort}
+                  {this.state.about.chefShort}
                 </p>
                 <a href='about#about-chef'>more...</a>
               </div>

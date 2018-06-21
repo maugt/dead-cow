@@ -5,9 +5,9 @@ import Footer from './components/Footer'
 
 export default class App extends Component {
 
-  componentWillMount () {}
+  componentWillMount() { }
 
-  render () {
+  render() {
     return (
       <div>
         <Nav />
