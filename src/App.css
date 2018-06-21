@@ -21,7 +21,7 @@ h2,
 h3,
 h4,
 a {
-  font-family: "Roboto Slab", "serif"; }
+  font-family: "Nunito", sans-serif; }
 
 p,
 p a,
@@ -29,7 +29,8 @@ li {
   font-family: 'Raleway'; }
 
 h1 {
-  font-size: 32px; }
+  font-size: 32px;
+  text-transform: uppercase; }
 
 h2 {
   font-size: 26px; }
@@ -42,7 +43,8 @@ h3 {
   font-size: 17px; }
 
 h4 {
-  font-size: 20px; }
+  margin: 0;
+  font-size: 16px; }
 
 p {
   line-height: 1.5em; }
@@ -142,7 +144,6 @@ h2 {
   top: 0;
   width: 100%;
   z-index: 1000;
-  font-family: "Roboto Slab", serif;
   border-top: solid 8px #b13a32; }
   .nav h1,
   .nav h3,
@@ -173,7 +174,8 @@ h2 {
   .nav .links {
     display: flex;
     flex-direction: row;
-    align-items: baseline; }
+    align-items: baseline;
+    text-transform: uppercase; }
   .nav .social {
     margin-left: 15px; }
   .nav .social-link {
@@ -275,18 +277,11 @@ h2 {
 .menu .menu-item p {
   margin: 0; }
 
-.menu .menu-item a {
-  font-family: 'Roboto'; }
-
 .menu h3 {
   margin: 0 auto;
   margin-top: 2rem;
   margin-bottom: 1rem;
   font-style: bold; }
-
-.menu h4 {
-  margin-top: 2rem;
-  margin-bottom: .5rem; }
 
 .menu .note,
 .menu .info {
@@ -309,21 +304,24 @@ footer {
 .footer {
   display: flex;
   justify-content: space-between;
-  margin: 25px 0px; }
+  margin: 25px 0 50px; }
+  .footer a {
+    font-family: "Raleway", sans-serif; }
   .footer h3 {
     font-size: 15px;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    font-weight: bold; }
   .footer ul {
     margin: 0;
     padding: 0;
     list-style-type: none; }
     .footer ul li {
       margin-left: 0;
-      font-family: "Roboto Slab", "serif";
       padding: 0;
       margin-bottom: 3px; }
   .footer .footer-logo {
-    transform: scale(0.7); }
+    width: 100px;
+    height: 100px; }
 
 @media (max-width: 1300px) {
   .cover .front-matter {

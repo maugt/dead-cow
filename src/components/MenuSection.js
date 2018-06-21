@@ -6,19 +6,19 @@ export default class MenuSection extends Component {
     let list = []
     for (const i in this.props.data) {
       const item = this.props.data[i]
-      if (item.Category === this.props.category) {
+      if (item.category === this.props.category) {
         list.push(
           <div className='menu-item' key={i}>
-            <p className='name'>{item.Name}</p>
+            <h4 className='name'>{item.name}</h4>
             <p className='info'>
               {item.Source &&
-                <span className='source'>{item.Source}</span>}
+                <span className='source'>{item.source}</span>}
               {item.abv &&
                 <span className='abv'>{item.abv}% ABV</span>}
               {item.ibu &&
                 <span className='ibu'>{item.ibu} IBUs</span>}
             </p>
-            <p>{item.Description}</p>
+            <p>{item.description}</p>
           </div>
         )
       }

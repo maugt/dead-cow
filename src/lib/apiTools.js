@@ -1,5 +1,5 @@
 import { apiKey } from '../constants/credentials/backend.json'
-
+const baseUrl = '35.227.190.205'
 export const buildUrl = (url) => {
-  return `http://35.188.15.61/api/${url}?token=${apiKey}`
+  return `http://${baseUrl}/api/${url}?token=${apiKey}`
 }

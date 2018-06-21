@@ -15,7 +15,7 @@ export default class Footer extends Component {
     fetch(buildUrl('regions/data/Hours'))
       .then(res => res.json())
       .then(json => this.setState({
-        hours: json.Hours.split('\n')
+        hours: json.hours.split('\n')
       }))
   }
 
