@@ -320,6 +320,8 @@ footer {
       padding: 0;
       margin-bottom: 3px; }
   .footer .footer-logo {
+    margin-top: 20px;
+    margin-left: -10px;
     width: 100px;
     height: 100px; }
 
