@@ -7,7 +7,7 @@ export default class NavLinks extends Component {
       <div className='navigation'>
         <ul>
           <li>
-            <a href='/menus'>Menus</a>
+            <a href='/menu'>Menu</a>
           </li>
           <li>
             <a href='/about'>About</a>

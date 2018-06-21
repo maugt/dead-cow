@@ -2,36 +2,36 @@ import React, { Component } from 'react'
 
 export default class MenuSection extends Component {
 
-  render () {
+  render() {
     let list = []
     for (const i in this.props.data) {
       const item = this.props.data[i]
       if (item.Category === this.props.category) {
         list.push(
-          <li key={i}>
-            <span className='name'>{item.Name}</span>
-            <div className='info'>
+          <div className='menu-item' key={i}>
+            <p className='name'>{item.Name}</p>
+            <p className='info'>
               {item.Source &&
-               <span className='source'>{item.Source}</span>}
+                <span className='source'>{item.Source}</span>}
               {item.abv &&
-               <span className='abv'>{item.abv}% ABV</span>}
+                <span className='abv'>{item.abv}% ABV</span>}
               {item.ibu &&
-               <span className='ibu'>{item.ibu} IBUs</span>}
-            </div>
-            {item.Description}
-          </li>
+                <span className='ibu'>{item.ibu} IBUs</span>}
+            </p>
+            <p>{item.Description}</p>
+          </div>
         )
       }
     }
 
     return (
-      <div>
+      <div className='menu-section'>
         <p className='note'>
           {this.props.note}
         </p>
-        <ul>
+        <div className='menu-items'>
           {list}
-        </ul>
+        </div>
       </div>)
   }
 

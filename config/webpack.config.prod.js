@@ -140,6 +140,7 @@ module.exports = {
 					/\.jpe?g$/,
 					/\.png$/,
 					/\.md$/,
+					/\.svg$/
 				],
 				loader: require.resolve('file-loader'),
 				options: {
@@ -218,6 +219,10 @@ module.exports = {
 			{
 				test: /\.md$/,
 				use: 'raw-loader'
+			},
+			{
+				test: /\.svg$/,
+				loader: 'svg-react-loader'
 			}
 			// ** STOP ** Are you adding a new loader?
 			// Remember to add the new extension(s) to the "file" loader exclusion list.
