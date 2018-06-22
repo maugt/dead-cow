@@ -12,7 +12,7 @@ deploy:
   project: bistro-112-staging
   message: LIVE!
   on:
-    branch: master
+    branch: staging
 - provider: firebase
   skip_cleanup: true
   token:
