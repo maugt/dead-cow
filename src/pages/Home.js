@@ -12,19 +12,28 @@ export default class Home extends Component {
     }
   }
 
-  componentWillMount() {
-    fetch(buildUrl('regions/data/About'))
+  componentWillMount () {
+    fetch(buildUrl('about'))
       .then(res => res.json())
       .then(json => {
         this.setState({
           about: json
         })
       })
+
+    fetch(buildUrl('hours'))
+      .then(res => res.json())
+      .then(json => {
+        this.setState({
+          hours: json
+        })
+      })
   }
 
-  render() {
+
+  render () {
     return (
-      <div className='home'>
+      <div className='home' >
         <Cover children={this.props.children} />
         <div className='page-content'>
           <div className='container'>

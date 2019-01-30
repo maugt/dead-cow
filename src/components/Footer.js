@@ -11,15 +11,16 @@ export default class Footer extends Component {
     }
   }
 
-  componentWillMount() {
-    fetch(buildUrl('regions/data/Hours'))
+  componentWillMount () {
+    fetch(buildUrl('hours'))
       .then(res => res.json())
       .then(json => this.setState({
-        hours: json.hours.split('\n')
+        hours: json
       }))
   }
 
-  render() {
+  render () {
+    console.log(this.state)
     return (
       <footer>
         <div className='container'>
@@ -30,7 +31,7 @@ export default class Footer extends Component {
               <ul>
                 {this.state.hours.map((x, i) => {
                   return <li key={i}>
-                    {x}
+                    <span>{x.day}</span>{x.hours}
                   </li>
                 })}
               </ul>
