@@ -4,7 +4,7 @@ import VarStore from '../stores/VarStore'
 
 export default class MenuItem extends Component {
 
-  constructor () {
+  constructor() {
     super()
     this.state = {
       navIsOpen: false
@@ -34,7 +34,7 @@ export default class MenuItem extends Component {
   render () {
     return (
       <div className='mobile toggleSwitch'>
-        <a onClick={this.toggleNav.bind(this)}><img src='/assets/icon-highlight.png' alt='dead-cow-icon' /></a>
+        <a onClick={this.toggleNav.bind(this)}><img src='/assets/icon-highlight.png' alt='bistro 112-icon' /></a>
       </div>
     )
   }
