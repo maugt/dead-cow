@@ -1,7 +1,7 @@
 {
   "projects": {
-    "default": "the-dead-cow",
-    "production": "the-dead-cow",
-		"staging": "the-dead-cow-staging"
+    "default": "bistro112-production",
+    "production": "bistro112-production",
+		"staging": "bistro112-staging"
   }
 }
