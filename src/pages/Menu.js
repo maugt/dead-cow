@@ -10,7 +10,7 @@ export default class FullMenu extends Component {
     super()
     this.state = {
       menu: [],
-      about: []
+      text: []
     }
   }
 
@@ -22,11 +22,11 @@ export default class FullMenu extends Component {
           menu: json
         })
       })
-    fetch(buildUrl('about'))
+    fetch(buildUrl('text'))
       .then(res => res.json())
       .then(json => {
         this.setState({
-          about: json
+          text: json
         })
       })
   }
@@ -36,10 +36,10 @@ export default class FullMenu extends Component {
 
 
   render () {
-    let aboutObj = {}
+    let textObj = {}
 
-    this.state.about.forEach(x => {
-      aboutObj[x.section] = x.text
+    this.state.text.forEach(x => {
+      textObj[x.section] = x.text
     })
 
     document.title = 'Bistro One Twelve - Menu'
@@ -50,7 +50,7 @@ export default class FullMenu extends Component {
         <div className='page-content'>
           <div className='container'>
             <h2>Bistro Cuisine</h2>
-            {renderHTML(aboutObj['menu-notes'] || "")}
+            {renderHTML(textObj['menu-notes'] || "")}
             <h2>Morning</h2>
             <h3>Breakfast</h3>
             <MenuSection category='breakfast' data={this.state.menu} />

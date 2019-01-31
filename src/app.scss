@@ -95,14 +95,6 @@ p {
 	margin-top: 1rem;
 }
 
-h2 {
-	position: relative;
-	span {
-		position: absolute;
-		top: -100px;
-	}
-}
-
 .page-header {
 	border-bottom: solid 8px $highlight;
 	width: 100%;
@@ -269,7 +261,7 @@ h2 {
 	}
 	.container {
 		flex-direction: column;
-		height: 89vh;
+		min-height: 89vh;
 		min-height: 650px;
 		justify-content: space-between;
 	}
@@ -303,9 +295,30 @@ h2 {
 		letter-spacing: 1px;
 	}
 	.logo {
+    margin-top: 30px;
 		width: 375px;
 		height: 375px;
-	}
+  }
+  
+}
+
+.chalkboard{
+  margin-top: 20px;
+  max-width: 400px;
+  color: $light;
+
+  h2{
+    margin: 0;
+  }
+
+  h3{
+    display: inline-block;
+    color: $light;
+    background: $highlight;
+    padding: 5px 8px;
+    border-radius: 5px;
+    position: relative;
+  }
 }
 
 .google-map {
@@ -453,6 +466,10 @@ footer {
 		grid-template-columns: 90px 1fr 90px;
 	}
 	.cover {
+     .chalkboard{
+      text-align: center; 
+      margin-bottom: 40px; 
+    }
 		.front-matter {
 			flex-direction: column;
 			width: 100%;
@@ -526,9 +543,11 @@ footer {
 			font-size: 25px;
 		}
 		.nav-title {
-			margin-bottom: 10px;
+      margin-bottom: 10px;
 			h1 {
-				font-size: 30px;
+        font-size: 30px;
+      color: $highlight;
+        
 			}
 		}
 		.links {
@@ -563,7 +582,13 @@ footer {
 			padding: 15px;
 		}
 	}
+ 
 	.cover {
+    .chalkboard{
+      h3{
+        font-size:20px;
+      }
+    }
 		.logo {
 			width: 210px;
 			height: 210px;
@@ -580,7 +605,7 @@ footer {
 			flex-direction: column;
 			justify-content: flex-start;
 			align-items: center;
-			margin-top: 0;
+			margin-top: 20px;
 			padding: 0;
 		}
 		.cover-text {
@@ -619,6 +644,9 @@ footer {
 		padding: 0 50px;
 	}
 	.menu {
+    .menu-items{
+      grid-template-columns: 1fr;
+    }
 		ul {
 			grid-template-columns: 1fr;
 			grid-row-gap: 15px;
@@ -637,6 +665,10 @@ footer {
 		* {
 			margin-bottom: 20px;
 			text-align: center; // align-items: center;
-		}
+    }
+      li span{
+        margin: 0;
+      }
+    
 	}
 }

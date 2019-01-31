@@ -67,12 +67,6 @@ p {
   margin-bottom: 3rem;
   margin-top: 1rem; }
 
-h2 {
-  position: relative; }
-  h2 span {
-    position: absolute;
-    top: -100px; }
-
 .page-header {
   border-bottom: solid 8px #b13a32;
   width: 100%;
@@ -205,7 +199,7 @@ h2 {
     color: #f8f8f8; }
   .cover .container {
     flex-direction: column;
-    height: 89vh;
+    min-height: 89vh;
     min-height: 650px;
     justify-content: space-between; }
   .cover .front-matter {
@@ -233,8 +227,23 @@ h2 {
     text-align: start;
     letter-spacing: 1px; }
   .cover .logo {
+    margin-top: 30px;
     width: 375px;
     height: 375px; }
+
+.chalkboard {
+  margin-top: 20px;
+  max-width: 400px;
+  color: #f8f8f8; }
+  .chalkboard h2 {
+    margin: 0; }
+  .chalkboard h3 {
+    display: inline-block;
+    color: #f8f8f8;
+    background: #b13a32;
+    padding: 5px 8px;
+    border-radius: 5px;
+    position: relative; }
 
 .google-map {
   height: 60vh;
@@ -349,6 +358,9 @@ footer {
   .page-header {
     width: 100%;
     grid-template-columns: 90px 1fr 90px; }
+  .cover .chalkboard {
+    text-align: center;
+    margin-bottom: 40px; }
   .cover .front-matter {
     flex-direction: column;
     width: 100%;
@@ -402,7 +414,8 @@ footer {
     .nav .nav-title {
       margin-bottom: 10px; }
       .nav .nav-title h1 {
-        font-size: 30px; }
+        font-size: 30px;
+        color: #b13a32; }
     .nav .links {
       flex-direction: column;
       align-items: center; }
@@ -426,6 +439,8 @@ footer {
       padding: 15px; }
       .nav .toggleSwitch img {
         width: 40px; }
+  .cover .chalkboard h3 {
+    font-size: 20px; }
   .cover .logo {
     width: 210px;
     height: 210px;
@@ -440,7 +455,7 @@ footer {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 0;
+    margin-top: 20px;
     padding: 0; }
   .cover .cover-text {
     text-align: center; }
@@ -468,6 +483,8 @@ footer {
       content: none; }
   .container {
     padding: 0 50px; }
+  .menu .menu-items {
+    grid-template-columns: 1fr; }
   .menu ul {
     grid-template-columns: 1fr;
     grid-row-gap: 15px; }
@@ -481,4 +498,6 @@ footer {
       display: none; }
     .footer * {
       margin-bottom: 20px;
-      text-align: center; } }
+      text-align: center; }
+    .footer li span {
+      margin: 0; } }

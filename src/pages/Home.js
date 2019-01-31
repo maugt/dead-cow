@@ -15,7 +15,7 @@ export default class Home extends Component {
   }
 
   componentWillMount () {
-    fetch(buildUrl('about'))
+    fetch(buildUrl('text'))
       .then(res => res.json())
       .then(json => {
         this.setState({
@@ -49,9 +49,7 @@ export default class Home extends Component {
             <div className='about-snippets'>
               <div className='mini-about'>
                 <h2>About the Concept</h2>
-                <p>
-                  {renderHTML(aboutObj['concept-short'] || "")}
-                </p>
+                {renderHTML(aboutObj['concept-short'] || "")}
                 <a href='about#about-concept'>more...</a>
               </div>
               <div className='mini-about'>
@@ -61,9 +59,7 @@ export default class Home extends Component {
               </div>
               <div className='mini-about'>
                 <h2>About the Chef</h2>
-                <p>
-                  {renderHTML(aboutObj['chef-short'] || "")}
-                </p>
+                {renderHTML(aboutObj['chef-short'] || "")}
                 <a href='about#about-chef'>more...</a>
               </div>
             </div>

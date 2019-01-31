@@ -13,7 +13,7 @@ export default class About extends Component {
   }
 
   componentWillMount () {
-    fetch(buildUrl('about'))
+    fetch(buildUrl('text'))
       .then(res => res.json())
       .then(json => {
         this.setState({

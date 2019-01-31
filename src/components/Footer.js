@@ -26,7 +26,7 @@ export default class Footer extends Component {
           <div className='footer'>
             <img className='footer-logo' src='/assets/icon-dark.png' alt='Bistro One Twelve at The Tannery Logo' />
             <div className='footer-hours'>
-              <h3>Hours</h3>
+              <h3 id="hours">Hours</h3>
               <ul>
                 {this.state.hours.map((x, i) => {
                   return <li key={i}>
