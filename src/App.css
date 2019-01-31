@@ -296,7 +296,6 @@ p {
 .menu .info {
   font-style: italic; }
 
-.menu .abv:before,
 .menu .ibu:before {
   content: " - "; }
 

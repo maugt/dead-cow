@@ -5,9 +5,17 @@ export default class MenuSection extends Component {
 
   render () {
     let list = []
-    let data = this.props.data.filter(x => x.subcategory === this.props.category)
-    console.log(this.props.category, data)
-    for (const i in data) {
+    let data = this.props.data
+      .filter(x => x.section === this.props.section)
+      .filter(x => x.name !== 'note')
+
+    let note = this.props.data
+    .filter(x => x.section === this.props.section)
+    .filter(x => x.name === 'note')
+    .map(x => x.description)[0] || ""
+
+    console.log(this.props.section, note)
+      for (const i in data) {
       const item = data[i]
       list.push(
         <div className='menu-item' key={i}>
@@ -15,6 +23,8 @@ export default class MenuSection extends Component {
           <p className='info'>
             {item.source &&
               <span className='source'>{item.source}</span>}
+          </p>
+          <p className='info'>
             {item.abv &&
               <span className='abv'>{item.abv}% ABV</span>}
             {item.ibu &&
@@ -28,7 +38,7 @@ export default class MenuSection extends Component {
     return (
       <div className='menu-section' >
         <p className='note'>
-          {this.props.note}
+          {note}
         </p>
         <div className='menu-items'>
           {list}

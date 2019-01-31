@@ -51,28 +51,26 @@ export default class FullMenu extends Component {
           <div className='container'>
             <h2>Bistro Cuisine</h2>
             {renderHTML(textObj['menu-notes'] || "")}
-            <h2>Morning</h2>
-            <h3>Breakfast</h3>
-            <MenuSection category='breakfast' data={this.state.menu} />
-            <h3>Coffee</h3>
-            <MenuSection category='coffee' data={this.state.menu} />
-            <h2>Lunch &amp; Dinner</h2>
+            <h3>Great Starts</h3>
+            <MenuSection section='starts' data={this.state.menu} />
+            <h3>All Day Refreshments</h3>
+            <MenuSection section='drinks' data={this.state.menu} />
+            <h2>Midday Fare</h2>
             <h3>Specialties Of The Moment</h3>
-            <MenuSection category='specials' data={this.state.menu} />
+            <MenuSection section='specials' data={this.state.menu} />
             <h3>Flatbreads</h3>
-            <MenuSection category='plates' data={this.state.menu} />
+            <MenuSection section='flatbreads' data={this.state.menu} />
             <h3>French-Style Baguettes</h3>
-            <MenuSection category='sandwiches' data={this.state.menu} />
+            <MenuSection section='baguettes' data={this.state.menu} />
             <h3>Salads</h3>
-            <MenuSection category='salad' data={this.state.menu} />
+            <MenuSection section='salads' data={this.state.menu} />
             <h3>Nibbles</h3>
-            <MenuSection category='nibbles' data={this.state.menu} />
-            <h3>Dessert</h3>
-            <MenuSection category='dessert' data={this.state.menu} />
+            <MenuSection section='nibbles' data={this.state.menu} />
+            <h2>Wine &amp; Beer</h2>
             <h3>Beer</h3>
-            <MenuSection category='beer' data={this.state.menu} />
+            <MenuSection section='beer' data={this.state.menu} />
             <h3>Wine</h3>
-            <MenuSection category='wine' data={this.state.menu} />
+            <MenuSection section='wine' data={this.state.menu} />
           </div>
         </div>
       </div >
