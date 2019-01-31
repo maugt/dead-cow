@@ -1,19 +1,19 @@
 import React, { Component } from 'react'
 import PageHeader from '../components/PageHeader'
 import { buildUrl } from '../lib/apiTools'
-import Markdown from 'react-markdown'
+import renderHTML from 'react-render-html'
 
 export default class About extends Component {
 
   constructor() {
     super()
     this.state = {
-      about: {}
+      about: []
     }
   }
 
-  componentWillMount() {
-    fetch(buildUrl('regions/data/About'))
+  componentWillMount () {
+    fetch(buildUrl('about'))
       .then(res => res.json())
       .then(json => {
         this.setState({
@@ -22,7 +22,14 @@ export default class About extends Component {
       })
   }
 
-  render() {
+  render () {
+
+    let aboutObj = {}
+
+    this.state.about.forEach(x => {
+      aboutObj[x.section] = x.text
+    })
+
     document.title = 'Bistro One Twelve - About'
     return (
       <div className='about'>
@@ -33,16 +40,16 @@ export default class About extends Component {
               <div className='section'>
                 <h2><span id='about-name' ></span>The Name</h2>
                 <img alt='' src='/assets/salz-tannery.png' />
-                <Markdown source={this.state.about.name} />
+                {renderHTML(aboutObj['name'] || "")}
               </div>
               <div className='section'>
                 <h2><span id='about-concept' ></span>Bistro Cuisine</h2>
                 <img alt='' src='/assets/salad.jpg' />
-                <Markdown source={this.state.about.concept} />
+                {renderHTML(aboutObj['concept'] || "")}
               </div>
               <div className='section'>
                 <h2><span id='about-chef' ></span>The Chef</h2>
-                <Markdown source={this.state.about.chef} />
+                {renderHTML(aboutObj['chef'] || "")}
               </div>
             </div>
           </div>

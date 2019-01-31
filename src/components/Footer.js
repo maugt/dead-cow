@@ -20,7 +20,6 @@ export default class Footer extends Component {
   }
 
   render () {
-    console.log(this.state)
     return (
       <footer>
         <div className='container'>

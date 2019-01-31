@@ -2,13 +2,15 @@ import React, { Component } from 'react'
 import Cover from '../components/Cover'
 import GoogleMap from '../components/GoogleMap'
 import { buildUrl } from '../lib/apiTools'
+import renderHTML from 'react-render-html'
 
 export default class Home extends Component {
 
   constructor() {
     super()
     this.state = {
-      about: {}
+      about: [],
+      hours: []
     }
   }
 
@@ -32,6 +34,13 @@ export default class Home extends Component {
 
 
   render () {
+
+    let aboutObj = {}
+
+    this.state.about.forEach(x => {
+      aboutObj[x.section] = x.text
+    })
+
     return (
       <div className='home' >
         <Cover children={this.props.children} />
@@ -41,21 +50,19 @@ export default class Home extends Component {
               <div className='mini-about'>
                 <h2>About the Concept</h2>
                 <p>
-                  {this.state.about.conceptShort}
+                  {renderHTML(aboutObj['concept-short'] || "")}
                 </p>
                 <a href='about#about-concept'>more...</a>
               </div>
               <div className='mini-about'>
                 <h2>About the Name</h2>
-                <p>
-                  {this.state.about.nameShort}
-                </p>
+                {renderHTML(aboutObj['name-short'] || "")}
                 <a href='about#about-name'>more...</a>
               </div>
               <div className='mini-about'>
                 <h2>About the Chef</h2>
                 <p>
-                  {this.state.about.chefShort}
+                  {renderHTML(aboutObj['chef-short'] || "")}
                 </p>
                 <a href='about#about-chef'>more...</a>
               </div>
