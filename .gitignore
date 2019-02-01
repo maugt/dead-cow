@@ -15,5 +15,6 @@ build
 npm-debug.log
 firebase-debug.log
 .cache
+.firebase
 
 #credentials
