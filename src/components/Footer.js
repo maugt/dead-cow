@@ -11,26 +11,26 @@ export default class Footer extends Component {
     }
   }
 
-  componentWillMount() {
-    fetch(buildUrl('regions/data/Hours'))
+  componentWillMount () {
+    fetch(buildUrl('hours'))
       .then(res => res.json())
       .then(json => this.setState({
-        hours: json.hours.split('\n')
+        hours: json
       }))
   }
 
-  render() {
+  render () {
     return (
       <footer>
         <div className='container'>
           <div className='footer'>
             <img className='footer-logo' src='/assets/icon-dark.png' alt='Bistro One Twelve at The Tannery Logo' />
             <div className='footer-hours'>
-              <h3>Hours</h3>
+              <h3 id="hours">Hours</h3>
               <ul>
                 {this.state.hours.map((x, i) => {
                   return <li key={i}>
-                    {x}
+                    <span>{x.day}</span>{x.hours}
                   </li>
                 })}
               </ul>
