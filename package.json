@@ -51,6 +51,7 @@
     "firebase": "^5.8.2",
     "firebase-tools": "^6.3.1",
     "flux": "^3.1.3",
+    "global": "^4.3.2",
     "google-map-react": "^0.22.3",
     "node-sass-chokidar": "0.0.2",
     "react": "^16.7.0",
@@ -69,7 +70,7 @@
     "start": "npm-run-all -p watch-css start-js",
     "build": "npm run build-css && node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-    "ship": "yarn build && firebase deploy"
+    "ship": "yarn build && git push origin staging && firebase deploy"
   },
   "jest": {
     "collectCoverageFrom": [
