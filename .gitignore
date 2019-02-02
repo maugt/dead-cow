@@ -14,5 +14,7 @@ build
 .env
 npm-debug.log
 firebase-debug.log
+.cache
+.firebase
 
 #credentials

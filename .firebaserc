@@ -2,6 +2,6 @@
   "projects": {
     "default": "bistro-112-production",
     "production": "bistro-112-production",
-		"staging": "bistro-112-staging"
+    "staging": "bistro-112-staging"
   }
 }
