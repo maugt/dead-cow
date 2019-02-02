@@ -21,6 +21,7 @@ h2,
 h3,
 h4,
 a {
+  margin: 0;
   font-family: "Nunito", sans-serif; }
 
 p,
@@ -222,28 +223,35 @@ p {
     color: #f8f8f8;
     font-size: 35px;
     font-weight: normal;
-    margin-top: 50px;
-    margin-right: 50px;
     text-align: start;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    margin-bottom: 20px; }
   .cover .logo {
-    margin-top: 30px;
     width: 375px;
-    height: 375px; }
+    height: 375px;
+    margin-bottom: 50px; }
 
 .chalkboard {
   margin-top: 20px;
   max-width: 400px;
   color: #f8f8f8; }
   .chalkboard h2 {
-    margin: 0; }
+    margin: 0;
+    font-size: 20px;
+    margin-bottom: 5px; }
+  .chalkboard p {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 15px; }
   .chalkboard h3 {
     display: inline-block;
     color: #f8f8f8;
     background: #b13a32;
     padding: 5px 8px;
     border-radius: 5px;
-    position: relative; }
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px; }
 
 .google-map {
   height: 60vh;
@@ -379,7 +387,6 @@ footer {
     margin-left: 0; }
   .cover .slogan {
     font-size: 30px;
-    margin-top: 70px;
     margin-right: 0;
     text-align: center; }
   .daily-specials .specials {
@@ -444,11 +451,10 @@ footer {
     width: 210px;
     height: 210px;
     margin-top: 90px;
-    margin-bottom: 0px; }
+    margin-bottom: 30px; }
   .cover .container {
     box-sizing: border-box;
-    justify-content: space-between;
-    height: 100vh; }
+    justify-content: space-between; }
   .cover .front-matter {
     display: flex;
     flex-direction: column;
@@ -459,10 +465,10 @@ footer {
   .cover .cover-text {
     text-align: center; }
   .cover .slogan {
-    margin-top: 25px;
     font-size: 25px;
     margin-right: 0;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 40px; }
   .cover h1 {
     margin-top: 20px;
     font-size: 48px; }
