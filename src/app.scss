@@ -321,6 +321,13 @@ p {
   }
 }
 
+.banner{
+  background: $highlight;
+  color: $light;
+  margin: 0;
+  padding: $page-section-vertical-margin;
+}
+
 .google-map {
 	height: 60vh;
 	width: 100%;

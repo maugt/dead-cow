@@ -31,7 +31,7 @@ export default class Chalkboard extends Component {
 
     return (
       <div className='chalkboard'>
-            {renderHTML(textObj['chalkboard'] || "")}
+        {renderHTML(textObj['chalkboard'] || "")}
       </div>
     )
   }

@@ -245,6 +245,12 @@ p {
     border-radius: 5px;
     position: relative; }
 
+.banner {
+  background: #b13a32;
+  color: #f8f8f8;
+  margin: 0;
+  padding: 40px; }
+
 .google-map {
   height: 60vh;
   width: 100%; }
