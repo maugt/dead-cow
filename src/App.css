@@ -249,7 +249,11 @@ p {
   background: #b13a32;
   color: #f8f8f8;
   margin: 0;
-  padding: 40px; }
+  padding: 20px; }
+  .banner h2 {
+    margin: 0; }
+  .banner a {
+    color: #f8f8f8; }
 
 .google-map {
   height: 60vh;

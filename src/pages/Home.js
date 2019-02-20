@@ -41,13 +41,14 @@ export default class Home extends Component {
     this.state.about.forEach(x => {
       textObj[x.section] = x.text
     })
+    console.log(textObj)
 
     return (
       <div className='home' >
         <Cover children={this.props.children} />
-        {textObj.bannerText &&
-          textObj.bannerText.length > 0 &&
-          <Banner text={textObj.bannerText} />
+        {textObj.banner &&
+          textObj.banner.length > 0 &&
+          <Banner text={textObj.banner} />
         }
         <div className='page-content'>
           <div className='container'>

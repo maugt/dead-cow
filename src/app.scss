@@ -325,7 +325,16 @@ p {
   background: $highlight;
   color: $light;
   margin: 0;
-  padding: $page-section-vertical-margin;
+  h2{
+    margin: 0;
+  }
+  padding: 20px;
+  a{
+    color: $light;
+  }
+  a:hover{
+    $color: $dark;
+  }
 }
 
 .google-map {
