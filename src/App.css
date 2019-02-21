@@ -236,24 +236,54 @@ p {
   max-width: 400px;
   color: #f8f8f8; }
   .chalkboard h2 {
-    margin: 0; }
-  .chalkboard h3 {
     display: inline-block;
     color: #f8f8f8;
     background: #b13a32;
     padding: 5px 8px;
     border-radius: 5px;
-    position: relative; }
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+  .chalkboard p {
+    font-size: 17px; }
+  .chalkboard a:hover {
+    color: #b13a32; }
 
 .banner {
-  background: #b13a32;
+  position: relative;
+  background: #222;
   color: #f8f8f8;
   margin: 0;
-  padding: 20px; }
-  .banner h2 {
-    margin: 0; }
+  padding: 40px;
+  border-bottom: solid 8px #b13a32; }
   .banner a {
     color: #f8f8f8; }
+  .banner h2 {
+    color: #222;
+    text-transform: uppercase;
+    font-style: bold;
+    font-size: 26px;
+    margin: auto;
+    background: #f8f8f8;
+    padding: 5px 8px;
+    border-radius: 5px;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+  .banner h3 {
+    text-transform: capitalize;
+    margin: 0;
+    margin-bottom: .25rem;
+    padding-top: 20px; }
+  .banner p {
+    grid-column: 1;
+    margin: 0; }
+  .banner img {
+    max-width: 400px;
+    opacity: .2;
+    position: relative;
+    top: 50px;
+    right: 100px; }
 
 .google-map {
   height: 60vh;
