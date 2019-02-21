@@ -113,6 +113,7 @@ p {
     border-radius: 5px; }
 
 .background-image {
+  min-height: inherit;
   width: 100%;
   background: url("/assets/wall-cow.jpg");
   background-size: cover;
@@ -194,19 +195,20 @@ p {
   font-size: 20px; }
 
 .cover {
-  border-bottom: solid 8px #b13a32; }
+  border-bottom: solid 8px #b13a32;
+  min-height: 650px; }
   .cover a,
   .cover a:visited {
     color: #f8f8f8; }
   .cover .container {
     flex-direction: column;
-    min-height: 89vh;
-    min-height: 650px;
-    justify-content: space-between; }
+    justify-content: space-between;
+    min-height: 650px; }
   .cover .front-matter {
     display: flex;
     flex-direction: row;
     margin-top: 100px;
+    margin-bottom: 20px;
     justify-content: space-between; }
   .cover .info {
     display: flex;
@@ -232,36 +234,58 @@ p {
     margin-bottom: 50px; }
 
 .chalkboard {
-  margin-top: 20px;
+  margin-top: 50px;
   max-width: 400px;
   color: #f8f8f8; }
   .chalkboard h2 {
-    margin: 0;
-    font-size: 20px;
-    margin-bottom: 5px; }
-  .chalkboard p {
-    margin-top: 5px;
-    margin-bottom: 20px;
-    font-size: 15px; }
-  .chalkboard h3 {
     display: inline-block;
     color: #f8f8f8;
     background: #b13a32;
     padding: 5px 8px;
     border-radius: 5px;
     position: relative;
-    margin-top: 20px;
-    margin-bottom: 20px; }
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0; }
+  .chalkboard p {
+    font-size: 17px; }
+  .chalkboard a:hover {
+    color: #b13a32; }
 
 .banner {
-  background: #b13a32;
+  position: relative;
+  background: #222;
   color: #f8f8f8;
   margin: 0;
-  padding: 20px; }
-  .banner h2 {
-    margin: 0; }
+  padding: 40px; }
   .banner a {
     color: #f8f8f8; }
+  .banner h2 {
+    color: #222;
+    text-transform: uppercase;
+    font-style: bold;
+    font-size: 26px;
+    margin: auto;
+    background: #f8f8f8;
+    padding: 5px 8px;
+    border-radius: 5px;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+  .banner h3 {
+    text-transform: capitalize;
+    margin: 0;
+    margin-bottom: .25rem;
+    padding-top: 20px; }
+  .banner p {
+    grid-column: 1;
+    margin: 0; }
+  .banner img {
+    max-width: 400px;
+    opacity: .2;
+    position: relative;
+    top: 50px;
+    right: 100px; }
 
 .google-map {
   height: 60vh;
