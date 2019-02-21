@@ -154,7 +154,9 @@ p {
 	width: 100%;
 	background: url("/assets/wall-cow.jpg");
 	background-size: cover;
-	background-position: bottom;
+  background-position: bottom;
+  height: 100%;
+  overflow: visible;
 }
 
 .breakup {
@@ -164,7 +166,7 @@ p {
 }
 
 .wrapper {
-	background-color: rgba(34, 34, 34, 0.65);
+  background-color: rgba(34, 34, 34, 0.65);
 }
 
 .nav {
@@ -254,23 +256,24 @@ p {
 }
 
 .cover {
-	border-bottom: solid 8px $highlight;
+  border-bottom: solid 8px $highlight;
 	a,
 	a:visited {
-		color: $light;
+    color: $light;
 	}
 	.container {
 		flex-direction: column;
-		min-height: 89vh;
-		min-height: 650px;
-		justify-content: space-between;
-	}
+    justify-content: space-between;
+  }
+  
 	.front-matter {
-		display: flex;
-		flex-direction: row;
-		margin-top: 100px;
+    display: flex;
+		flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 20px;
 		justify-content: space-between;
-	}
+  }
+  
 	.info {
 		display: flex;
 		flex-direction: row;
@@ -335,9 +338,6 @@ p {
   margin: 0;
   padding: $page-section-vertical-margin;
   border-bottom: solid 8px $highlight;
-
-
-
 
   a{
     color: $light;
@@ -655,8 +655,8 @@ footer {
 		.container {
 			box-sizing: border-box;
 			justify-content: space-between;
-			height: 100vh;
-		}
+    }
+    
 		.front-matter {
 			display: flex;
 			flex-direction: column;
