@@ -151,12 +151,11 @@ p {
 }
 
 .background-image {
-	width: 100%;
+  min-height: inherit;
+  width: 100%;
 	background: url("/assets/wall-cow.jpg");
 	background-size: cover;
   background-position: bottom;
-  height: 100%;
-  overflow: visible;
 }
 
 .breakup {
@@ -257,6 +256,8 @@ p {
 
 .cover {
   border-bottom: solid 8px $highlight;
+  min-height: 650px;
+
 	a,
 	a:visited {
     color: $light;
@@ -264,11 +265,12 @@ p {
 	.container {
 		flex-direction: column;
     justify-content: space-between;
+    min-height: 650px;
   }
   
 	.front-matter {
     display: flex;
-		flex-direction: column;
+		flex-direction: row;
     margin-top: 100px;
     margin-bottom: 20px;
 		justify-content: space-between;
@@ -306,7 +308,7 @@ p {
 }
 
 .chalkboard{
-  margin-top: 20px;
+  margin-top: 50px;
   max-width: 400px;
   color: $light;
 
@@ -318,7 +320,8 @@ p {
     border-radius: 5px;
     position: relative;
     text-transform: uppercase;
-	  letter-spacing: 1px;
+    letter-spacing: 1px;
+    margin: 0;    
 
   }
 
@@ -337,7 +340,7 @@ p {
   color: $light;
   margin: 0;
   padding: $page-section-vertical-margin;
-  border-bottom: solid 8px $highlight;
+  // border-bottom: solid 8px $highlight;
 
   a{
     color: $light;
