@@ -25,7 +25,7 @@ export default class GoogleMap extends Component {
           v: '3.exp',
           key: C.key
         }} onMapCreated={this.onMapCreated}>
-          <Marker lat={coords.lat} lng={coords.lng} draggable={false} onClick={this.onMarkerClick} icon="/assets/icon-dark-small.png"/>
+          <Marker lat={coords.lat} lng={coords.lng} draggable={false} onClick={this.onMarkerClick} icon="/assets/icon-highlight-small.png"/>
 
         </Gmaps>
       </div>

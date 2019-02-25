@@ -1,28 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
 import { Route, IndexRoute, IndexRedirect, Router, browserHistory } from 'react-router'
-import App from './App';
+import App from './App'
 import Home from './pages/Home'
-import MenuIndex from './pages/MenuIndex'
-import FullAbout from './pages/FullAbout'
-import Login from './pages/Login'
-import Logout from './pages/Logout'
-import './index.css';
+import MenuIndex from './pages/Menu'
+import About from './pages/About'
+import './index.css'
 
 ReactDOM.render(
-	<Router history={browserHistory}>
-		<Route path='/' component={App}>
-			<Route component={Home}>
-				<IndexRoute />
-			</Route>
-			<Route path="/login" component={Login}></Route>
-			<Route path="/logout" component={Logout}></Route>
-			<Route path="/menus" component={MenuIndex}>
-
-			</Route>
-			<Route path="/about" component={FullAbout}></Route>
-			<Route path="*">
-				<IndexRedirect to='/'></IndexRedirect>
-			</Route>
-		</Route>
-	</Router>, document.getElementById('app'))
+  <Router history={browserHistory}>
+    <Route path='/' component={App}>
+      <Route component={Home}>
+        <IndexRoute />
+      </Route>
+      <Route path='/menu' component={MenuIndex}>
+      </Route>
+      <Route path='/about' component={About}></Route>
+      <Route path='*'>
+        <IndexRedirect to='/'></IndexRedirect>
+      </Route>
+    </Route>
+  </Router>, document.getElementById('app'))

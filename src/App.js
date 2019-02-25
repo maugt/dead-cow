@@ -1,33 +1,21 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from 'react'
+import './App.css'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
-// import TwitterBar from './components/TwitterBar'
-import * as Actions from './actions/Actions'
-import firebase from 'firebase'
 
 export default class App extends Component {
 
-	componentWillMount() {
-		firebase.auth().onAuthStateChanged(user => {
-			if (user) {
-				Actions.setLoggedInStatus(true)
-			} else {
-				Actions.setLoggedInStatus(false)
-			}
-		}).bind(this)
-	}
+  componentWillMount() { }
 
-	render() {
-		return (
-			<div>
-				<Nav />
-				<div className="space">
-				</div>
-				{this.props.children}
-
-				<Footer />
-			</div>
-		);
-	}
+  render() {
+    return (
+      <div>
+        <Nav />
+        <div className='space'>
+        </div>
+        {this.props.children}
+        <Footer />
+      </div>
+    )
+  }
 }
